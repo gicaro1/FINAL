@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'paris';
+  src: url("fonts/parisr.eot");
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("../fonts/parisr.woff") format("woff"), url("../fonts/parisr.ttf") format("truetype"), url("../fonts/parisr.svg") format("svg");
+}
+
+body {
+  background-color: #8EB19D;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+  letter-spacing: 1rem;
+  color: white;
+  font-family: paris;
+}
+/*# sourceMappingURL=styles.css.map */
