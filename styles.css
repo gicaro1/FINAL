@@ -4,16 +4,215 @@
   src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("../fonts/parisr.woff") format("woff"), url("../fonts/parisr.ttf") format("truetype"), url("../fonts/parisr.svg") format("svg");
 }
 
-body {
-  background-color: #8EB19D;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  overflow-x: hidden;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-h1 {
-  font-size: 2rem;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 10px 10px;
+  line-height: 1.4;
+}
+
+.btn {
+  background: #222;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.main-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.common-nav ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.common-nav ul li {
   text-align: center;
-  padding: 3rem;
-  letter-spacing: 1rem;
-  color: white;
+  padding: .8rem;
+  background: #236841;
+  opacity: .5;
+  margin-bottom: 15px;
   font-family: paris;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  border-radius: 27px;
+}
+
+.common-nav ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  letter-spacing: .5rem;
+  font-weight: 900;
+}
+
+.common-nav ul li:hover {
+  background: #333;
+  color: white;
+}
+
+.main-nav ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.main-nav ul li {
+  text-align: center;
+  padding: .8rem;
+  background: #ddd;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  letter-spacing: .4rem;
+}
+
+.main-nav ul li:hover {
+  background: #333;
+  color: white;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "video";
+}
+
+.container .video {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: video;
+  min-height: 400px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.cat-1 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 15px;
+}
+
+.cat-1 .top {
+  background: grey;
+  padding: 10px;
+  text-align: center;
+  margin: 0px 10px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.boxes {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.boxes .box {
+  background: #ddd;
+  padding: 10px;
+  text-align: center;
+  margin: 0px 10px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 10px;
+  margin: 8px;
+}
+
+footer ul {
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  list-style: none;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+footer ul li {
+  text-align: center;
+  padding: .8rem;
+  grid-gap: 10px;
+  background: #222;
+}
+
+footer ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

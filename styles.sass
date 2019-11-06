@@ -1,25 +1,157 @@
+@import ../FMA_web/fonts/font-face/_font-face
 @import ../FMA_web/variables/_var
+@import ../FMA_web/normalize/_normalize
 
-@font-face 
-    font-family: 'paris'
-    src: url('fonts/parisr.eot')
-    src: url('webfont.eot?#iefix') format('embedded-opentype'),  url('webfont.woff2') format('woff2'),  url('../fonts/parisr.woff') format('woff'),  url('../fonts/parisr.ttf') format('truetype'),  url('../fonts/parisr.svg') format('svg')
-
-
+    
 body 
-    background-color: $medium-top
+    // background: $background
+    margin: 10px 10px
+    line-height: 1.4
 
-h1 
-    font-size: 2rem
-    text-align: center
-    padding: 3rem 
-    letter-spacing: 1rem
-    color: white
-    font-family: paris
+.btn 
+    background: $gray-dark
+    padding: 0.6rem 1.3rem
+    text-decoration: none
+    border: 0
+
+img
+  display: block
+  margin: 10px auto
+
+  width: 100%
+  
+
+
+.main-wrapper 
+    display: grid
+    // grid-row-gap: 10px
+
+.common-nav 
+    ul 
+        display: grid
+        grid-gap: 10px
+        padding: 0
+        
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+        // grid-template-columns: 1fr 1fr
+        li 
+            
+            text-align: center
+            padding: .8rem
+            background: $defaul-color
+            opacity: .5
+            margin-bottom: 15px
+            font-family: paris
+            box-shadow: 0px 10px 13px -7px #000000
+            border-radius: 27px
+            a
+                text-decoration: none
+                color: white
+                cursor: pointer
+                list-style: none
+                letter-spacing: .5rem
+                font-weight: 900
+                
+                
+            &:hover
+                background: $grey-medium
+                color: white
+
     
+.main-nav 
+    ul 
+        display: grid
+        grid-gap: 10px
+        padding: 0
+        list-style: none
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+        li 
+            
+            text-align: center
+            padding: .8rem
+            background: $gray-light
+            margin-bottom: 5px
+            box-shadow: 0px 10px 13px -7px #000000
+
+            // &:nth-last-child(-n + 2) 
+            //     display: grid
+            //     align-items: center
+            //     background: blue
+
+            a
+                text-decoration: none
+                color: white
+                cursor: pointer
+                letter-spacing: .4rem
+            &:hover
+                background: $grey-medium
+                color: white
+.container 
+    display: grid
+    // grid-gap: 20px
+    grid-template-areas: "video"
     
+  
+
+    .video
+        grid-area: video
+        min-height: 400px
+        grid-column: 1
+        grid-row: 1
+        
+
+        // background: url(img/books.jpg)
+.cat-1
+    display: grid
+    grid-gap: 10px
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    margin-bottom: 15px
+    // grid-template-areas: "top-A top-B" "top-C top-D" "top-E top-F" 
+    .top 
+        background:  grey 
+        padding: 10px
+        text-align: center
+        margin: 0px 10px
+       
+        box-shadow: 0px 10px 13px -7px #000000
+        
+.boxes
+    display: grid
+    grid-gap: 20px
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+
+    .box 
+        background: $gray-light 
+        padding: 10px 
+        text-align: center
+        margin: 0px 10px
+        box-shadow: 0px 10px 13px -7px #000000
+
+footer
+    display: grid
+    margin-top: 10px
+    margin: 8px
+
+    ul 
+        display: grid
+        padding: 0
+        list-style: none
+        grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr))
+        li 
+            text-align: center
+            padding: .8rem
+            grid-gap: 10px
+            background: $gray-dark
+          
+            a
+                text-decoration: none
+                cursor: pointer
+                text-transform: uppercase
+                color: white
+
+                //  &:hover
+                // background: white
+              
 
 
-
-
-
+   
