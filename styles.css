@@ -46,7 +46,8 @@ table {
 }
 
 body {
-  margin: 10px 10px;
+  background: #ccc;
+  margin: 10px 15px;
   line-height: 1.4;
 }
 
@@ -60,6 +61,7 @@ body {
 img {
   display: block;
   margin: 10px auto;
+  height: auto;
   width: 100%;
 }
 
@@ -71,7 +73,8 @@ img {
 .common-nav ul {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
+  -ms-grid-row: 5;
+  grid-row: 5px;
   padding: 0;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -82,7 +85,7 @@ img {
   padding: .8rem;
   background: #236841;
   opacity: .5;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: paris;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
@@ -144,7 +147,7 @@ img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: video;
-  min-height: 400px;
+  height: 100%;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -164,7 +167,6 @@ img {
   background: grey;
   padding: 10px;
   text-align: center;
-  margin: 0px 10px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
 }
@@ -181,7 +183,6 @@ img {
   background: #ddd;
   padding: 10px;
   text-align: center;
-  margin: 0px 10px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
 }
@@ -190,7 +191,6 @@ footer {
   display: -ms-grid;
   display: grid;
   margin-top: 10px;
-  margin: 8px;
 }
 
 footer ul {
@@ -205,7 +205,6 @@ footer ul {
 footer ul li {
   text-align: center;
   padding: .8rem;
-  grid-gap: 10px;
   background: #222;
 }
 
