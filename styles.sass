@@ -5,9 +5,9 @@
     
 body 
     background: $background
-    margin: 10px 15px
+    // margin: 10px 15px
     line-height: 1.2
-
+/*----GENERAL STYLES-----*/
 .btn 
     display: grid
     border: 1px  solid $light
@@ -34,79 +34,70 @@ img
   opacity: .5
   margin-bottom: 55px
 
-  
-
-
+  /*----- MAIN WRAPPER ----*/
 .main-wrapper 
     display: grid
     // grid-row-gap: 10px
     position: relative
 
-.common-nav 
-    
-    ul 
-        display: grid
-        grid-row: 5px
-        padding: 0
-        
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-        // grid-template-columns: 1fr 1fr
-        li 
-            
-            text-align: center
-            padding: .8rem
-            // background: $defaul-color
-            background: $gray-light
-        
-            margin-bottom: 10px
-            // font-family: paris
-            box-shadow: 0px 10px 13px -7px #000000
-            // border-radius: 27px
-            a
-                text-decoration: none
-                color: $gray-dark
-                cursor: pointer
-                list-style: none
-                letter-spacing: .5rem 
-            &:hover
-                background: $grey-medium
-                color: $light
 
-    
+
 .main-nav 
+    display: none
     // position: fixed
-    
     ul 
         display: grid
-        grid-gap: 10px
+       
         padding: 0
+        background: #333333
         list-style: none
-        
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        opacity: .8
         li 
             
             text-align: center
-            padding: .8rem
-            background: $gray-light
-            margin-bottom: 5px
-            box-shadow: 0px 10px 13px -7px #000000
+       
+            justify-content: center
+            padding: 10px 10px
+         
+        
             a
                 text-decoration: none
-                color: $gray-dark
+                color: $light
                 cursor: pointer
-                letter-spacing: .4rem
+            
+              
             &:hover
                 background: $grey-medium
                 color: white
+// .common-nav 
+//     ul 
+//         display: grid
+//         grid-row: 5px
+//         padding: 0
+//         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))     
+//         li            
+//             text-align: center
+//             padding: .8rem
+//             background: $gray-light
+//             margin-bottom: 10px
+//             // font-family: paris
+//             box-shadow: 0px 10px 13px -7px #000000
+          
+//             a
+//                 text-decoration: none
+//                 color: $gray-dark
+//                 cursor: pointer
+//                 list-style: none
+//                 letter-spacing: .5rem 
+//             &:hover
+//                 background: $grey-medium
+//                 color: $light
 .container 
     display: grid
+   
     // grid-gap: 20px
     grid-template-areas: "video"
-    
-   
-
-.container
-
 
     h1 
         font-size: 3rem
@@ -129,6 +120,7 @@ img
         grid-row: 1
      
 .cat-1
+    margin: 10px 15px
     display: grid
     grid-gap: 10px
  
@@ -141,8 +133,6 @@ img
         text-align: center
         color: $light
         box-shadow: $shadow
-       
-
         h3 
             font-size: 1.5rem
             margin: 10px
@@ -154,9 +144,11 @@ img
             text-align: left
             margin-left: 50px
 
+/* -----------LAST TEXT SECTION ---------- */
+
 .values-B
     background: $gray-dark
-    padding: 10px
+    margin: 10px 15px
     
     text-align: center
     color: $light
@@ -170,13 +162,10 @@ img
         margin: 10px
         color: $defaul-color
 
-
+/*------------FOOTER MAIN STYLES ----------- */
 footer
     display: grid
     margin-top: 10px
-    
- 
-
     ul 
         display: grid
         padding: 0
@@ -187,55 +176,91 @@ footer
             text-align: center
             padding: .8rem
             background: $gray-dark
-          
             a
                 text-decoration: none
                 cursor: pointer
                 text-transform: uppercase
                 color: white
 
+/* ----------------- IPAD MEDIA QUERIES -------------- */
 
-                /* --- IPAD MEDIA QUERIES ------- */
 @media only  screen and(min-device-width:768px) and (max-device-width:1024px)
+    .cat-1
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        .top
+            h2 
+                font-size: 4rem
+            h3 
+                font-size: 3rem
+            p 
+                font-size: 1.3rem
+    .main-wrapper 
+    display: grid
+ 
+
+
+
+.main-nav 
+    display: contents
+    position: fixed
+   
+    ul 
+
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+        // position: fixed
+
+    li 
+        
+        margin: 0
+        
+        a
+            font-size: .5rem
+            
+            &:hover
+                background: $grey-medium
+                color: white
+           
+
     .container
         .video
             h1 
             font-size: 4rem
-     
+
+    /*--- ----Middle section text & books images------*/
     .top
         .list-items
             text-align: left
             margin-left: 50px
-    .cat-1       
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-        .top
-            h2 
-                font-size: 3rem
-                // margin-top: 20px
-                overflow: hidden
-                color: $defaul-color
-                line-height: .8
-            h3 
-                font-size: 2rem
-            p 
-                font-size: 1.3rem
+    // .cat-1
+    //     grid-template-columns: repeat(auto-fit, minmax(400px, fr))
+        // .top
+         
+        // .top
+        //     h2 
+        //         font-size: 3rem
+        //         overflow: hidden
+        //         color: $defaul-color
+        //         line-height: .8
+        //     h3 
+        //         font-size: 2rem
+        //     p 
+        //         font-size: 1.4rem
     .boxes
         .values-B
-            margin: 0
+            
 
             h3 
-             font-size: 3rem
+             font-size: 2rem
             p 
-                font-size: 2.5r
+                font-size: 1.4rem
                 // background: blue
                 padding: 5px
-                margin: 0
-                 
+                margin: 0  
+
+    /* ------------------ FOOTER------------------*/    
     footer 
         ul
           font-size: 1.2rem
-            
-
     .common-nav 
         ul 
             grid-gap: 5px
@@ -249,22 +274,20 @@ footer
     .btn 
         font-size: 2rem
         padding: 15px 
-        margin: 10px
+        margin: 10px   
 
- 
-          
-    /*--- IPAD-PRO MEDIA QUERIES ---- */
-          
-@media only  screen and(min-device-width:1024px) and (max-device-width:2000px)
+    /*-----------MEDIA QUERIES IPAD-PRO -------------- */
+
+@media only  screen and(min-device-width:1024px) and (max-device-width:1366px)
+    .container
+     .video
+        h1 
+         font-size: 5rem
+         margin-top: 20%
 
     .cat-1
-        // display: grid
-        // grid-gap: 10px
         grid-template-columns: repeat(auto-fit, minmax(400px, 2fr))
-
-
         .top
-    
             h2 
                 font-size: 4rem
             h3 
@@ -277,21 +300,35 @@ footer
             margin-left: 50px
     .boxes
         .values-B
-
             h3 
              font-size: 3rem
-
             p 
-                font-size: 1.5rem
+             font-size: 1.5rem
     footer 
         ul
           font-size: 1.5rem 
-           
-@media only  screen and(min-device-width:1024px) and (max-device-width:2000px)
-     .btn 
+          
+/* ----------------LAPTOP AND DESKOP MEDIA QUERIES-------------*/ 
+
+@media only  screen and(min-device-width:1280px) and (max-device-width:2000px)
+
+    .cat-1
+     grid-template-columns: repeat(auto-fit, minmax(600px, 2fr))
+     .top
+        p 
+         font-size: 1.6rem
+    .boxes
+     .values-B
+            h3 
+                font-size: 3rem
+            p 
+                font-size: 1.6rem
+
+    .btn 
         font-size: 2rem
         padding: 5px 
-        margin: 10px
+        margin: 15px
+     
            
         
            
