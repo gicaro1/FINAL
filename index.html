@@ -5,45 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
+  <script src="/javaScript/toggle.js"></script>
   <title>Main page</title>
 
 </head>
 <body>
   <div class="main-wrapper">
-    <!-- <nav class="common-nav">
+     
+    <div class="toggle-wrapper">
+      <img  class="logo" src="/logo/emblem_logo_64.png" alt="logo">
+      <div class= "hamburger_toggle_menu" onclick="myFunction(this)" >
+          <div class="lines1"></div>
+          <div class="lines2"></div>
+          <div class="lines3"></div>
+      </div>
+    </div>
 
-      <ul>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="#">ACCESIBILITY</a></li>
-        <li> <a href="#">LOGIN</a></li>
-      </ul>
-    </nav> -->
+    <nav class="main-nav" >
 
-    <nav class="main-nav">
-      <ul>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="#">ACCESIBILITY</a></li>
-        <li> <a href="#">LOGIN</a></li>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">BOOKS</a></li>
-        <li><a href="#">DELIVERY</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li> <a href="#">INVESTMENT</a></li>
+      <ul id="burger">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li> <a href="#">Login</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">About</a></li>
+        <li> <a href="#">Investements</a></li>
+
       </ul>
+
     </nav>
 
     <section class="container">
        
-      <header class="video">
-       
+      <!-- <header class="video"> -->
         <h1> Emblem Books Shop</h1>
-        <img src="/img/homepage/books.jpg" alt="">
+     
+            <video 
+            id="vid1" src="/videos/emblem_video_480x360.mp4" 
+            autoplay="true" loop="true" muted="true">
+            <source src="/videos/emblem_video_480x360.ogg" 
+            autoplay="true" loop="true" muted="true">
+            <source src="/videos/emblem_video_480x360.webm" 
+            autoplay="true" loop="true" muted="true">
+          </video>  
 
-      </header>
-
+       
+      <!-- </header> -->
     </section>
 
-    <section class="cat-1">
+     <section  id= "cat-section" class="cat-1">
+       
 
       <div class="top">
         <h2>The Heart of the Matter</h2>
@@ -100,7 +113,7 @@
 
     </section>
 
-    <section class="boxes">
+    <section  id = "value-b" class="boxes">
 
         <div class="values-B">
             <h3>Valuing Books</h3>
@@ -114,7 +127,7 @@
    
     </section>
 
-    <footer>
+    <footer id="fot">
       
       <ul>
         <li><a href="#">Privacy</a></li>
@@ -123,9 +136,10 @@
       </ul>
 
     </footer>
+    
   </div>
 
-
+  </div>
   
 </body>
-</html>
+</html> 
