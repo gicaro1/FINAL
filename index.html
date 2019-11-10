@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|PT+Sans+Narrow&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
   <script src="/javaScript/toggle.js"></script>
   <title>Main page</title>
 
 </head>
 <body>
   <div class="main-wrapper">
-     
+
     <div class="toggle-wrapper">
       <img  class="logo" src="/logo/emblem_logo_64.png" alt="logo">
       <div class= "hamburger_toggle_menu" onclick="myFunction(this)" >
@@ -37,23 +39,27 @@
 
     </nav>
 
-    <section class="container">
+    <header>
        
       <!-- <header class="video"> -->
-        <h1> Emblem Books Shop</h1>
-     
-            <video 
+        <!-- <h1> Emblem Books Shop</h1> -->
+        <div class="video-wrapper">
+
+            <video class="video-bg"
             id="vid1" src="/videos/emblem_video_480x360.mp4" 
             autoplay="true" loop="true" muted="true">
             <source src="/videos/emblem_video_480x360.ogg" 
             autoplay="true" loop="true" muted="true">
             <source src="/videos/emblem_video_480x360.webm" 
             autoplay="true" loop="true" muted="true">
-          </video>  
+          </video> 
+
+        </div>
+         
 
        
       <!-- </header> -->
-    </section>
+    </header>
 
      <section  id= "cat-section" class="cat-1">
        
@@ -69,12 +75,18 @@
 
       <div class="top">
           <h3>Graham Greene</h3>
+
+         
          <img src="/img/homepage/the heart o the matter.png" alt="">
+       
+       <div class="btn-wrapper">
           <a href="#" class="btn">Buy Now</a>
+        </div>
+       
       </div>
 
       <div  class="top">
-          <h3>James <br>Joyce</h3>
+          <h3>James Joyce</h3>
           <img src="/img/homepage/ulyses-removebg-preview.png" alt="">
            <a href="#" class="btn">Buy Now</a>
       </div>
@@ -94,10 +106,6 @@
          
       </div>
    
-
-
-
-
       <div class="top">
           <h3>Selling Books</h3>
           <p>

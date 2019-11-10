@@ -4,19 +4,21 @@
 
     
 body 
-    background: $background
+    background: #fafafa
     // margin: 10px 15px
-    line-height: 1.2
+    line-height: 1.3
+    font-family: 'PT Sans Narrow', sans-serif
 /*----GENERAL STYLES-----*/
 .btn 
     display: grid
     border: 1px  solid $light
     background-color: Transparent
-    background-repeat:no-repeat
+    background-repeat: no-repeat
     border: 1px  solid $light
     cursor:pointer
     overflow: hidden
-    opacity: .3
+    margin: 20px
+    opacity: .7
     padding: 5px 
     color: $light
     text-decoration: none
@@ -30,14 +32,14 @@ img
   display: block
   margin: 0 auto 
   width: 100%
-  height: 500px
+  height: 400px
   opacity: .5
   margin-bottom: 55px
 
   /*----- MAIN WRAPPER ----*/
-.main-wrapper 
-    display: grid
-   
+// .main-wrapper 
+//     display: grid
+ 
 
 .main-nav 
    
@@ -63,34 +65,6 @@ img
                 background: $grey-medium
                 color: white
 
-// /*NAVIGATION LINKS NESTED*/
-// .nav-links 
-//   display: flex
-//   margin-top: 90px
-//   flex-direction: column
-//   position: fixed
-//   //background: #8B8B8B
-//   opacity: .5
-//   width: 100%
-//   height: 100%
-//   position: absolute
-//   font-size: 30px
-//   letter-spacing: .35em
-//   font-family: 'popp'
-//   // display: none
-//   z-index: 1
-  
-
-//   lii
-//     margin-top: 80px
-//     text-align: center
-//     justify-content: center
-//     a
-//       color:  $white-color
-//       text-decoration: none
-//       list-style: none
-//       color: $white-color
-//       cursor: pointer
 
 /*-------HAMBURGUER MENU SECTION ------*/
 .toggle-wrapper
@@ -130,53 +104,70 @@ img
 
 
 /* ROTATE LINES HAMBURGUER MENU*/
-.change
-  .lines1
-   -webkit-transform: rotate(-45deg) translate(-9px, 6px)
-   -ms-flex-transform: rotate(-45deg) translate(-9px, 6px)
-    flex-transform: rotate(-45deg) translate(-9px, 6px)
-    transform: rotate(-45deg) translate(-9px, 6px)
-    color: black
+// .change
+//   .lines1
+//    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+//    -ms-flex-transform: rotate(-45deg) translate(-9px, 6px)
+//     flex-transform: rotate(-45deg) translate(-9px, 6px)
+//     transform: rotate(-45deg) translate(-9px, 6px)
+//     color: black
 
-  .lines2
-    opacity: 0
+//   .lines2
+//     opacity: 0
    
-  .lines3
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px)
+//   .lines3
+//     -webkit-transform: rotate(45deg) translate(-8px, -8px);
+//     transform: rotate(45deg) translate(-8px, -8px)
 
-.container 
+   
+
+.video-wrapper 
     display: grid
+    grid-template-areas: "video-bg" 
+        
+    .video-bg
+        grid-area: video-bg
+  
+        position: relative
+        width: 100%
+        height: auto
+        grid-row: 1
+        grid-column: 1
+        //     // max-width: 100%
+        //     // position: absolute
+        // min-width: 100%
+        // min-height: 100%
+        // object-fit: cover
+// .container 
+//     display: grid
+    
    
     // grid-gap: 20px
     // grid-template-areas: "video"
-    h1 
-        font-size: 2rem
-        display: none
-        text-align: center
-        margin-top: 30%
-        justify-content: center
-        position: absolute
-        color: $light
-        font-family: paris
-        z-index: 9
-        width: 100%
-        overflow: hidden
-        letter-spacing: .6rem
-        transition-delay: 10s
+    // h1 
+    //     font-size: 2rem
+    //     display: none
+    //     text-align: center
+    //     margin-top: 30%
+    //     justify-content: center
+    //     position: absolute
+    //     color: $light
+    //     font-family: paris
+    //     z-index: 9
+    //     width: 100%
+    //     overflow: hidden
+    //     letter-spacing: .6rem
+    //     transition-delay: 10s
  
-    .video
-        
-        video
-            width: 100%
-            height: 100vh
+    
            
      
 .cat-1
     // margin: 20px 15px
+    
     border-bottom: 1px solid grey 
     display: grid
-    grid-gap: 20px
+    grid-gap: 5px
     margin: 20px
  
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
@@ -184,20 +175,28 @@ img
 
     .top 
         background: black
-        padding: 10px
+        // padding: 10px
         text-align: center
         color: $light
         box-shadow: $shadow
+
+        h2 
+            padding: 10px 0px 0px 0px
+            font-size: 1.6rem
         h3 
-            font-size: 1.5rem
-            margin: 10px
+            font-size: 2rem
+            margin: 20px 
             color: $defaul-color
             // text-transform: uppercase
         p 
-            margin: 20px
+            margin: 15px
         .list-items
             text-align: left
             margin-left: 50px
+           
+
+
+          
 
 /* -----------LAST TEXT SECTION ---------- */
 
@@ -212,70 +211,100 @@ img
 
     p 
         margin: 20px
+    
+    h2 
+        padding: 20px
     h3 
         font-size: 2rem
-        margin: 10px
+        margin: 20px
         color: $defaul-color
 
 /*------------FOOTER MAIN STYLES ----------- */
 footer
     display: grid
-    margin-top: 10px
+    // margin-top: 10px
+    grid-gap: 5px
     ul 
         display: grid
-        padding: 0
         list-style: none
-        grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr))
+        grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr))
         grid-gap: 3px
         li 
-            text-align: center
-            padding: .8rem
-            background: black
+            // text-align: center
+            padding: .5rem
+            background: #444444
+        
             a
                 text-decoration: none
                 cursor: pointer
+                justify-content: center
+                text-align: center
+                display: block
+                letter-spacing: .2rem
+        
                 text-transform: uppercase
-                color: white
+                color: $gray-light
 
 
 /*------- ALL MOBILE UNDER 414 [MEDIA QUERIES] -----*/
 
 @media only  screen and(max-device-width:414px)
 
-    .cat-1
-       margin: 20px
+ 
+        
 
-    .main-wrapper 
-     .main-nav 
+    .video-wrapper 
+       
+    
+    .video-bg
+        
+       
+        position: absolute
+       
+        // transform: translate(-50%, -50%)
+        
+        
+        
+       
+
+    .cat-1
+       margin: 10px
+
+    // .main-wrapper 
+    .main-nav 
         
         
         ul
             
-            display: flex
-            margin-top: 70px
+            // display: flex
+
             flex-direction: column
-            float:left
             z-index: 99
             background: black
+            // height: 900px
             overflow: hidden
+            // opacity: .4
           
 
             width: 100%
-            height: 100vh
+            // height: 100vh
             position: absolute
             display: none
         
         li
         
             border-bottom: 1px solid grey 
-            display: grid
-            grid-gap: 0px
-            margin-top: 0px
+            margin-top: 5px
             width: 80% 
             margin-left: 24px
-         
+            &:nth-last-child(-n + 1)
+             
+             border-bottom: none
+             margin-bottom: 15px
         a 
          font-size: 1.3rem
+        
+
 
 
 /* -------------- IPAD MEDIA QUERIES -------------- */
@@ -296,7 +325,7 @@ footer
                 font-size: 3rem
             p 
                 font-size: 1.3rem
-    // .main-wrapper 
+
     // display: grid
 
 
@@ -308,18 +337,22 @@ footer
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
         // position: fixed
     li 
-        margin: 0
+        // background: blue
+       
+   
         
         a
-            font-size: .5rem
+            font-size: .8rem
+            float: left
+            text-align: center
+            letter-spacing: .1rem
+           
+   
+
             
-            &:hover
-                background: $grey-medium
-                color: white
-    .container
-        .video
-            h1 
-            font-size: 4rem
+         
+            // h1 
+            // font-size: 4rem
 
     /*--- ----Middle section text & books images------*/
     .top
@@ -332,20 +365,20 @@ footer
 
             h3 
              font-size: 2rem
+             padding: 15px
             p 
-                font-size: 1.4rem
+                font-size: 1.5rem
                 // background: blue
                 padding: 5px
-                margin: 0  
+                margin: 10px  
 
     /* ------------------ FOOTER------------------*/    
-    footer 
-        ul
-          font-size: 1.2rem
-    .common-nav 
-        ul 
-            grid-gap: 5px
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+    footer
+      
+        ul  
+            grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr))
+       
+  
     .main-nav 
         ul 
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
@@ -357,17 +390,37 @@ footer
         padding: 15px 
         margin: 10px   
 
+
+
+
+
+
+
     /*-----------MEDIA QUERIES IPAD-PRO -------------- */
 
 @media only  screen and(min-device-width:1024px) and (max-device-width:1366px)
+    .main-nav 
+        display: contents
+        position: fixed
+   
+    ul 
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+        
+    li 
+        
+        a
+            font-size: .8rem
+            float: left
+            text-align: center
+            letter-spacing: .1rem
     .toggle-wrapper
         display: none
   
-    .container
-     .video
-        h1 
-         font-size: 5rem
-         margin-top: 20%
+    // .container
+    //  .video
+    //     h1 
+    //      font-size: 5rem
+    //      margin-top: 20%
 
     .cat-1
         grid-template-columns: repeat(auto-fit, minmax(400px, 2fr))
@@ -388,13 +441,33 @@ footer
              font-size: 3rem
             p 
              font-size: 1.5rem
-    footer 
-        ul
-          font-size: 1.5rem 
+    footer
+ 
+     ul 
+        
+        grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr))
+        
+
+        li 
+            
+            a 
+
+             font-size: 1.5rem
+             
+             
+             
+             
+             
+             
+             
+  
+         
           
 /* ---------LAPTOP AND DESKOP MEDIA QUERIES-------------*/ 
 
 @media only  screen and(min-device-width:1280px) and (max-device-width:2000px)
+    .toggle-wrapper
+      display: none
 
     .cat-1
      grid-template-columns: repeat(auto-fit, minmax(600px, 2fr))
@@ -407,11 +480,24 @@ footer
                 font-size: 3rem
             p 
                 font-size: 1.6rem
+    .btn-wrapper
+        display: grid
+       
+        
+       
 
     .btn 
-        font-size: 2rem
+    
         padding: 5px 
-        margin: 15px
+        padding: 10px
+        font-size: 1.4rem
+        // width: 40%
+
+      
+      
+        
+        
+
      
            
         
