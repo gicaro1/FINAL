@@ -76,10 +76,11 @@ img
 
 .logo
     
-    width: 50px
-    height: 50px
-    margin: 0 auto
-    padding: 17px
+    width: 40px
+    height: 40px
+    margin:  auto
+    padding: 15px
+    overflow: hidden
 
 .hamburger_toggle_menu
   
@@ -249,52 +250,39 @@ footer
 /*------- ALL MOBILE UNDER 414 [MEDIA QUERIES] -----*/
 
 @media only  screen and(max-device-width:414px)
-
- 
-        
-
     .video-wrapper 
        
-    
-    .video-bg
-        
-       
+    .video-bg 
         position: absolute
-       
-        // transform: translate(-50%, -50%)
-        
-        
-        
-       
+
 
     .cat-1
-       margin: 10px
-
+       display: grid
+       
+       margin: 5px
+       .top
+           border: 5px solid white
+           
+        
     // .main-wrapper 
     .main-nav 
         
         
         ul
-            
-            // display: flex
 
             flex-direction: column
             z-index: 99
             background: black
-            // height: 900px
+            height: 100vh
             overflow: hidden
-            // opacity: .4
-          
-
             width: 100%
-            // height: 100vh
             position: absolute
             display: none
         
         li
         
             border-bottom: 1px solid grey 
-            margin-top: 5px
+            margin-top: 25px
             width: 80% 
             margin-left: 24px
             &:nth-last-child(-n + 1)
@@ -302,7 +290,11 @@ footer
              border-bottom: none
              margin-bottom: 15px
         a 
-         font-size: 1.3rem
+            font-size: 5rem
+    .boxes
+        .values-B
+            border: 10px solid $defaul-color
+      
         
 
 
@@ -423,7 +415,8 @@ footer
     //      margin-top: 20%
 
     .cat-1
-        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr))
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+
         .top
             h2 
                 font-size: 4rem
@@ -451,8 +444,9 @@ footer
         li 
             
             a 
-
+           
              font-size: 1.5rem
+            
              
              
              
