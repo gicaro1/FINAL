@@ -4,7 +4,7 @@
 
     
 body 
-    background: #fafafa
+    background: white
     // margin: 10px 15px
     line-height: 1.3
     font-family: 'PT Sans Narrow', sans-serif
@@ -29,16 +29,17 @@ body
         background: $light
         color: $gray-dark
 img
+
   display: block
   margin: 0 auto 
   width: 100%
-  height: 400px
+  height: auto
   opacity: .5
-  margin-bottom: 55px
+ 
+
 
   /*----- MAIN WRAPPER ----*/
-// .main-wrapper 
-//     display: grid
+
  
 
 .main-nav 
@@ -46,7 +47,6 @@ img
     // position: fixed
     ul 
         display: grid
-    
         padding: 0
         background: #333333
         list-style: none
@@ -55,7 +55,6 @@ img
         li 
             padding: 10px 10px
             
-         
             a
                 text-decoration: none
                 color: $light
@@ -75,28 +74,30 @@ img
     // border-bottom: 1px solid grey 
 
 .logo
-    
+
     width: 40px
     height: 40px
     margin:  auto
     padding: 15px
-    overflow: hidden
+   
+    // z-index: 99
 
 .hamburger_toggle_menu
+ 
   
   position: absolute
 
   top: 17px
  
-  padding: 4px
+  padding: 6px
   cursor: pointer
   opacity: .5
-  z-index: 99
+//   z-index: 99
   display: inline-block
   cursor: pointer
 
 .lines1, .lines2,.lines3
-  width: 50px
+  width: 40px
   height: 4px
   background-color: $white-color
   margin: 5px
@@ -104,23 +105,89 @@ img
   margin-left: 20px
 
 
-/* ROTATE LINES HAMBURGUER MENU*/
-// .change
-//   .lines1
-//    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
-//    -ms-flex-transform: rotate(-45deg) translate(-9px, 6px)
-//     flex-transform: rotate(-45deg) translate(-9px, 6px)
-//     transform: rotate(-45deg) translate(-9px, 6px)
-//     color: black
+/* -----------ROTATE LINES HAMBURGUER MENU-----------*/
+.change
+  .lines1
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+   -ms-flex-transform: rotate(-45deg) translate(-9px, 6px)
+    flex-transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-9px, 6px)
+    color: black
 
-//   .lines2
-//     opacity: 0
+  .lines2
+    opacity: 0
    
-//   .lines3
-//     -webkit-transform: rotate(45deg) translate(-8px, -8px);
-//     transform: rotate(45deg) translate(-8px, -8px)
+  .lines3
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px)
 
+.main-wrapper 
+    display: grid
+ 
+    .common-links
+        
+        ul
+        display: grid
+     
+        background: black
+        list-style: none
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr))
+
+
+        
+        li 
+            padding: 10px
+            justify-content: center
+            text-align: center
+            display: flex
+            border-top: 1px solid grey 
+            border-bottom: 1px solid grey 
+            opacity: .4
+           
+
+        a 
+            text-decoration: none
+            text-transform: uppercase
+            cursor: pointer
+            font-size: .7rem
+            color: $light
+            letter-spacing: .2rem
+            //  &:hover
+            //         background: $grey-medium
+            //         color: white
+  
    
+
+    .main-nav 
+        ul
+
+            flex-direction: column
+            z-index: 1
+            background: black
+            height: 100vh
+            overflow: hidden
+            width: 100%
+            // position: absolute
+            display: none
+
+        
+        li
+        
+            border-bottom: 1px solid grey 
+            margin-top: 45px
+            display: flex
+            justify-content: flex-start
+            width: 80% 
+            margin-left: 24px
+            &:nth-last-child(-n + 1)
+             
+             border-bottom: none
+             margin-bottom: 15px
+        a 
+            font-size: 1rem 
+
+
+
 
 .video-wrapper 
     display: grid
@@ -134,56 +201,35 @@ img
         height: auto
         grid-row: 1
         grid-column: 1
-        //     // max-width: 100%
-        //     // position: absolute
-        // min-width: 100%
-        // min-height: 100%
-        // object-fit: cover
-// .container 
-//     display: grid
-    
-   
-    // grid-gap: 20px
-    // grid-template-areas: "video"
-    // h1 
-    //     font-size: 2rem
-    //     display: none
-    //     text-align: center
-    //     margin-top: 30%
-    //     justify-content: center
-    //     position: absolute
-    //     color: $light
-    //     font-family: paris
-    //     z-index: 9
-    //     width: 100%
-    //     overflow: hidden
-    //     letter-spacing: .6rem
-    //     transition-delay: 10s
+ 
  
     
            
      
 .cat-1
-    // margin: 20px 15px
-    
+
     border-bottom: 1px solid grey 
     display: grid
     grid-gap: 5px
     margin: 20px
- 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
     margin-bottom: 15px
 
     .top 
-        background: black
+        background: #fafafa
         // padding: 10px
         text-align: center
-        color: $light
+        color: black
         box-shadow: $shadow
+        margin: 10px
 
         h2 
             padding: 10px 0px 0px 0px
             font-size: 1.6rem
+            font-family: paris
+            line-height: 3.4rem
+           
         h3 
             font-size: 2rem
             margin: 20px 
@@ -191,9 +237,12 @@ img
             // text-transform: uppercase
         p 
             margin: 15px
+
         .list-items
             text-align: left
             margin-left: 50px
+            
+            
            
 
 
@@ -202,11 +251,11 @@ img
 /* -----------LAST TEXT SECTION ---------- */
 
 .values-B
-    background: black
+    background: #fafafa
     margin: 10px 15px
     
     text-align: center
-    color: $light
+    color: black
     box-shadow: $shadow
     font-size: .8rem
 
@@ -214,138 +263,216 @@ img
         margin: 20px
     
     h2 
-        padding: 20px
+        // padding: 20px
+        // font-family: "paris"
     h3 
         font-size: 2rem
-        margin: 20px
+        margin: 10px
         color: $defaul-color
 
 /*------------FOOTER MAIN STYLES ----------- */
 footer
     display: grid
     // margin-top: 10px
-    grid-gap: 5px
+   
     ul 
         display: grid
         list-style: none
         grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr))
-        grid-gap: 3px
+        
+       
         li 
-            // text-align: center
-            padding: .5rem
-            background: #444444
+            padding: .4rem
+            background: black
+            justify-content: center
+            text-align: center
+            display: flex
+         
+           
+        
+            
         
             a
                 text-decoration: none
                 cursor: pointer
-                justify-content: center
-                text-align: center
-                display: block
-                letter-spacing: .2rem
-        
+            
                 text-transform: uppercase
                 color: $gray-light
+
+/*-------- STYLES BOOKS PAGE ---------*/
+.main-wrapper
+    
+    header
+        
+     
+
+    .books-image-wrapper
+        
+        height: 63vh
+        overflow-y: hidden
+        position: relative
+        
+        
+        
+    .text-book-cover
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+    
+        h1  
+            font-size: 2rem
+            font-family: paris
+        p  
+            width: 280px
+            position: absolute
+            margin-top: 12%
+            text-align: center
+            
+
+      
+
+    .cover-img 
+        background-position: center
+        background-size: cover
+        height: 100%
+        position: absolute
+        // background-repeat: no-repeat
+        // opacity: .4
+       
+
+       
+    
+        
+
+    
+
+  
+ 
+            
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
 
 
 /*------- ALL MOBILE UNDER 414 [MEDIA QUERIES] -----*/
 
 @media only  screen and(max-device-width:414px)
+    .common-links
+        display: none
+
     .video-wrapper 
        
-    .video-bg 
-        position: absolute
-
-
-    .cat-1
-       display: grid
+        // position: relative
        
-       margin: 5px
-       .top
-           border: 5px solid white
-           
-        
-    // .main-wrapper 
-    .main-nav 
-        
-        
-        ul
+    .video-bg 
+    
 
-            flex-direction: column
-            z-index: 99
-            background: black
-            height: 100vh
-            overflow: hidden
-            width: 100%
-            position: absolute
-            display: none
-        
-        li
-        
-            border-bottom: 1px solid grey 
-            margin-top: 25px
-            width: 80% 
-            margin-left: 24px
-            &:nth-last-child(-n + 1)
-             
-             border-bottom: none
-             margin-bottom: 15px
-        a 
-            font-size: 5rem
     .boxes
         .values-B
-            border: 10px solid $defaul-color
+            // border: 10px solid $defaul-color
       
-        
-
-
 
 /* -------------- IPAD MEDIA QUERIES -------------- */
 
-@media only  screen and(min-device-width:768px) and (max-device-width:1024px)
+@media only  screen and(min-device-width:768px) 
     .toggle-wrapper
         display: none
-   
+
       
     .cat-1
         margin: 20px
+        background: #fafafa
         
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-        .top
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    .top
             h2 
                 font-size: 4rem
             h3 
                 font-size: 3rem
             p 
                 font-size: 1.3rem
-
-    // display: grid
-
-
-.main-nav 
-    display: contents
-    position: fixed
-   
-    ul 
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
-        // position: fixed
-    li 
-        // background: blue
-       
-   
-        
-        a
-            font-size: .8rem
-            float: left
-            text-align: center
-            letter-spacing: .1rem
-           
-   
-
+    .main-wrapper
+        .common-links
+            ul 
             
-         
-            // h1 
-            // font-size: 4rem
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+        
+            li 
+            
+            
+            a
 
+                font-size: 1rem
+               
+               
+        .main-nav 
+            
+            ul
+             animation: nav-animation 1s 1 0s linear
+             display: flex
+             background: black
+             opacity: .5
+             height: auto
+             margin: 27px
+             width: auto
+             position: relative
+             border: none
+             justify-content: center
+             position: fixed 
+             
+             li 
+              border: none
+             a
+              font-size: 1.2rem 
+              text-transform: uppercase
+              letter-spacing: .2rem
+             &:hover
+                background: $grey-medium
+                color: white
+
+        
+        @keyframes nav-animation
+         0%
+          transform: translateX(-300px)
+
+ 
+        
+
+
+   
+
+
+        
+
+  
     /*--- ----Middle section text & books images------*/
     .top
         .list-items
@@ -353,8 +480,7 @@ footer
             margin-left: 50px
     .boxes
         .values-B
-            
-
+        
             h3 
              font-size: 2rem
              padding: 15px
@@ -364,23 +490,17 @@ footer
                 padding: 5px
                 margin: 10px  
 
-    /* ------------------ FOOTER------------------*/    
-    footer
-      
-        ul  
-            grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr))
-       
   
-    .main-nav 
-        ul 
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
-            li 
-                 a
-                    font-size: .6rem
     .btn 
         font-size: 2rem
         padding: 15px 
-        margin: 10px   
+        margin: 10px 
+
+    /* ------------------ FOOTER------------------*/ 
+
+    footer
+        ul  
+            grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr)) 
 
 
 
@@ -390,32 +510,16 @@ footer
 
     /*-----------MEDIA QUERIES IPAD-PRO -------------- */
 
-@media only  screen and(min-device-width:1024px) and (max-device-width:1366px)
-    .main-nav 
-        display: contents
-        position: fixed
-   
-    ul 
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
-        
-    li 
-        
-        a
-            font-size: .8rem
-            float: left
-            text-align: center
-            letter-spacing: .1rem
+@media only  screen and(min-device-width:1024px) 
+
+
     .toggle-wrapper
         display: none
-  
-    // .container
-    //  .video
-    //     h1 
-    //      font-size: 5rem
-    //      margin-top: 20%
+
 
     .cat-1
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr))
 
         .top
             h2 
@@ -423,11 +527,12 @@ footer
             h3 
                 font-size: 3rem
             p 
-                font-size: 1.3rem
+                font-size: 1.8rem
         
-        .list-items
-            text-align: left
-            margin-left: 50px
+            .list-items
+           
+             font-size: 1.5rem
+           
     .boxes
         .values-B
             h3 
@@ -435,17 +540,20 @@ footer
             p 
              font-size: 1.5rem
     footer
- 
-     ul 
-        
-        grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr))
-        
-
+     ul  
+        grid-template-columns:  repeat(auto-fit, minmax(50px, 1fr))
         li 
-            
+            align-content: center
             a 
-           
              font-size: 1.5rem
+    .values-B
+   
+
+     p 
+        margin: 10px 
+        padding: 10px
+        font-size: 1.9rem
+   
             
              
              
@@ -458,52 +566,42 @@ footer
          
           
 /* ---------LAPTOP AND DESKOP MEDIA QUERIES-------------*/ 
+@media only  screen and(min-device-width:1024px) and (max-device-width:2000px)
 
-@media only  screen and(min-device-width:1280px) and (max-device-width:2000px)
-    .toggle-wrapper
-      display: none
-
-    .cat-1
-     grid-template-columns: repeat(auto-fit, minmax(600px, 2fr))
-     .top
-        p 
-         font-size: 1.6rem
-    .boxes
-     .values-B
-            h3 
-                font-size: 3rem
-            p 
-                font-size: 1.6rem
-    .btn-wrapper
-        display: grid
-       
+    body 
+    background: green
+    // .main-nav 
+    //     ul
         
+    //         display: flex
+    //         background: black
        
-
-    .btn 
+    //         opacity: .5
+    //         height: auto
+    //         margin: 17px
+    //         z-index: 1
+        
+    //         width: auto
+    //         position: relative
+    //         border: none
+    //         justify-content: center
+    //         position: fixed 
+            
+    //         li 
+    //         border: none
+    //         a
+    //         font-size: 1.2rem 
+    //         text-transform: uppercase
+    //         letter-spacing: .2rem
+    //         &:hover
+    //         background: $grey-medium
+    //         color: white
     
-        padding: 5px 
-        padding: 10px
-        font-size: 1.4rem
-        // width: 40%
-
+    
       
-      
-        
-        
 
-     
-           
-        
-           
-              
-                // &:nth-child(n2 + 2)
-                //     width: 200px  
-                
-            
-                    
-            
-                
+    
+
 
 
    
