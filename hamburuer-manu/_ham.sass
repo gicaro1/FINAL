@@ -1,0 +1,49 @@
+
+/*-------HAMBURGUER MENU SECTION ------*/
+.toggle-wrapper
+    background: black 
+    height: 77px
+    width: 100%
+   
+.logo
+
+    width: 45px
+    height: 45px
+
+    padding: 17px
+
+.hamburger_toggle_menu
+ 
+  position: absolute
+  top: 17px
+  padding: 6px
+  cursor: pointer
+  opacity: .5
+  z-index: 99
+  display: inline-block
+  cursor: pointer
+
+.lines1, .lines2,.lines3
+  width: 40px
+  height: 4px
+  background-color: $white-color
+  margin: 5px
+  color: $white-color
+  margin-left: 20px
+
+
+/* -----------ROTATE LINES HAMBURGUER MENU-----------*/
+.change
+  .lines1
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+   -ms-flex-transform: rotate(-45deg) translate(-9px, 6px)
+    flex-transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-9px, 6px)
+    color: black
+
+  .lines2
+    opacity: 0
+   
+  .lines3
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px)

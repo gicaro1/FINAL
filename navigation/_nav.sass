@@ -1,0 +1,86 @@
+.main-nav 
+   
+    // position: fixed
+    ul 
+        display: grid
+        padding: 0
+        background: #333333
+        list-style: none
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+     
+        li 
+            padding: 10px 10px
+            
+            a
+                text-decoration: none
+                color: $light
+                cursor: pointer
+                // text-transform: uppercase
+            &:hover
+                background: $grey-medium
+                color: white
+.main-wrapper 
+    display: grid
+    
+ 
+    .common-links
+        
+        ul
+        display: grid
+     
+        background: black
+        list-style: none
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr))
+
+
+        
+        li 
+            padding: 10px
+            justify-content: center
+            text-align: center
+            display: flex
+            border-top: 1px solid grey 
+            border-bottom: 1px solid grey 
+            opacity: .4
+           
+
+        a 
+            text-decoration: none
+            text-transform: uppercase
+            cursor: pointer
+            font-size: .7rem
+            color: $light
+            letter-spacing: .2rem
+            //  &:hover
+            //         background: $grey-medium
+            //         color: white
+  
+   
+
+    .main-nav 
+        ul
+
+            flex-direction: column
+            z-index: 1
+            background: black
+            height: 87vh
+            overflow: hidden
+            width: 100%
+            // position: absolute
+            display: none
+
+        
+        li
+        
+            border-bottom: 1px solid grey 
+            margin-top: 45px
+            display: flex
+            justify-content: flex-start
+            width: 80% 
+            margin-left: 24px
+            &:nth-last-child(-n + 1)
+             
+             border-bottom: none
+             margin-bottom: 15px
+        a 
+            font-size: 1rem 
