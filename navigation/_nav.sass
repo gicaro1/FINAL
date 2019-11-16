@@ -2,16 +2,16 @@
 
 .main-wrapper 
     display: grid
-    
+    position: relative
  
     .common-links
         
         ul
         display: grid
-     
         background: black
         list-style: none
         grid-template-columns: repeat(auto-fit, minmax(90px, 1fr))
+        position: relative
 
 
         
@@ -23,12 +23,12 @@
             border-top: 1px solid grey 
             border-bottom: 1px solid grey 
             opacity: .4
-            &:hover
-                    background: white
-                    height: 30px
-                    a 
-                        color: black
-                        font-size: 1.3rem
+            // &:hover
+            //         background: white
+            //         height: 30px
+            //         a 
+            //             color: black
+            //             font-size: 1.3rem
                       
                    
 
@@ -45,52 +45,82 @@
    
 
     .main-nav 
+        
+        
+       
       
         ul
 
             flex-direction: column
+            
             z-index: 1
             background: black
             height: 87vh
             overflow: hidden
             width: 100%
-           
             display: none
-      
-        
-           
             list-style: none
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+           
 
         
         li
         
             border-bottom: 1px solid grey 
             opacity: .4
-            margin-top: 65px
+            
             display: flex
             justify-content: flex-start
-            padding: 10px 10px
+            // padding: 10px 10px
             width: 80% 
-            margin-left: 24px
-            // &:nth-last-child(-n + 1)
-            //  border-bottom: none
-            //  margin-bottom: 15px
+            // margin-left: 24px
+           
         a 
             font-size: 1.1rem 
             text-decoration: none
             color: $light
             cursor: pointer
             letter-spacing: .2rem
-            &:hover
-                background: $grey-medium
-                height: 50px
+
+  
+       
+    
+    #slide
+      
+    #burger
+
+        .drop-menu
+            
+            opacity: 9
+            width: auto
+            height: 200px
+            padding: 20px
+            visibility: visible
+          
+            li
+                width: 250px
+                display: flex
+                flex-direction: column
+                border: none
+                margin: 5px
+          
                 
-                a 
-                    color: black
-                    font-size: 1.6rem
-                    display: block
-                    justify-content: center
-                    padding-top: 10px
+            a 
+                margin: 10px 0px 0px -10px
+            
+                
+                
+
+          
+
+
+           
+  
+           
+    
+            
+            
+         
+   
            
             

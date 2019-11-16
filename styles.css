@@ -48,6 +48,7 @@ table {
 .main-wrapper {
   display: -ms-grid;
   display: grid;
+  position: relative;
 }
 
 .main-wrapper .common-links {
@@ -57,6 +58,7 @@ table {
   list-style: none;
   -ms-grid-columns: (minmax(90px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  position: relative;
 }
 
 .main-wrapper .common-links li {
@@ -71,16 +73,6 @@ table {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
   opacity: .4;
-}
-
-.main-wrapper .common-links li:hover {
-  background: white;
-  height: 30px;
-}
-
-.main-wrapper .common-links li:hover a {
-  color: black;
-  font-size: 1.3rem;
 }
 
 .main-wrapper .common-links a {
@@ -111,16 +103,13 @@ table {
 .main-wrapper .main-nav li {
   border-bottom: 1px solid grey;
   opacity: .4;
-  margin-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 10px 10px;
   width: 80%;
-  margin-left: 24px;
 }
 
 .main-wrapper .main-nav a {
@@ -131,19 +120,29 @@ table {
   letter-spacing: .2rem;
 }
 
-.main-wrapper .main-nav a:hover {
-  background: #333;
-  height: 50px;
+.main-wrapper #burger .drop-menu {
+  opacity: 9;
+  width: auto;
+  height: 200px;
+  padding: 20px;
+  visibility: visible;
 }
 
-.main-wrapper .main-nav a:hover a {
-  color: black;
-  font-size: 1.6rem;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 10px;
+.main-wrapper #burger .drop-menu li {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  margin: 5px;
+}
+
+.main-wrapper #burger .drop-menu a {
+  margin: 10px 0px 0px -10px;
 }
 
 /*-------HAMBURGUER MENU SECTION ------*/
@@ -340,10 +339,11 @@ table {
 }
 
 .main-wrapper .cover-img {
-  background-position: center;
-  background-size: cover;
+  width: 100%;
   height: 100%;
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper-book-base {
@@ -434,8 +434,44 @@ body {
   color: #444444;
 }
 
+.century-sec {
+  display: -ms-grid;
+  display: grid;
+  margin: 10px;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.century-sec .cent-box {
+  background: #fafafa;
+  height: 100px;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40%;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  margin-bottom: 20px;
+}
+
+.century-sec a {
+  font-family: paris;
+  color: black;
+  text-decoration: none;
+}
+
 /*------- ALL MOBILE UNDER 414 [MEDIA QUERIES] -----*/
 @media only screen and (max-device-width: 414px) {
+  .main-nav li {
+    padding: 10px;
+    margin-top: 37px;
+    margin-left: 24px;
+  }
   .common-links {
     display: none;
   }
@@ -462,6 +498,11 @@ body {
 
 /* -------------- IPAD MEDIA QUERIES -------------- */
 @media only screen and (min-device-width: 768px) {
+  .century-sec .cent-box {
+    height: 130px;
+    font-size: 2rem;
+    padding-top: 20%;
+  }
   .toggle-wrapper {
     display: none;
   }
@@ -486,36 +527,40 @@ body {
     font-size: 1rem;
   }
   .main-wrapper .main-nav ul {
-    -webkit-animation: nav-animation 2s 1 0s linear;
-            animation: nav-animation 2s 1 0s linear;
+    -webkit-animation: nav-animation 1s 1 0s linear;
+            animation: nav-animation 1s 1 0s linear;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: black;
-    opacity: .5;
-    height: auto;
-    margin: 27px;
-    width: auto;
-    position: relative;
-    border: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: fixed;
+    height: 40px;
   }
-  .main-wrapper .main-nav ul li {
+  .main-wrapper .main-nav li {
+    background: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px;
     border: none;
-    margin-left: 10px;
-    padding-left: 10px;
   }
-  .main-wrapper .main-nav ul li:hover {
-    background: grey;
-    color: blue;
-  }
-  .main-wrapper .main-nav ul a {
-    font-size: 1.2rem;
+  .main-wrapper .main-nav a {
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    margin: 0 auto;
+    color: white;
+  }
+  #burger .drop-menu {
+    display: none;
   }
   @-webkit-keyframes nav-animation {
     0% {
@@ -593,6 +638,11 @@ body {
 }
 
 @media only screen and (min-device-width: 1024px) {
+  .century-sec .cent-box {
+    height: 140px;
+    font-size: 3rem;
+    padding-top: 20%;
+  }
   .toggle-wrapper {
     display: none;
   }
@@ -661,6 +711,33 @@ body {
 
 /* ---------LAPTOP AND DESKOP MEDIA QUERIES-------------*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 2000px) {
+  .century-sec {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .century-sec .cent-box {
+    height: 140px;
+    font-size: 1.9rem;
+    padding-top: 20%;
+  }
+  .common-links li:hover {
+    background: white;
+    height: 20px;
+  }
+  .common-links li:hover a {
+    color: black;
+    font-size: 1.1rem;
+  }
+  .main-nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+  }
+  .main-nav li:hover a {
+    color: white;
+    font-size: 1.4rem;
+  }
   .toggle-wrapper {
     display: none;
   }
@@ -708,6 +785,7 @@ body {
   margin-bottom: 15px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
+  position: relative;
 }
 
 .wrapper-book-base .books-base p {

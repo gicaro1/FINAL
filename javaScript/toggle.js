@@ -9,6 +9,7 @@ function myFunction(x) {
     // var y = document.getElementById("cat-section");
     // var value = document.getElementById("value-b");
     // var t = document.getElementById("fot");
+    // var dropMenue = document.getElementById("drop");
     
    
 
@@ -18,6 +19,7 @@ function myFunction(x) {
       // value.style.display = "none";
       // t.style.display = "none";
       // video.style.display = "none";
+      // dropMenue.style.display = "none";
       
     } else {
       x.style.display = "none";
@@ -25,6 +27,7 @@ function myFunction(x) {
       // value.style.display = "block";
       // t.style.display = "block";
       // video.style.display = "block";
+      // dropMenue.style.display = "block";
      
     }    
 }

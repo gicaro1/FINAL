@@ -37,37 +37,72 @@ body
     &:hover
         background: $light
         color: $gray-dark
-    // img
 
-    // display: block
-    // margin: 0 auto 
-    // width: 100%
-    // height: auto
-    // z-index: 1
+    
+.century-sec   
+    display: grid
+    margin: 10px
+    grid-gap: 10px
+ 
+   
+    grid-template-columns: 1fr 1fr
+    
+     
+    .cent-box
+    
+        background: #fafafa
+        height: 100px
+        ba
+        font-size: 1.2rem
+        display: flex
+        justify-content: center
+        padding-top: 40%
+        box-shadow: $shadow
+        margin-bottom: 20px
+
+    a
+
+        font-family: paris
+        color: black
+        text-decoration: none
+
+        
+       
+   
+   
+
+
+
+ 
+
+
+     
+
+  
+     
 
  
 /*------- ALL MOBILE UNDER 414 [MEDIA QUERIES] -----*/
 
 @media only  screen and(max-device-width:414px)
-    // .main-nav 
+    .main-nav 
       
-    //     ul
+        ul
 
-    //     li
-        
-       
-    //     a 
            
-    //         &:hover
-    //             background: black
-               
-                
-    //             a 
-    //                 // color: black
-    //                 // font-size: 1.6rem
-    //                 // display: block
-    //                 // justify-content: center
-    //                 // padding-top: 10px
+
+        
+        li
+        
+           
+            padding: 10px 
+            margin-top: 37px
+           
+            margin-left: 24px
+           
+        a 
+            
+   
     
     .common-links
         display: none
@@ -90,6 +125,25 @@ body
 /* -------------- IPAD MEDIA QUERIES -------------- */
 
 @media only  screen and(min-device-width:768px) 
+    .century-sec   
+        
+    
+     
+        .cent-box
+    
+          
+            height: 130px
+
+            font-size: 2rem
+        
+            padding-top: 20%
+       
+
+ 
+
+
+
+
     .toggle-wrapper
         display: none
 
@@ -119,34 +173,42 @@ body
         .main-nav 
             
             ul
-             animation: nav-animation 2s 1 0s linear
+             animation: nav-animation 1s 1 0s linear
              display: flex
-             background: black
-             opacity: .5
-             height: auto
-             margin: 27px
-             width: auto
-             position: relative
-             border: none
+             flex-direction: row
              justify-content: center
-             position: fixed 
+      
+             height: 40px
+            //  margin-left: 27px
+             width: 100%
+             position: relative
+
+             border: none
              
-             li 
-              border: none
-              margin-left: 10px
-              padding-left: 10px
-
-              &:hover
-                background: grey
-                color: blue
-               
-              
-
-             a
-              font-size: 1.2rem 
+        
+             
+            li 
+             background: black
+             display: flex
+             justify-content: center
+             margin: 5px
+             border: none
+             
+            //   border: none
+            
+            
+           
+            a
+              font-size: 1rem 
               text-transform: uppercase
               letter-spacing: .2rem
-              z-index: 
+              margin: 0 auto
+              color: white
+    #slide
+    #burger
+        .drop-menu
+            display: none
+          
              
                 
 
@@ -211,7 +273,11 @@ body
      width: 90px
      height: 90px
      margin-bottom: 25px
-     margin-top: 45px 
+     margin-top: 45px
+
+
+     
+
 
 
 
@@ -228,6 +294,18 @@ body
     /*-----------MEDIA QUERIES IPAD-PRO -------------- */
 
 @media only  screen and(min-device-width:1024px) 
+    .century-sec   
+        
+    
+     
+        .cent-box
+    
+          
+            height: 140px
+
+            font-size: 3rem
+        
+            padding-top: 20%
 
     .toggle-wrapper
         display: none
@@ -260,6 +338,8 @@ body
             align-content: center
             a 
              font-size: 1.5rem
+
+
     .values-B
 
      p 
@@ -296,9 +376,46 @@ body
           
 /* ---------LAPTOP AND DESKOP MEDIA QUERIES-------------*/ 
 @media only  screen and(min-device-width:1024px) and (max-device-width:2000px)
-
-   
+    .century-sec  
+        grid-template-columns: 1fr 1fr 1fr 1fr 
         
+    
+     
+        .cent-box
+    
+          
+            height: 140px
+
+            font-size: 1.9rem
+        
+            padding-top: 20%
+    .common-links
+        
+        ul
+        
+        li 
+          
+            &:hover
+                    background: white
+                    height: 20px
+                    a 
+                        color: black
+                        font-size: 1.1rem
+
+    .main-nav 
+      
+        ul
+            
+        
+        li 
+            display: flex
+            justify-items: center
+            &:hover
+                
+                    a 
+                        color: white
+                        font-size: 1.4rem
+      
     .toggle-wrapper
         display: none
     .cat-1
@@ -346,9 +463,13 @@ body
       padding: 10px
       margin-bottom: 15px
       box-shadow: $shadow
+      position: relative
       p 
           font-size: 1.8rem
           padding: 15px
+
+
+    
 
     
     
