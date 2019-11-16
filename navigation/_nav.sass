@@ -1,24 +1,5 @@
-.main-nav 
-   
-    // position: fixed
-    ul 
-        display: grid
-        padding: 0
-        background: #333333
-        list-style: none
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-     
-        li 
-            padding: 10px 10px
-            
-            a
-                text-decoration: none
-                color: $light
-                cursor: pointer
-                // text-transform: uppercase
-            &:hover
-                background: $grey-medium
-                color: white
+
+
 .main-wrapper 
     display: grid
     
@@ -42,7 +23,14 @@
             border-top: 1px solid grey 
             border-bottom: 1px solid grey 
             opacity: .4
-           
+            &:hover
+                    background: white
+                    height: 30px
+                    a 
+                        color: black
+                        font-size: 1.3rem
+                      
+                   
 
         a 
             text-decoration: none
@@ -51,13 +39,13 @@
             font-size: .7rem
             color: $light
             letter-spacing: .2rem
-            //  &:hover
-            //         background: $grey-medium
-            //         color: white
+          
+            
   
    
 
     .main-nav 
+      
         ul
 
             flex-direction: column
@@ -66,21 +54,43 @@
             height: 87vh
             overflow: hidden
             width: 100%
-            // position: absolute
+           
             display: none
+      
+        
+           
+            list-style: none
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 
         
         li
         
             border-bottom: 1px solid grey 
-            margin-top: 45px
+            opacity: .4
+            margin-top: 65px
             display: flex
             justify-content: flex-start
+            padding: 10px 10px
             width: 80% 
             margin-left: 24px
-            &:nth-last-child(-n + 1)
-             
-             border-bottom: none
-             margin-bottom: 15px
+            // &:nth-last-child(-n + 1)
+            //  border-bottom: none
+            //  margin-bottom: 15px
         a 
-            font-size: 1rem 
+            font-size: 1.1rem 
+            text-decoration: none
+            color: $light
+            cursor: pointer
+            letter-spacing: .2rem
+            &:hover
+                background: $grey-medium
+                height: 50px
+                
+                a 
+                    color: black
+                    font-size: 1.6rem
+                    display: block
+                    justify-content: center
+                    padding-top: 10px
+           
+            

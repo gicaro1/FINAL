@@ -37,17 +37,38 @@ body
     &:hover
         background: $light
         color: $gray-dark
-img
+    // img
 
-  display: block
-  margin: 0 auto 
-  width: 100%
-  height: auto
-  opacity: .5
+    // display: block
+    // margin: 0 auto 
+    // width: 100%
+    // height: auto
+    // z-index: 1
+
  
 /*------- ALL MOBILE UNDER 414 [MEDIA QUERIES] -----*/
 
 @media only  screen and(max-device-width:414px)
+    // .main-nav 
+      
+    //     ul
+
+    //     li
+        
+       
+    //     a 
+           
+    //         &:hover
+    //             background: black
+               
+                
+    //             a 
+    //                 // color: black
+    //                 // font-size: 1.6rem
+    //                 // display: block
+    //                 // justify-content: center
+    //                 // padding-top: 10px
+    
     .common-links
         display: none
 
@@ -78,11 +99,11 @@ img
       
     .top
             h2 
-                font-size: 4rem
+                font-size: 3rem
             h3 
                 font-size: 3rem
             p 
-                font-size: 1.3rem
+                font-size: 1.5rem
     .main-wrapper
         .common-links
             ul 
@@ -98,7 +119,7 @@ img
         .main-nav 
             
             ul
-             animation: nav-animation 1s 1 0s linear
+             animation: nav-animation 2s 1 0s linear
              display: flex
              background: black
              opacity: .5
@@ -112,13 +133,22 @@ img
              
              li 
               border: none
+              margin-left: 10px
+              padding-left: 10px
+
+              &:hover
+                background: grey
+                color: blue
+               
+              
+
              a
               font-size: 1.2rem 
               text-transform: uppercase
               letter-spacing: .2rem
-             &:hover
-                background: $grey-medium
-                color: white
+              z-index: 
+             
+                
 
         
         @keyframes nav-animation
@@ -143,10 +173,50 @@ img
                 // background: blue
                 padding: 5px
                 margin: 10px  
-    .btn 
-        font-size: 2rem
-        padding: 15px 
-        margin: 10px 
+
+  
+
+    /*-------- top cover image ---------*/
+
+        /*----- IPAD -------*/
+   
+    .books-image-wrapper
+     .text-book-cover
+        
+
+        h1  
+            margin-top: -130px
+            font-size: 3.5rem
+            text-align: center
+        p  
+            width: 380px
+            margin-top: 25px
+            font-size: 2.3rem
+.wrapper-book-base
+     .books-base
+      padding: 10px
+      margin-bottom: 15px
+      box-shadow: $shadow
+      p 
+          font-size: 1.5rem
+          padding: 15px
+
+     .icon-books
+        width: 150px
+        height: 150px
+        margin-top: 45px 
+.top
+
+    .icon-books
+     width: 90px
+     height: 90px
+     margin-bottom: 25px
+     margin-top: 45px 
+
+
+
+
+   
 
     /* ------------------ FOOTER------------------*/ 
 
@@ -196,40 +266,90 @@ img
         margin: 10px 
         padding: 10px
         font-size: 1.9rem
+
+        /*------ IPAD PRO ------*/
+
+    .books-image-wrapper
+     .text-book-cover
+
+        h1  
+         margin-top: -170px
+         font-size: 5rem 
+        p  
+            width: 480px
+            margin-top: 10px
+            text-align: center
+            font-size: 2.6rem
+       
+.wrapper-book-base
+
+    .books-base
+      padding: 10px
+      margin-bottom: 15px
+      box-shadow: $shadow
+      p 
+          font-size: 1.9rem
+          padding: 15px
+
    
          
           
 /* ---------LAPTOP AND DESKOP MEDIA QUERIES-------------*/ 
 @media only  screen and(min-device-width:1024px) and (max-device-width:2000px)
 
-    // body 
-    //  background: green
-    // .main-nav 
-    //     ul
+   
         
-    //         display: flex
-    //         background: black
+    .toggle-wrapper
+        display: none
+    .cat-1
+
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr))
+
+        .top
+            h2 
+                font-size: 3rem
+            h3 
+                font-size: 3rem
+            p 
+                font-size: 1.5rem
+                width: 400px
+                margin: 0 auto
+        
+            .list-items
+             font-size: 1.2rem
+    .cover-img
+
+        display: block
        
-    //         opacity: .5
-    //         height: auto
-    //         margin: 17px
-    //         z-index: 1
+        margin: 0 auto 
+        width: 100%
+    .top
+     .home-img
+        width: 300px
+        height: 300px
+    
+
+     .text-book-cover
         
-    //         width: auto
-    //         position: relative
-    //         border: none
-    //         justify-content: center
-    //         position: fixed 
+
+        h1  
+            margin-top: -130px
+            font-size: 6.5rem
+            text-align: center
+        p  
+            width: 780px
+            margin-top: 85px
+            font-size: 3.3rem
             
-    //         li 
-    //         border: none
-    //         a
-    //         font-size: 1.2rem 
-    //         text-transform: uppercase
-    //         letter-spacing: .2rem
-    //         &:hover
-    //         background: $grey-medium
-    //         color: white
+.wrapper-book-base
+     .books-base
+      padding: 10px
+      margin-bottom: 15px
+      box-shadow: $shadow
+      p 
+          font-size: 1.8rem
+          padding: 15px
+
     
     
       
