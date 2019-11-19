@@ -1,10 +1,11 @@
 /*-------- STYLES BOOKS PAGE ---------*/
 .main-wrapper
-     
     
 
     /*-------- top cover image ---------*/
     .books-image-wrapper
+        display: grid
+        grid-template-rows: repeat(5, 1fr)
         
         height: 84vh
         overflow-y: hidden
@@ -12,30 +13,23 @@
   
 
     .text-book-cover
-        display: flex
-        justify-content: center
-        align-items: center
+        display: grid
+        grid-template-rows: repeat(3, 1fr)
+        grid-row-start: 3
+        grid-row-end: 4
         height: 100%
-
+        margin: auto
+        
         h1  
+            grid-row-start: 2
+            grid-row-end: 3
+            position: relative
+            letter-spacing: .4rem
+            // padding: 20px
+            margin: 0 auto
+            font-size: 2.8rem
             font-family: paris
-            margin-top: -110px
-            font-size: 2.2rem
-            margin-bottom: 0px
-            z-index: 1
-            position: absolute
-           
-        p  
-            width: 350px
-            margin-top: -50px
-            text-align: center
-            font-size: 1.3rem
-            z-index: 1
-            opacity: .6
-
-
-       
-
+ 
     .cover-img 
         // background-position: center
         // background-size: cover
@@ -44,28 +38,122 @@
         position: absolute
         object-fit: cover
         // background-repeat: no-repeat
+.century-sec 
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    padding-bottom: 10px
+    grid-gap: 10px
+ 
+    
+
+    .cent-box 
+        // grid-column-start: 1
+        // grid-column-end: -1 
+        box-shadow: $shadow
+     
+        background: #fafafa
+        height: 90px
+        display: grid
+        align-content: center
+        text-align: center
+        text-decoration: none
+        font-family: paris
+        color: black
+
+.container-pics
+       
+        // display: grid
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        grid-gap: 20px
+
+        .para-con 
+
+            
+            // grid-column-start: 1
+            // grid-column-end: -1 
+            box-shadow: $shadow
+            background: #fafafa
+            margin: 20px
+            p 
+                padding: 20px 
+                text-align: center
+                font-size: 1.3rem
+
+        .book-img-box
+            // grid-column-start: 1
+            // grid-column-end: -1 
+            background: #fafafa
+            text-align: center
+            color: black
+            box-shadow: $shadow
+            margin-bottom: 20px
+            // margin: 20px
+        
+            h3 
+                padding: 10px
+                font-size: 1.6rem
+                font-weight: 900
+                letter-spacing: .2rem
+
+        .icon-book-fist-p
+            display: block
+            margin: 10px auto
+            width: 80px
+            height: 80px
+            padding: 20px
+            opacity: .5
+      
+        .books-img 
+                padding: 20px 0px
+
+.contaniner-meddle-section
+    .box-middle
+        background: green
+        box-shadow: $shadow
+        background: #fafafa
+        margin: 20px
+        .icon-books
+            
+            width: 80px
+            height: 80px
+            padding: 20px
+            margin: auto
+            display: block
+            opacity: .5
+        p
+                font-size: 1.3rem
+                text-align: center
+                padding: 10px
+// 
     
 
 .wrapper-book-base
+    
 
-    display: grid
-    grid-gap: 10px
-    margin: 20px 20px 10px 20px
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-    
-    
-    
+
     .books-base
-      text-align: center
-      background: #fafafa
-      padding: 10px
-    //   &:last-child
-    //   background: green
+        display: grid
+       
+        background: green
+        box-shadow: $shadow
+        background: #fafafa
+        margin: 20px
+        p
+    
+            font-size: 1.3rem
+       
+        .icon-base
+            
+            width: 80px
+            height: 80px
+            margin: 0 auto
+            opacity: .5
+        
+   
+
      
  
 
-    .icon-base
-        width: 100px
-        height: 100px
-        margin-bottom: 15px
-        margin-top: 15px
+ 
+
+  
