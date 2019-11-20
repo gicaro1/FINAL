@@ -1,42 +1,41 @@
 .cat-1
-
-    // border-bottom: 1px solid grey 
-    display: grid
-    // grid-gap: 15px
-    
-   
-    
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-    // margin-bottom: 15px
-
-    .top 
+    display: block
+    .top1
         background: #fafafa
-        // padding-bottom: 15px
-        text-align: center
-        margin: 10px 
+        margin: 10px
         color: black
-        
+        display: block
+        margin: 5 auto
+        text-align: center
+        box-shadow: $shadow
+        padding: 20px
+        p
+         font-size: 1.5rem
+
+    .top-buy,.top-sell,.top-img ,.top-img1,.top-img2 
+        @extend .top1
     
-    // .icon-books
-    //     width: 130px
-    //     height: 130px
+
     .home-img
+        
 
         display: block
         padding-top: 20px
         margin: 0 auto 
-        width: 150px
-        height: 250px
+        width: 200px
+        height: 200px
+        height: auto
     
     h2 
-        padding: 10px 0px 0px 0px
-        font-size: 1.6rem
+        
+        font-size: 1.9rem
         font-family: paris
         line-height: 3.4rem
+        text-align: center
         
     h3 
         font-size: 2rem
-        margin: 20px 
+        margin: 10px 
         color: $defaul-color
         // text-transform: uppercase
     p 

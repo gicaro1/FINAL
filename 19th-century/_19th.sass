@@ -1,70 +1,77 @@
-.main-wrapper
-    display: grid 
-    .text-century-cover
-      
-
-  
-        @extend .text-book-cover 
-
-
-    .top-text-ninteen
+.century-main-wrapper
+    display: block
+    .century-text-top
         background: #fafafa
-        text-align: center
-        margin: 10px 
+        margin: 10px
         color: black
+        display: block
+        margin: 5 auto
+        text-align: center
         box-shadow: $shadow
         padding: 20px
-        font-size: 1.5rem
-        
-       
-
+        p
+         font-size: 1.5rem
+    .century-text1, .century-text2,.century-text3 ,.century-text4,.century-text5, .century-text6,.century-card6, .century-card5, .century-card4 ,.century-card3 ,.century-card2, .century-card1
+        @extend .century-text-top
+        padding: 30px
 
     
-    // .century-19th-main
-    //     @extend  .cat-1
-    //     .box-19th-main
-    //         @extend .top
+        span 
+            font-size: 2.5rem
+            margin-left: 5px
+            letter-spacing: .4rem
 
-    //     h4 
-    //         font-size: 1.3rem
-    //         font-style: italic
-    //         letter-spacing: .1rem
-    //         margin-bottom: 3px
-
-
+        h4 
+            font-size: 1.3rem
+            font-style: italic
+            letter-spacing: .1rem
+            margin-bottom: 3px
+   
+        h3  
+            font-size: 3rem
             
-    //     span 
+
+        .price
+            background: grey
+            margin-left: 0
+            opacity: .6
+          
+        
+        p
+        
+            display: flex
+            flex-direction: star
+            padding: 2px  0px 1px
+            margin: 2px 10px -10px 
+            color: black
+      
+        img 
+            padding: 30px
             
-    //         display: flex
-    //         flex-direction: star
-    //         padding: 2px  0px 1px
-    //         margin: 2px 10px 2px 
-    //         font-size: 1.3rem
+
 
         
-    //     .invest-span
-    //             margin-bottom: 10px
-    //             &:after 
-    //                 content: " * * * * *"
-    //                 font-size: 2.3rem
+//         .invest-span
+//                 margin-bottom: 10px
+//                 &:after 
+//                     content: " * * * * *"
+//                     font-size: 2.3rem
             
 
         
     
-    //     .text-19th
-    //         @extend .top 
-    //         font-size: 1.3rem
+//         .text-19th
+//             @extend .top 
+//             font-size: 1.3rem
 
 
             
-            // height: auto
+//             height: auto
 
 // .century-sec   
 //     display: grid
 //     margin: 10px
 //     grid-gap: 10px
- 
-   
 //     grid-template-columns: 1fr 1fr
     
      

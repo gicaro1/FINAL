@@ -1,41 +1,126 @@
 
 @media only  screen and(min-device-width:414px) and (max-device-width:768px) 
-// .main-wrapper
-//     .main-nav 
-//         ul
-
-//             flex-direction: row
-//             z-index: 99
-//             background: black
-//             position: relative
-//             margin-top: 200px
-//             height: 77vh
-           
-//             width: 100%
+    .toggle-wrapper
+        display: none
+    .main-wrapper
+        .main-nav 
         
+        
+            ul  
+                display: grid
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+                height: 50px
+             
+                
+                align-content: center
+            
+            li      
            
+             text-decoration: none
+             padding: 5px
+             
+             
+            //     border: black
+            //     text-align: center
+               
 
-    .century-sec 
+            a
+             margin: 0 auto
+  
+    .cat-1 
         display: grid
-        background: 
-        
-        
-        padding-bottom: 10px
-        grid-column-gap: 10px
+        grid-template-columns: repeat(3, 1fr)
+        // grid-template-rows: repeat(5, auto)
+        grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B"
 
-        .cent-box 
+        .top1
+        
+            grid-area: top1
+        
+
+        .top-img 
+        
+            grid-area: top-img
+        .top-img1 
+            
+            grid-area: top-img1
+        .top-img2 
+        
+            grid-area: top-img2
+    
+        .top-buy 
+
+            grid-area: top-buy
+        .top-sell 
+        
+            grid-area: top-sell
+        .values-B
+        
+            grid-area: values-B
+
+    .century-main-wrapper
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        // grid-template-rows: repeat(5, auto)
+        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2" "century-card3 century-text3" " century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 "
+
+
+
+        .century-text-top
+            grid-area: century-text-top
+            
+        .century-card1
+            grid-area: century-card1
+
+        .century-text1
+            
+            grid-area: century-text1
            
-            box-shadow: $shadow
-            background: #fafafa
-           
-           
-            height: 90px
-            display: grid
-            align-content: center
-            text-align: center
-            text-decoration: none
-            font-family: paris
-            font-size: 1.5rem
+        .century-card2
+            grid-area: century-card2
+
+
+        .century-text2
+            grid-area: century-text2
+        
+        .century-card3
+            grid-area: century-card3
+
+        .century-text3
+            grid-area: century-text3
+
+        .century-card4
+            grid-area: century-card4
+
+        .century-text4
+            grid-area: century-text4
+        
+        .century-card5
+            grid-area: century-card5
+
+        .century-text5
+            grid-area: century-text5
+
+        .century-card6
+            grid-area: century-card6
+
+        .century-text6
+            grid-area: century-text6
+        img 
+            margin-bottom: 50px
+            width: 200px
+            height: 200px
+
+
+          
+        
+       
+
+        
+        
+
+  
+    //         font-size: 1.5rem
          
     .books-image-wrapper
         grid-template-rows: 1fr 1fr 2fr 1fr 
@@ -51,69 +136,38 @@
                 grid-row-end: -1
                 letter-spacing: .4rem
                 
-    .toggle-wrapper
-        display: none
+    
 
     .container-pics
         
         display: grid
-            grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-areas: "para-con para-con para-con"
         grid-gap: 20px
+        margin: 20px
         .para-con 
-            // background: blue
-            // border: 3px solid
-            p
-                
-
-       
-        
-               
-
-           
-    
-
-        // .para-con 
-
-        //     background: blue
-        // grid-column-start: 1
-        // grid-column-end: -1
-        // background: #fafafa
-        // margin: 20px
-        //     p 
-        //         padding: 20px 
-        //         text-align: center
-        //         font-size: 1.8rem
-
-        // 
-        //     border: 2px solid
-        //     grid-column-start: 1
-        //     grid-column-end: -1
-          
-          
-      
-        // background: #fafafa
-        // text-align: center
-        // color: black
-        // box-shadow: $shadow
-        // background: blue
-        // margin-bottom: 20px
-
-            // margin: 20px
-        
+            grid-area: para-con
+         
             h3 
-                padding: 10px
-                font-size: 1.6rem
+             
+                font-size: 1.7rem
                 font-weight: 900
+        
+        img 
+            padding: 10px
+            width: 200px
+            height: 200px
+            border-radius: 50%
 
-        .icon-book-fist-p
-            display: block
-            margin: 10px auto
-            width: 80px
-            height: 80px
-            padding: 20px
-            opacity: .5
-       
 
+        // .icon-book-fist-p
+        //     display: block
+      
+        //     width: 80px
+        //     height: 80px
+        //     padding: 20px
+        //     opacity: .5
+      
         .books-img 
                 padding: 20px 0px
     .contaniner-meddle-section
@@ -135,44 +189,32 @@
                 text-align: center
                 padding: 10px
 
-        // .values-B
-
-        //     p 
-        //     margin: 10px 
-        //     padding: 10px
-        //     font-size: 1.9rem
-
-
         
-        .wrapper-book-base
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-            margin: 10px
-            
-
-            .books-base
-            display: grid
-        
-        
+    .wrapper-book-base
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        display: grid
+        .books-base1 
             p 
-        
-                text-align: center
                 font-size: 1.8rem
+        
 
-            .icon-base
-            
-                width: 80px
-                height: 80px
-                opacity: .5
+        // .books-base1
+        // p 
+    
+        //     text-align: center
+        //     font-size: 1.8rem
+
+        // .icon-base
+        
+        //     width: 80px
+        //     height: 80px
+        //     opacity: .5
            
 
               
             
-    .boxes
-        .values-B
-            h3 
-             font-size: 3rem
-            p 
-             font-size: 1.5rem
+ 
+       
     footer
      ul  
         grid-template-columns:  repeat(auto-fit, minmax(50px, 1fr))

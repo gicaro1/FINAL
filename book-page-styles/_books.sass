@@ -125,29 +125,36 @@
                 text-align: center
                 padding: 10px
 // 
-    
+
 
 .wrapper-book-base
     
-
-
-    .books-base
+    .books-base1
+        
         display: grid
-       
         background: green
         box-shadow: $shadow
         background: #fafafa
         margin: 20px
+        padding: 30px
+        text-align: center
+        
         p
-    
-            font-size: 1.3rem
-       
-        .icon-base
             
+        .icon-base
             width: 80px
             height: 80px
             margin: 0 auto
             opacity: .5
+            padding: 20px
+    .books-base2
+        @extend .books-base1
+             
+    
+        
+    
+    .icon-base
+       @extend .icon-base
         
    
 

@@ -1,24 +1,119 @@
-@media only  screen and(min-device-width:768px) and (max-device-width:1024px)
-  
+@media only  screen and(min-device-width:769px) and (max-device-width:1024px)
+    .main-wrapper
+        .main-nav 
+        
+        
+            ul  
+                display: grid
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+                height: 50px
+             
+                
+                align-content: center
+            
+            li      
+           
+             text-decoration: none
+             padding: 5px
+       
+            a
+             margin: 0 auto
+
+    .cat-1 
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        // grid-template-rows: repeat(5, auto)
+        grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B"
+
+        .top1
+            grid-area: top1
+   
+        .top-img 
+        
+            grid-area: top-img
+        .top-img1 
+            
+            grid-area: top-img1
+        .top-img2 
+        
+            grid-area: top-img2
+    
+        .top-buy 
+
+            grid-area: top-buy
+        .top-sell 
+        
+            grid-area: top-sell
+        .values-B
+        
+            grid-area: values-B
+     
+            p 
+            font-size: 1.5rem
+
+        .home-img
+
+            width: 200px
+            height: 200px
+           
         
 
-    .century-sec 
+    .century-main-wrapper
         display: grid
-        grid-template-columns: repeat(4, 1fr)
-        padding-bottom: 10px
-        grid-column-gap: 10px
-    .cent-box 
-        box-shadow: $shadow
-        background: #fafafa
+        grid-template-columns: repeat(2, 1fr)
+        // grid-template-rows: repeat(5, auto)
+        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2 " "century-card3 century-text3" "century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 "
+    
 
-        height: 90px
-        display: grid
-        align-content: center
-        text-align: center
-        text-decoration: none
-        font-family: paris
-        font-size: 2rem
-        color: black
+        .century-text-top
+            grid-area: century-text-top
+            padding: 50px
+            p
+                font-size: 2rem
+            img 
+                width: 250px
+                height: 300px
+                padding-bottom: 30px
+            h4 
+                font-size: 1.9rem
+                font-style: italic
+                letter-spacing: .1rem
+                margin-bottom: 3px
+            h3  
+                font-size: 3rem
+
+        .century-card1
+            grid-area: century-card1
+
+        .century-text1
+            grid-area: century-text1
+        
+        .century-card2
+            grid-area: century-card2
+        .century-text2
+            grid-area: century-text2
+        .century-card3
+            grid-area: century-card3
+        .century-text3
+            grid-area: century-text3
+        .century-card4
+            grid-area: century-card4
+        .century-text4
+            grid-area: century-text4
+        .century-card5
+            grid-area: century-card5
+        .century-text5
+            grid-area: century-text5
+        .century-card6
+            grid-area: century-card6
+        .century-text6
+            grid-area: century-text6
+            
+        img 
+            margin-bottom: 50px
+       
+            
+            
 
 
     .toggle-wrapper
@@ -41,6 +136,20 @@
         
            
                 padding: 20px
+
+    
+    .century-sec 
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        padding-bottom: 10px
+        grid-column-gap: 10px
+    .cent-box 
+        box-shadow: $shadow
+        background: #fafafa
+        font-size: 1.8rem
+        line-height: 1.5rem
+
+        height: 90px
    
     .container-pics
        
@@ -59,6 +168,11 @@
                 padding: 20px 
                 text-align: center
                 font-size: 1.8rem
+        img 
+            padding: 10px
+            width: 200px
+            height: 200px
+            border-radius: 50%
 
         .book-img-box
             background: #fafafa
@@ -114,29 +228,21 @@
            
              font-size: 1.5rem
            
-    
-    .values-B
-
-     p 
-        margin: 10px 
-        padding: 10px
-        font-size: 1.9rem
+ 
 
 
        
     .wrapper-book-base
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-        margin: 10px
+        display: grid
         
 
-        .books-base
-        display: grid
+        .books-base1
        
-       
-        p 
-       
-            text-align: center
-            font-size: 1.8rem
+            p 
+        
+                text-align: center
+                font-size: 1.8rem
 
         .icon-base
         
@@ -151,13 +257,6 @@
             a 
              font-size: 1.5rem
 
-
-    .values-B
-
-     p 
-        margin: 10px 
-        padding: 10px
-        font-size: 1.9rem
 .books-image-wrapper
     .text-book-cover
      
