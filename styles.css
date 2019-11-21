@@ -454,6 +454,7 @@ table {
 footer {
   display: -ms-grid;
   display: grid;
+  position: relative;
 }
 
 footer ul {
@@ -555,7 +556,7 @@ footer ul a {
   font-size: 1.3rem;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
   .toggle-wrapper {
     display: none;
   }
@@ -1372,6 +1373,82 @@ footer ul a {
     height: 80px;
     opacity: .5;
   }
+}
+
+.table-wrappper {
+  width: 100%;
+}
+
+.table-wrappper table {
+  border-collapse: collapse;
+  padding: 12px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.table-wrappper table td {
+  border: 1px solid #fafafa;
+  padding: 1rem 2rem;
+  display: block;
+  font-size: 1.4rem;
+  border: 1px solid black;
+}
+
+.table-wrappper table tr {
+  display: block;
+  background: #fafafa;
+  margin-bottom: 10px;
+}
+
+.table-wrappper table th {
+  border: 1px solid DEDEDE;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  background: #000;
+  opacity: .5;
+  color: #fff;
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.table-wrappper table .premium {
+  display: none;
+}
+
+.table-wrappper table .weight-kg {
+  display: none;
+}
+
+.table-wrappper span {
+  margin-left: 60px;
+  font-size: 1.3rem;
+}
+
+.delivery-logo img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: auto;
+}
+
+.delivery-countries-wrapper .delivery-estimate-p, .delivery-countries-wrapper .countries-list, .delivery-countries-wrapper .delivery-dispath-p {
+  background: #fafafa;
+  margin: 10px;
+  color: black;
+  display: block;
+  margin: 5 auto;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  padding: 20px;
+}
+
+caption {
+  font-size: 3rem;
+  padding: 1rem;
+  font-family: paris;
+  letter-spacing: 0.3rem;
 }
 
 body {
