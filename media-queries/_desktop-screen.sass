@@ -1,4 +1,4 @@
-@media only  screen and(min-device-width:1025px) and (max-device-width:2000px)
+@media only  screen and(min-device-width:1025px) 
     .main-wrapper
         .main-nav 
         
@@ -173,22 +173,28 @@
         
 
         
-   
-        .text-book-cover
-            grid-template-rows:  100px repeat(3, 1fr)
-            h1 
-                font-size: 5rem
-                grid-row-start: 1
-                grid-row-end: 2
-                overflow: hidden
+    .books-image-wrapper
+            grid-template-rows: 1fr 1fr 2fr 1fr 
+            
+    
+            .text-book-cover
+                grid-template-rows:  100px  
+                display: grid
+                align-content: center
+                h1 
+                    font-size: 5rem
+                    grid-row-start: 1
+                    grid-row-end: -1
+                    letter-spacing: 1rem
+                   
               
                 
-            p   
-                font-size: 2.5rem 
-                grid-row-start: 2
-                grid-row-end: -1
-                margin:  0px 40px
-                overflow: visible
+            // p   
+            //     font-size: 2.5rem 
+            //     grid-row-start: 2
+            //     grid-row-end: -1
+            //     margin:  0px 40px
+            //     overflow: visible
     .contaniner-meddle-section
 
         grid-template-columns: repeat(auto-fit, minmax(550px, 1fr))
@@ -206,8 +212,10 @@
              font-size: 1.5rem
   
     .common-links
+    
         
         ul
+             
         
         li 
           
@@ -217,6 +225,48 @@
                     a 
                         color: black
                         font-size: 1.1rem
+    .main-nav 
+
+        ul
+           
+
+        li  
+            height: 20px
+    
+            &:hover
+                    background: white
+                    padding: 10px
+              
+                  
+                   
+                
+
+                    a 
+                        color: black
+                        font-size: 1.3rem
+                        justify-content: center
+               
+                        
+                        text-transform: uppercase
+                     
+
+        
+          
+            // opacity: .4
+            // display: flex
+            // justify-content: flex-start
+            // padding: 10px 10px
+            // width: 80% 
+            // margin-left: 24px
+           
+        // a 
+        //     font-size: 1.1rem 
+        //     text-decoration: none
+        //     color: $light
+        //     cursor: pointer
+        //     letter-spacing: .2rem
+
+    
     .toggle-wrapper
         display: none
    

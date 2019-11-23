@@ -1,28 +1,24 @@
 
-@media only  screen and(min-device-width:415px) and (max-device-width:768px) 
+@media only  screen and(min-device-width:414px) and (max-device-width:768px) 
     .toggle-wrapper
         display: none
+
     .main-wrapper
         .main-nav 
-        
-        
             ul  
                 display: grid
-                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+                grid-template-columns: repeat(5, 1fr)
                 height: 50px
-             
-                
+                margin: 0
                 align-content: center
             
             li      
            
              text-decoration: none
              padding: 5px
-             
-             
-            //     border: black
-            //     text-align: center
-               
+             margin-left: 0
+             text-align: center
+             padding: 10px
 
             a
              margin: 0 auto
@@ -111,16 +107,6 @@
             width: 200px
             height: 200px
 
-
-          
-        
-       
-
-        
-        
-
-  
-    //         font-size: 1.5rem
          
     .books-image-wrapper
         grid-template-rows: 1fr 1fr 2fr 1fr 
@@ -131,13 +117,20 @@
             display: grid
             align-content: center
             h1 
-                font-size: 5rem
+                font-size: 1rem
                 grid-row-start: 1
                 grid-row-end: -1
                 letter-spacing: .4rem
-                
-    
+    .century-sec 
+  
+    .cent-box 
+      
+        font-size: 1.8rem
+        line-height: 1.6rem
+  
 
+        height: 90px
+  
     .container-pics
         
         display: grid
@@ -209,12 +202,55 @@
         //     width: 80px
         //     height: 80px
         //     opacity: .5
-           
-
-              
-            
  
-       
+   
+    .delivery-logo
+  
+        img
+            width: 60px
+            height: 60px
+            display: block
+            margin: auto
+         
+.delivery-countries-wrapper
+   
+
+    .delivery-estimate-p
+        background: #fafafa
+        margin: 10px
+        color: black
+        display: block
+        margin: 5 auto
+        text-align: center
+        box-shadow: $shadow
+        font-size: 1.8rem
+     
+        padding: 20px
+    .countries-list
+        position: relative
+        height: 200px
+        overflow: hidden
+
+        p 
+            font-size: 2rem
+            line-height: 2rem
+          
+        ul 
+     
+            position: absolute
+            left: 0
+            font-size: 1.4rem
+            text-align: left
+            padding: 10px
+
+        strong 
+            font-weight: bold
+               
+    .delivery-dispath-p
+        @extend .delivery-estimate-p
+    
+        p 
+            font-size: 2rem
     footer
      ul  
         grid-template-columns:  repeat(auto-fit, minmax(50px, 1fr))

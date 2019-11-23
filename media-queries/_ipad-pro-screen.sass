@@ -6,7 +6,8 @@
             ul  
                 display: grid
                 grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
-                height: 50px
+                height: 51px
+                border: none
              
                 
                 align-content: center
@@ -131,6 +132,19 @@
             text-align: center
             color: black
             box-shadow: $shadow
+
+    .books-image-wrapper
+
+        .text-book-cover
+            grid-template-rows:  100px  
+            display: grid
+            align-content: center
+            h1 
+                font-size: 5rem
+                grid-row-start: 1
+                grid-row-end: -1
+                letter-spacing: .4rem
+        
 
         .books-img 
         
