@@ -147,7 +147,7 @@ table {
   cursor: pointer;
 }
 
-.lines1, .lines2, .lines3 {
+.hamburger_toggle_menu .lines1, .hamburger_toggle_menu .lines2, .hamburger_toggle_menu .lines3 {
   width: 40px;
   height: 4px;
   background-color: #FFFFFF;
@@ -166,7 +166,7 @@ table {
 }
 
 .change .lines2 {
-  opacity: 0;
+  opacity: 5;
 }
 
 .change .lines3 {
@@ -214,10 +214,11 @@ table {
 }
 
 .cat-1 .home-img {
+  position: relative;
   display: block;
   padding-top: 20px;
   margin: 0 auto;
-  width: 200px;
+  width: 100%;
   height: 200px;
   height: auto;
 }
@@ -272,7 +273,18 @@ table {
   /*-------- top cover image ---------*/
 }
 
-.main-wrapper .books-image-wrapper {
+.main-wrapper .cover-img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.books-image-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[5];
@@ -282,7 +294,7 @@ table {
   position: relative;
 }
 
-.main-wrapper .text-book-cover {
+.text-book-cover {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[3];
@@ -293,7 +305,7 @@ table {
   height: 100%;
 }
 
-.main-wrapper .text-book-cover h1 {
+h1 {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
@@ -303,19 +315,8 @@ table {
       align-content: center;
   position: relative;
   margin: 0 auto;
-  font-size: .5rem;
+  font-size: 5rem;
   font-family: paris;
-}
-
-.main-wrapper .cover-img {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
 }
 
 .century-sec {
@@ -530,24 +531,35 @@ footer ul a {
   padding: 30px;
 }
 
-.books-image-wrapper {
-  -ms-grid-rows: 1fr 1fr 2fr 1fr;
-      grid-template-rows: 1fr 1fr 2fr 1fr;
+h1 {
+  letter-spacing: .4rem;
+  font-size: 3.5rem;
 }
 
-.books-image-wrapper .text-book-cover h1 {
-  font-size: 1rem;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: -1;
-  letter-spacing: .4rem;
+.century-sec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 10px;
+  grid-gap: 10px;
 }
 
 .wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p {
   font-size: 1.3rem;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 768px) {
+.wrapper-book-base .main-wrapper .top-img1 .home-img {
+  background: pink;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
   .toggle-wrapper {
     display: none;
   }
@@ -706,9 +718,10 @@ footer ul a {
     display: grid;
     -ms-flex-line-pack: center;
         align-content: center;
+    background: green;
   }
   .books-image-wrapper .text-book-cover h1 {
-    font-size: 1rem;
+    font-size: 5rem;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: -1;
@@ -820,7 +833,7 @@ footer ul a {
 }
 
 .delivery-countries-wrapper .delivery-dispath-p p {
-  font-size: 2rem;
+  font-size: 6rem;
 }
 
 .delivery-countries-wrapper footer ul {
@@ -835,6 +848,10 @@ footer ul a {
 
 .delivery-countries-wrapper footer ul li a {
   font-size: 1.5rem;
+}
+
+.skiplink {
+  display: none;
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
@@ -1028,7 +1045,7 @@ footer ul a {
         align-content: center;
   }
   .books-image-wrapper .text-book-cover h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: -1;
@@ -1157,12 +1174,6 @@ footer ul a {
   footer ul li a {
     font-size: 1.5rem;
   }
-}
-
-.books-image-wrapper .text-book-cover h1 {
-  font-size: 5rem;
-  overflow: hidden;
-  padding: 15px;
 }
 
 @media only screen and (min-device-width: 1025px) {
@@ -1419,12 +1430,33 @@ footer ul a {
     padding: 10px;
   }
   .main-nav li:hover a {
+    color: #000;
+  }
+  .main-nav li:hover a:focus {
+    outline: 2.5 dotted #236841;
+  }
+  .main-nav li:hover a {
     color: black;
     font-size: 1.3rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-transform: uppercase;
+  }
+  .skiplink {
+    position: absolute;
+    left: -10000px;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    color: white;
+  }
+  .skiplink:focus {
+    left: auto;
+    top: 100px;
+    z-index: 1;
+    text-decoration: none;
+    outline: 2px dotted #736837;
   }
   .toggle-wrapper {
     display: none;
@@ -1503,6 +1535,24 @@ footer ul a {
   display: none;
 }
 
+.delivery-logo {
+  background: #fafafa;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  font-size: 1.3rem;
+  padding: 20px;
+  border-radius: 50%;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
 .delivery-logo img {
   width: 60px;
   height: 60px;
@@ -1519,14 +1569,33 @@ footer ul a {
   text-align: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
+  font-size: 1.3rem;
   padding: 20px;
 }
 
-caption {
+.delivery-countries-wrapper .delivery-estimate-p p, .delivery-countries-wrapper .delivery-dispath-p p, .delivery-countries-wrapper .countries-list p {
+  font-size: 1.3rem;
+}
+
+.delivery-countries-wrapper .countries-list p {
+  line-height: 1.5rem;
+}
+
+.delivery-countries-wrapper .countries-list ul {
+  margin-top: 40px;
+}
+
+.table-title {
+  text-align: center;
   font-size: 3rem;
-  padding: 1rem;
   font-family: paris;
-  letter-spacing: 0.3rem;
+  padding: 10px 0px 10px 0px;
+}
+
+caption {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  letter-spacing: .3rem;
 }
 
 body {

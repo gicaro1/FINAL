@@ -1,4 +1,7 @@
-@media only  screen and(min-device-width:1025px) 
+@media only  screen and(min-device-width:1025px)
+ 
+        
+      
     .main-wrapper
         .main-nav 
         
@@ -24,6 +27,7 @@
 
             a
              margin: 0 auto
+             
     .cat-1 
         display: grid
         grid-template-columns: repeat(3, 1fr)
@@ -116,6 +120,7 @@
         .century-text5
             grid-area: century-text5
         .century-card6
+
             grid-area: century-card6
         .century-text6
             grid-area: century-text6
@@ -225,6 +230,7 @@
                     a 
                         color: black
                         font-size: 1.1rem
+      
     .main-nav 
 
         ul
@@ -236,6 +242,10 @@
             &:hover
                     background: white
                     padding: 10px
+                    a
+                        color: #000
+                        &:focus 
+                            outline: 2.5 dotted  $defaul-color
               
                   
                    
@@ -248,25 +258,25 @@
                
                         
                         text-transform: uppercase
-                     
+ 
 
-        
-          
-            // opacity: .4
-            // display: flex
-            // justify-content: flex-start
-            // padding: 10px 10px
-            // width: 80% 
-            // margin-left: 24px
+    .skiplink 
+        position: absolute
+        left: -10000px
+        padding: 10px
+        font-size: 1.3rem
+        margin-left: 10px
+        color: white
+       
+        &:focus 
+            left: auto
+            top: 100px
            
-        // a 
-        //     font-size: 1.1rem 
-        //     text-decoration: none
-        //     color: $light
-        //     cursor: pointer
-        //     letter-spacing: .2rem
+            z-index: 1
+            text-decoration: none
+            outline: 2px dotted #736837
 
-    
+
     .toggle-wrapper
         display: none
    
@@ -298,31 +308,5 @@
             height: 80px
             opacity: .5
 
-// .wrapper-book-base
-//         display: grid
-//         grid-template-columns: repeat(2, 1fr)
-//         margin: 10px
-//         grid-template-areas: "books-base1 books-base2" 
-    
-//         .books-base1
-//             grid-area: books-base1
-//             p 
-//                 text-align: center
-//                 font-size: 2rem
-//                 padding: 35px
-//         .books-base2
-//             @extend .books-base1
-//             grid-area: books-base2
-                
-       
-            
-
-//         .icon-base
-            
-//             width: 80px
-//             height: 80px
-//             display: block
-//             margin: auto
-//             padding: 
                 
             

@@ -1,5 +1,5 @@
 
-@media only  screen and(min-device-width:414px) and (max-device-width:768px) 
+@media only  screen and(min-device-width:415px) and (max-device-width:768px) 
     .toggle-wrapper
         display: none
 
@@ -107,17 +107,18 @@
             width: 200px
             height: 200px
 
-         
+            
     .books-image-wrapper
         grid-template-rows: 1fr 1fr 2fr 1fr 
         
-   
+
         .text-book-cover
             grid-template-rows:  100px  
             display: grid
             align-content: center
+            background: green
             h1 
-                font-size: 1rem
+                font-size: 5rem
                 grid-row-start: 1
                 grid-row-end: -1
                 letter-spacing: .4rem
@@ -250,7 +251,7 @@
         @extend .delivery-estimate-p
     
         p 
-            font-size: 2rem
+            font-size: 6rem
     footer
      ul  
         grid-template-columns:  repeat(auto-fit, minmax(50px, 1fr))
@@ -258,4 +259,6 @@
             align-content: center
             a 
              font-size: 1.5rem
+.skiplink
+    display: none
           
