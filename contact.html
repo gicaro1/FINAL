@@ -4,10 +4,180 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Emblem-Home-Contact</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo|PT+Sans+Narrow&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <script src="/javaScript/toggle.js"></script>
+  <title>Contact Page</title>
+
 </head>
-<body>
-  <H1>CONTACT PAGE</H1>
-</body>
+<header>
+  
+  <div class="main-wrapper">
+ <a href="#hearth" class="skiplink">Skip paragraph 1 The Heart of the Matter</a>
+ <a href="#buy" class="skiplink">Skip paragraph 2 buying </a>
+ <a href="#sell" class="skiplink">Skip paragraph 3 selling</a>
+ <a href="#value" class="skiplink">Skip paragraph 4 valuing</a>
+ <a href="#fot" class="skiplink">Skip footer</a>
+    <div class="toggle-wrapper">
+  
+        <img src="/logo/emblem_logo_64.png" alt="" class="logo">
+        
+        
+
+     <div class="line-toggle">
+        
+        <div class= "hamburger_toggle_menu" onclick="myFunction(this)" >
+        
+            <div class="lines1"></div>
+            <div class="lines2"></div>
+            <div class="lines3"></div>
+        </div>
+      </div>
+
+      
+    </div>
+
+
+    <nav class="common-links">
+      
+        <ul class="common-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li> <a href="#">Login</a></li>
+        </ul>
+    </nav> 
+   
+    <nav id="#slide" class="main-nav"  >
+
+      <ul id="burger">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="book.html">Books</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+        <li><a href="#">About</a></li>
+        <li> <a href="#">Investements</a></li>
+
+      </ul>
+  
+    </nav>
+    <div id="image-book-cover" class="books-image-wrapper">
+  
+      <img src="/img/contact/contact.jpg"  class="cover-img" alt="">
+
+      <div class="text-book-cover">
+          <h1>Contact Us</h1>
+          <!-- <p>That’s the thing about books. They let you travel without moving your feet</p> -->
+      </div>
+    </div>
+  </header>
+    <section>
+
+        <div class="contact-p">
+          <img    class="form-icon" src="/img/contact/form2.jpg" alt="">
+          <p> Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are looking to sell a book, have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt. </p>
+
+        </div>
+
+          <div class="details-container">
+              <div class="emil-text">
+                  <p><strong>Email: </strong>sales@emblem-rare-books.com</p>
+                </div>
+                <div class="phone">
+    
+                  <p><strong> Phone: </strong>0208 555 6789</p>
+                </div>
+          </div>
+        
+        <form  action="confirmation.html" method="POST">
+        
+
+              <fieldset  class="details" >
+                  <legend class="contac-form-title" > Contact Form:</legend>
+
+
+                  <label for="tittle">Tittle</label>
+                  <input type="text" name="tittle"  id="tittle" required>
+
+                  <label for="name">First Name</label>
+                  <input type="text" name="name"  id="name" required>
+          
+                  <label for="surname">Surname</label>
+                  <input type="text" name="surname"  id="surname" required>
+      
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email"   id="email" required >
+                </fieldset>
+              
+              <fieldset>
+
+                <fieldset  class="centuries" >
+                  <legend>Interest</legend>
+
+                  <select id="century">
+                      <option  class="please-select" value="">--Please Select--</option>
+                      <option value="20th century">20th Century Books</option>
+                      <option value="19th century">19th Century Books</option>
+                      <option value="18th century">18th Century Books</option>
+                      <option value="Rare Books">Rare Books</option>
+                  </select>
+                </fieldset>
+            
+               
+
+              <fieldset class="yes-and-no">
+                  <legend>Are you Dealer?</legend>
+
+                  <div class="control-group">
+                      <label for=Yes>Yes</label>
+                      <input type="radio"   name="yes" value="Yes" id="Yes" checked >  
+                  </div>
+
+                  <div class="control-group">
+                      <label for=No1>No</label>
+                      <input type="radio"   name="yes" value="no" id="no" >   
+                  </div>
+
+              </fieldset>
+
+              <fieldset class="sell-and-buy">
+                  <legend>Selling or Buying? </legend>
+
+                  <div class="control-group">
+                      <label for=selling>Sell</label>
+                      <input type="checkbox"   name="selling" value="selling" id="selling" checked >  
+                  </div>
+
+                  <div class="control-group">
+                      <label for=Buying>Buy</label>
+                      <input type="checkbox"   name="Buying" value="Buying" id="Buying" >   
+                  </div>
+
+              </fieldset>
+
+              <section class="submit-button">
+                <div >
+                  <input type="submit" value="Submit">
+                </div>
+
+
+              </section>
+             
+             
+        </form>
+    
+       
+
+     
+
+    </section>
+    <footer tabindex="0" id="fot">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </footer>
+
+  
 </html>

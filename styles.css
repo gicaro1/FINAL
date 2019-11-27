@@ -534,6 +534,7 @@ footer ul a {
 h1 {
   letter-spacing: .4rem;
   font-size: 3.5rem;
+  overflow: hidden;
 }
 
 .century-sec {
@@ -560,6 +561,14 @@ h1 {
 }
 
 @media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
+  form {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button";
+  }
   .toggle-wrapper {
     display: none;
   }
@@ -855,6 +864,12 @@ h1 {
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  form {
+    grid-gap: 20px;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button";
+  }
   .main-wrapper .main-nav ul {
     display: -ms-grid;
     display: grid;
@@ -1177,6 +1192,14 @@ h1 {
 }
 
 @media only screen and (min-device-width: 1025px) {
+  form {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button";
+  }
   .main-wrapper .main-nav ul {
     display: -ms-grid;
     display: grid;
@@ -1596,6 +1619,94 @@ caption {
   font-size: 1.3rem;
   padding-bottom: 10px;
   letter-spacing: .3rem;
+}
+
+section .form-icon {
+  width: 110px;
+  height: 90px;
+  opacity: .5;
+}
+
+section .contact-p, section .details-container {
+  background: #fafafa;
+  margin: 10px;
+  color: black;
+  display: block;
+  margin: 5 auto;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  font-size: 1.9rem;
+  padding: 20px;
+}
+
+section .contact-p p, section .details-container p {
+  font-size: 1.3rem;
+}
+
+section form {
+  display: -ms-grid;
+  display: grid;
+  margin: 20px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 90%;
+}
+
+section form .details, section form .centuries, section form .yes-and-no, section form .sell-and-buy {
+  border: 1px solid #b9b8bb;
+  background: #fafafa;
+  color: black;
+  display: block;
+  margin: 10px auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  padding: 20px;
+}
+
+section form select {
+  width: 90%;
+  border: 1px solid #b9b8bb;
+  font-size: 1rem;
+}
+
+section form #name, section form #surname, section form #email, section form #tittle {
+  width: 90%;
+  margin: 0 auto;
+  height: 25px;
+  padding: 5px;
+  border: 1px solid #b9b8bb;
+  margin-bottom: 20px;
+}
+
+section form #century {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section form label {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+section form legend {
+  font-size: 1.3rem;
+}
+
+section .submit-button input {
+  font-size: 1.3rem;
+  display: block;
+  color: #fff;
+  letter-spacing: .2rem;
+  background: #236841;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 body {
