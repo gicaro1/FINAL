@@ -1,23 +1,68 @@
 
 @media only  screen and(min-device-width:415px) and (max-device-width:768px) 
 
+    .form-icon
+        width: 80px
+        height: 70px
+        padding: 10px
+        opacity: .3
+    .contact-p
+        font-size: 1.9rem
+        margin: 20px
+        padding: 20px
+        .contac-email-logo
+            width: 80px
+            height: 70px
+            padding: 10px
+            opacity: .4
+    .google-maps 
+        position: relative
+        padding-bottom: 40%
+        margin: 20px
+        height: 0
+        overflow: hidden
+        box-shadow: $shadow
+     
+
     form    
         grid-template-columns: 1fr 1fr
         grid-gap: 20px
-        grid-template-rows: 1fr
-        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button"
-        // #name, #surname, #email, #tittle,
-        //     width: 90%
-        //     margin: 0 auto
-        //     height: 25px
-        //     padding: 5px
-        //     border: 1px solid #b9b8bb
-        //     margin-bottom: 20px
-        // #century
-        //     height: 40px
-        //     display: flex
-        //     align-items: center
-    
+        margin: 0 auto
+        margin-bottom: 15px
+        grid-template-rows:  1fr 1fr 1fr 
+        grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy" 
+
+        .details 
+            
+            grid-column: 1/2
+            grid-row: 1/4
+            // grid-area: details
+        .centuries 
+            grid-column: 2/3
+            grid-row: 1/2
+            // grid-area: centuries 
+
+        .yes-and-no
+            .control-group 
+                label
+                    font-size: 1.5rem
+              
+        .sell-and-buy
+            .control-group 
+         
+                label
+                    font-size: 1.5rem
+        legend
+            font-size: 1.6rem
+
+    .submit-button
+        input
+            grid-column: 1/-1
+            grid-row: 4/5
+            font-size: 1.6rem
+            width: 60%
+
+   
 
 
     .toggle-wrapper
@@ -210,75 +255,58 @@
         .books-base1 
             p 
                 font-size: 1.8rem
-        
 
-        // .books-base1
-        // p 
-    
-        //     text-align: center
-        //     font-size: 1.8rem
 
-        // .icon-base
-        
-        //     width: 80px
-        //     height: 80px
-        //     opacity: .5
- 
-   
-    .delivery-logo
-  
-        img
-            width: 60px
-            height: 60px
-            display: block
-            margin: auto
+
+    table
+        background: blue
+       
+        .kg
+            // padding: 20px
+            // font-size: 1.4rem
+     
+            
+
+
+        td
+            
+            // padding: 1rem .5rem
+            // display: block
+            // font-size: 1.3rem
+            color: #000 
+            text-align: center
+            border: 1px solid #DEDEDE
+            
+            
+        .eu, .uk,.re,.ue 
+            text-align: center
+            border: 1px solid #DEDEDE
+        .pr, .st
          
-.delivery-countries-wrapper
-   
+            border: 1px solid #DEDEDE
 
-    .delivery-estimate-p
-        background: #fafafa
-        margin: 10px
-        color: black
-        display: block
-        margin: 5 auto
-        text-align: center
-        box-shadow: $shadow
-        font-size: 1.8rem
-     
-        padding: 20px
-    .countries-list
-        position: relative
-        height: 200px
-        overflow: hidden
+            
+            
+            
+        
 
-        p 
-            font-size: 2rem
-            line-height: 2rem
-          
-        ul 
-     
-            position: absolute
-            left: 0
-            font-size: 1.4rem
-            text-align: left
-            padding: 10px
+        tr 
+       
+        
+        th 
+       
+            
+            
+            
+        .premium
+            // display: none
+        .weight-kg
+            //  display: none
+    span 
+            
+            display: none        
+         
 
-        strong 
-            font-weight: bold
-               
-    .delivery-dispath-p
-        @extend .delivery-estimate-p
-    
-        p 
-            font-size: 6rem
-    footer
-     ul  
-        grid-template-columns:  repeat(auto-fit, minmax(50px, 1fr))
-        li 
-            align-content: center
-            a 
-             font-size: 1.5rem
 .skiplink
     display: none
           

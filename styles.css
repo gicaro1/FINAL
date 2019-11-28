@@ -531,6 +531,191 @@ footer ul a {
   padding: 30px;
 }
 
+@media only screen and (max-device-width: 414px) {
+  .form-icon {
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+    opacity: .3;
+  }
+  .contact-p, section .details-container {
+    background: #fafafa;
+    margin: 10px;
+    color: black;
+    display: block;
+    margin: 5 auto;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    font-size: 1.9rem;
+    padding: 20px;
+  }
+  .contact-p p, section .details-container p {
+    font-size: 1.3rem;
+  }
+  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+    opacity: .4;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 40%;
+    margin: 20px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+  }
+  .google-maps iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 7%;
+  }
+  form {
+    display: -ms-grid;
+    display: grid;
+    margin: 10px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 95%;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "details" "centuries" "yes-and-no" "sell-and-buy";
+  }
+  form label {
+    font-size: 1.3rem;
+  }
+  form legend {
+    font-size: 1.6rem;
+  }
+  form .yes-and-no .control-group label {
+    font-size: 1.5rem;
+  }
+  form .sell-and-buy .control-group label {
+    font-size: 1.5rem;
+  }
+  form .sell-and-buy .control-group input {
+    margin: 10px auto;
+  }
+  .submit-button {
+    /*-----DELIVERY PAGE-------*/
+  }
+  .submit-button input {
+    font-size: 1.3rem;
+    width: 95%;
+  }
+  .submit-button .sell-and-buy .control-group label {
+    font-size: 1.5rem;
+  }
+  .delivery-caption {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+    margin: 10px;
+  }
+  .delivery-caption p {
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+  }
+  .delivery-caption .delivery-truck-icon {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 5px auto;
+    opacity: 0.5;
+  }
+  table .kg {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+  table td {
+    padding: 1rem .5rem;
+    display: block;
+    font-size: 1.3rem;
+    color: #000;
+    left: 0;
+    border: 1px solid #DEDEDE;
+  }
+  table .eu, table .uk, table .re, table .ue {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #DEDEDE;
+    font-size: 1.8rem;
+  }
+  table .pr, table .st {
+    border: 1px solid #DEDEDE;
+  }
+  table tr {
+    display: block;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+    margin: 15px 0px 10px 0px;
+  }
+  table th {
+    display: block;
+  }
+  table .premium {
+    display: none;
+  }
+  table .weight-kg {
+    display: none;
+  }
+  span {
+    font-size: 1.3rem;
+    margin-left: 100px;
+  }
+}
+
+.delivery-countries-wrapper .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 5px auto;
+  opacity: 0.5;
+  padding: 10px;
+}
+
+.delivery-countries-wrapper .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
+  font-size: 1.3rem;
+  padding: 10px 40px 10px 40px;
+}
+
+.delivery-countries-wrapper .countries-list p {
+  line-height: 1.5rem;
+}
+
+.delivery-countries-wrapper .countries-list ul {
+  padding: 15px;
+}
+
+.delivery-countries-wrapper .countries-list ul li {
+  padding: 3px;
+  font-size: 1.3rem;
+}
+
+.delivery-countries-wrapper .countries-list img {
+  width: 20px;
+  height: 20px;
+  padding-right: 6px;
+}
+
+.delivery-dispath-p img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+}
+
+.delivery-dispath-p p {
+  font-size: 1.3rem;
+}
+
 h1 {
   letter-spacing: .4rem;
   font-size: 3.5rem;
@@ -561,13 +746,74 @@ h1 {
 }
 
 @media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
+  .form-icon {
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+    opacity: .3;
+  }
+  .contact-p, section .details-container {
+    font-size: 1.9rem;
+    margin: 20px;
+    padding: 20px;
+  }
+  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
+    width: 80px;
+    height: 70px;
+    padding: 10px;
+    opacity: .4;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 40%;
+    margin: 20px;
+    height: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+  }
   form {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button";
+    margin: 0 auto;
+    margin-bottom: 15px;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy";
+  }
+  form .details {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+  }
+  form .centuries {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  form .yes-and-no .control-group label {
+    font-size: 1.5rem;
+  }
+  form .sell-and-buy .control-group label {
+    font-size: 1.5rem;
+  }
+  form legend {
+    font-size: 1.6rem;
+  }
+  .submit-button input {
+    grid-column: 1/-1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    font-size: 1.6rem;
+    width: 60%;
   }
   .toggle-wrapper {
     display: none;
@@ -797,66 +1043,24 @@ h1 {
   .wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p {
     font-size: 1.8rem;
   }
-  .delivery-logo img {
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: auto;
+  table {
+    background: blue;
   }
-}
-
-.delivery-countries-wrapper .delivery-estimate-p, .delivery-countries-wrapper .delivery-dispath-p, .delivery-countries-wrapper .countries-list {
-  background: #fafafa;
-  margin: 10px;
-  color: black;
-  display: block;
-  margin: 5 auto;
-  text-align: center;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000;
-          box-shadow: 0px 10px 13px -7px #000000;
-  font-size: 1.8rem;
-  padding: 20px;
-}
-
-.delivery-countries-wrapper .countries-list {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.delivery-countries-wrapper .countries-list p {
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
-.delivery-countries-wrapper .countries-list ul {
-  position: absolute;
-  left: 0;
-  font-size: 1.4rem;
-  text-align: left;
-  padding: 10px;
-}
-
-.delivery-countries-wrapper .countries-list strong {
-  font-weight: bold;
-}
-
-.delivery-countries-wrapper .delivery-dispath-p p {
-  font-size: 6rem;
-}
-
-.delivery-countries-wrapper footer ul {
-  -ms-grid-columns: (minmax(50px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-}
-
-.delivery-countries-wrapper footer ul li {
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.delivery-countries-wrapper footer ul li a {
-  font-size: 1.5rem;
+  table td {
+    color: #000;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+  }
+  table .eu, table .uk, table .re, table .ue {
+    text-align: center;
+    border: 1px solid #DEDEDE;
+  }
+  table .pr, table .st {
+    border: 1px solid #DEDEDE;
+  }
+  span {
+    display: none;
+  }
 }
 
 .skiplink {
@@ -864,11 +1068,77 @@ h1 {
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .form-icon {
+    width: 140px;
+    height: 110px;
+    padding: 10px;
+    opacity: .3;
+  }
+  .contact-p, section .details-container {
+    font-size: 2.5rem;
+    padding: 70px;
+    margin: 10px;
+  }
+  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
+    width: 140px;
+    height: 110px;
+    padding: 10px;
+    opacity: .4;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 29%;
+    margin: 20px;
+    height: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+  }
   form {
-    grid-gap: 20px;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 0 auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy";
+  }
+  form legend {
+    font-size: 2.5rem;
+  }
+  form .details {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+  }
+  form .details label {
+    font-size: 1.6rem;
+  }
+  form .centuries {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  form .yes-and-no .control-group {
+    font-size: 2.2rem;
+  }
+  form .sell-and-buy .control-group {
+    font-size: 2.2rem;
+  }
+  .submit-button input {
+    grid-column: 1/-1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    font-size: 1.5rem;
+    width: 60%;
   }
   .main-wrapper .main-nav ul {
     display: -ms-grid;
@@ -1192,13 +1462,76 @@ h1 {
 }
 
 @media only screen and (min-device-width: 1025px) {
+  .form-icon {
+    width: 160px;
+    height: 140px;
+    padding: 10px;
+    opacity: .3;
+  }
+  .contact-p, section .details-container {
+    font-size: 2.5rem;
+    padding: 70px;
+    margin: 10px;
+  }
+  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
+    width: 160px;
+    height: 140px;
+    padding: 10px;
+    opacity: .4;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 23%;
+    margin: 20px;
+    height: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+  }
   form {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button";
+    grid-gap: 30px;
+    margin: 0 auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy";
+  }
+  form legend {
+    font-size: 2.5rem;
+  }
+  form .details {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+  }
+  form .details label {
+    font-size: 1.6rem;
+  }
+  form .centuries {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  form .yes-and-no .control-group {
+    font-size: 2.2rem;
+  }
+  form .sell-and-buy .control-group {
+    font-size: 2.2rem;
+  }
+  .submit-button input {
+    grid-column: 1/-1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    font-size: 1.5rem;
+    width: 60%;
   }
   .main-wrapper .main-nav ul {
     display: -ms-grid;
@@ -1518,49 +1851,9 @@ h1 {
   table-layout: fixed;
 }
 
-.table-wrappper table .kg {
-  padding: 20px;
-  font-size: 1.4rem;
-}
-
-.table-wrappper table td {
-  color: #000;
-  text-align: center;
-  border: 1px solid #DEDEDE;
-}
-
-.table-wrappper table .eu, .table-wrappper table .uk, .table-wrappper table .re, .table-wrappper table .ue {
-  text-align: left;
-  padding: 10px;
-  border: 1px solid #DEDEDE;
-}
-
-.table-wrappper table .pr, .table-wrappper table .st {
-  padding: 15px;
-  letter-spacing: .1rem;
-  border: 1px solid #DEDEDE;
-}
-
-.table-wrappper table tr {
-  background: #fafafa;
-}
-
-.table-wrappper table th {
-  border: 1px solid DEDEDE;
-  text-transform: uppercase;
-  background: #000;
-  opacity: .5;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.table-wrappper span {
-  display: none;
-}
-
 .delivery-logo {
   background: #fafafa;
-  margin: 10px;
+  margin: 15px;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
@@ -1568,36 +1861,26 @@ h1 {
   text-align: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
-  font-size: 1.3rem;
-  padding: 20px;
   border-radius: 50%;
-  width: 80px;
   display: block;
   margin: 0 auto;
 }
 
 .delivery-logo img {
-  width: 60px;
-  height: 60px;
   display: block;
   margin: 10px auto;
 }
 
-.delivery-countries-wrapper .delivery-estimate-p, .delivery-countries-wrapper .delivery-dispath-p, .delivery-countries-wrapper .countries-list {
+.delivery-countries-wrapper .delivery-estimate-p, .delivery-countries-wrapper .countries-list {
   background: #fafafa;
   margin: 10px;
   color: black;
   display: block;
   margin: 5 auto;
-  text-align: center;
+  text-align: left;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
-  font-size: 1.3rem;
-  padding: 20px;
-}
-
-.delivery-countries-wrapper .delivery-estimate-p p, .delivery-countries-wrapper .delivery-dispath-p p, .delivery-countries-wrapper .countries-list p {
-  font-size: 1.3rem;
+  text-align: center;
 }
 
 .delivery-countries-wrapper .countries-list p {
@@ -1605,69 +1888,145 @@ h1 {
 }
 
 .delivery-countries-wrapper .countries-list ul {
-  margin-top: 40px;
+  padding: 15px;
 }
 
-.table-title {
+.delivery-countries-wrapper .countries-list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.delivery-countries-wrapper .countries-list img {
+  width: 20px;
+  height: 20px;
+}
+
+.delivery-dispath-p {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  background: #fafafa;
+  margin: 10px;
+}
+
+.delivery-dispath-p img {
+  display: block;
+  margin: 5px auto;
+  opacity: 0.5;
+}
+
+.delivery-dispath-p p {
   text-align: center;
-  font-size: 3rem;
-  font-family: paris;
-  padding: 10px 0px 10px 0px;
-}
-
-caption {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  letter-spacing: .3rem;
-}
-
-section .form-icon {
-  width: 110px;
-  height: 90px;
-  opacity: .5;
 }
 
 section .contact-p, section .details-container {
   background: #fafafa;
-  margin: 10px;
   color: black;
   display: block;
   margin: 5 auto;
   text-align: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
-  font-size: 1.9rem;
-  padding: 20px;
 }
 
-section .contact-p p, section .details-container p {
-  font-size: 1.3rem;
+section .google-maps iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 7%;
 }
 
 section form {
   display: -ms-grid;
   display: grid;
-  margin: 20px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  width: 90%;
+  width: 95%;
 }
 
-section form .details, section form .centuries, section form .yes-and-no, section form .sell-and-buy {
+section form .details {
+  grid-area: details;
   border: 1px solid #b9b8bb;
   background: #fafafa;
   color: black;
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+section form .centuries {
+  grid-area: centuries;
+  border: 1px solid #b9b8bb;
+  background: #fafafa;
+  color: black;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
   padding: 20px;
 }
 
 section form select {
-  width: 90%;
+  width: 70%;
   border: 1px solid #b9b8bb;
   font-size: 1rem;
+  display: block;
+}
+
+section form .yes-and-no {
+  grid-area: yes-and-no;
+  border: 1px solid #b9b8bb;
+  background: #fafafa;
+  color: black;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  padding: 20px;
+}
+
+section form .yes-and-no .control-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+section form .yes-and-no .control-group label {
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+section form .yes-and-no .control-group input {
+  margin: 10px auto;
+}
+
+section form .sell-and-buy {
+  grid-area: sell-and-buy;
+  border: 1px solid #b9b8bb;
+  background: #fafafa;
+  color: black;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+section form .sell-and-buy .control-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+section form .sell-and-buy .control-group label {
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+section form .sell-and-buy .control-group input {
+  margin: 10px auto;
 }
 
 section form #name, section form #surname, section form #email, section form #tittle {
@@ -1687,24 +2046,21 @@ section form #century {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section form label {
-  font-size: 1.3rem;
+  width: 100%;
   font-style: italic;
 }
 
 section form legend {
-  font-size: 1.3rem;
+  padding: 10px;
+  text-align: center;
 }
 
 section .submit-button input {
-  font-size: 1.3rem;
   display: block;
   color: #fff;
   letter-spacing: .2rem;
   background: #236841;
-  width: 100%;
+  margin: 10px auto;
   padding: 10px;
   border-radius: 20px;
 }

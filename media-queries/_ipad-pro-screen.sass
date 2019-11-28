@@ -1,12 +1,79 @@
 @media only  screen and(min-device-width:769px) and (max-device-width:1024px)
-    form 
+    .form-icon
+        width: 140px
+        height: 110px
+        padding: 10px
+        opacity: .3
+    .contact-p
+        font-size: 2.5rem
+        padding: 70px
+        margin: 10px
+        .contac-email-logo
+            width: 140px
+            height: 110px
+            padding: 10px
+            opacity: .4
+    .google-maps 
+        position: relative
+        padding-bottom: 29%
+        margin: 20px
+        height: 0
+        overflow: hidden
+        box-shadow: $shadow
+        background: #fafafa
+        
+    form    
+        grid-template-columns: 1fr 1fr
+        grid-gap: 30px
+        margin: 0 auto
+        // margin-bottom: 15px
+        grid-template-rows:  1fr 1fr 1fr 
+        grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy"
+
+
+
+
+        legend
+            font-size: 2.5rem
+
+        .details 
+            label
+                font-size: 1.6rem
+            
+            grid-column: 1/2
+            grid-row: 1/4
+
+            
+            // grid-area: details
+        .centuries 
+            grid-column: 2/3
+            grid-row: 1/2
+            // grid-area: centuries 
+        .yes-and-no
+         
+            .control-group 
+                label
+                font-size: 2.2rem
          
        
-        grid-gap: 20px
+            // grid-area: yes-and-no 
+        .sell-and-buy 
+            .control-group 
+                label
+                font-size: 2.2rem
+           
        
-        
-        grid-template-rows: 1fr
-        grid-template-areas: "details centuries" " details yes-and-no" " details sell-and-buy" "details  submit-button"
+       
+
+    .submit-button
+        input
+            grid-column: 1/-1
+            grid-row: 4/5
+            font-size: 1.5rem
+            width: 60%
+ 
+     
+       
 
 
    
@@ -284,14 +351,8 @@
             align-content: center
             a 
              font-size: 1.5rem
-
-    // .books-image-wrapper
-    //     .text-book-cover
         
-    //         h1 
-    //         font-size: 5rem
-    //         overflow: hidden
-    //         padding: 15px
+
 
 
       

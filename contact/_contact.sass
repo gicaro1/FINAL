@@ -1,56 +1,111 @@
 section
-    .form-icon
-        width: 110px
-        height: 90px
-        opacity: .5
+
     .contact-p
         background: #fafafa
-        margin: 10px
         color: black
         display: block
         margin: 5 auto
         text-align: center
         box-shadow: $shadow
-        font-size: 1.9rem
-        padding: 20px
+       
 
-        p
-            font-size: 1.3rem
 
     .details-container
         @extend .contact-p
+    
+
+    .google-maps iframe 
+        top: 0
+        left: 0
+        width: 100% 
+        height: 300px 
+        margin-bottom: 7% 
+    
 
     form
         display: grid
-        margin: 20px
-        grid-template-columns: 1fr
-        width: 90%
         
-        // grid-template-rows: repeat(4, auto)
-        // grid-template-areas: "details" "centuries" "yes-and-no" "sell-and-buy"
+        width: 95%
+     
 
         .details
-            // grid-area: details
+            grid-area: details
             // display: grid
             border: 1px solid #b9b8bb
             background: #fafafa
             color: black
             display: block
-            margin: 10px auto
+            margin: 0 auto
             box-shadow: $shadow
             padding: 20px
+            margin-bottom: 10px
+
+
         .centuries
-          
-            @extend .details
+            grid-area: centuries
+            border: 1px solid #b9b8bb
+            background: #fafafa
+            color: black
+            box-shadow: $shadow
+            padding: 20px
+     
+    
         select
-            width: 90%
+            width: 70%
             border: 1px solid #b9b8bb
             font-size: 1rem
+            display: block
+            
+       
+         
 
         .yes-and-no
-            @extend .details
+            grid-area: yes-and-no
+            border: 1px solid #b9b8bb
+            background: #fafafa
+            color: black
+            box-shadow: $shadow
+            padding: 20px
+          
+            
+           
+            .control-group 
+                display: grid
+           
+                grid-template-columns: repeat(4, 1fr)
+         
+                label
+                    text-align: center
+            
+                    letter-spacing: .2rem
+       
+                input
+                    margin: 10px auto
+     
         .sell-and-buy
-            @extend .details
+            grid-area: sell-and-buy
+            border: 1px solid #b9b8bb
+            background: #fafafa
+            color: black
+            box-shadow: $shadow
+            padding: 20px
+            margin-bottom: 10px
+            .control-group 
+                display: grid
+           
+                grid-template-columns: repeat(4, 1fr)
+         
+                label
+                    text-align: center
+         
+                    letter-spacing: .2rem
+       
+
+                input
+                    margin: 10px auto
+
+             
+            
 
         #name, #surname, #email, #tittle,
             width: 90%
@@ -63,21 +118,27 @@ section
             height: 40px
             display: flex
             align-items: center
+            width: 100%
 
-        label
-            font-size: 1.3rem
-
+        
+            
             font-style: italic
         legend
-            font-size: 1.3rem
+           
+            padding: 10px
+           
+            text-align: center
+        
     .submit-button
         input
-            font-size: 1.3rem
+           
             display: block
             color: #fff
             letter-spacing: .2rem
             background: $mainColor
-            width: 100%
+         
+            margin: 10px auto
             padding: 10px
             border-radius: 20px
+         
 

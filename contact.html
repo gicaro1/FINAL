@@ -74,12 +74,13 @@
     <section>
 
         <div class="contact-p">
-          <img    class="form-icon" src="/img/contact/form2.jpg" alt="">
+          <img    class="form-icon" src="/img/contact/forms.png" alt="">
           <p> Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are looking to sell a book, have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt. </p>
 
         </div>
 
           <div class="details-container">
+            <img src="/img/contact/email.png" alt="" class="contac-email-logo">
               <div class="emil-text">
                   <p><strong>Email: </strong>sales@emblem-rare-books.com</p>
                 </div>
@@ -88,6 +89,10 @@
                   <p><strong> Phone: </strong>0208 555 6789</p>
                 </div>
           </div>
+          <div class="google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.86265576045!2d-0.15586051244560592!3d51.509259279215236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605255643cb2b%3A0x261185c6bcdb02d2!2sMayfair%2C+London%2C+UK!5e0!3m2!1sen!2s!4v1564511981758!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+      
         
         <form  action="confirmation.html" method="POST">
         
@@ -105,20 +110,20 @@
                   <label for="surname">Surname</label>
                   <input type="text" name="surname"  id="surname" required>
       
-                  <label for="email">E-mail</label>
+                  <label for="email">Email</label>
                   <input type="email" name="email"   id="email" required >
                 </fieldset>
               
-              <fieldset>
+            
 
                 <fieldset  class="centuries" >
                   <legend>Interest</legend>
 
                   <select id="century">
-                      <option  class="please-select" value="">--Please Select--</option>
-                      <option value="20th century">20th Century Books</option>
-                      <option value="19th century">19th Century Books</option>
-                      <option value="18th century">18th Century Books</option>
+                      <option  class="please-select" value="">-Please Select-</option>
+                      <option value="20th century">20th Century </option>
+                      <option value="19th century">19th Century </option>
+                      <option value="18th century">18th Century </option>
                       <option value="Rare Books">Rare Books</option>
                   </select>
                 </fieldset>
@@ -126,15 +131,14 @@
                
 
               <fieldset class="yes-and-no">
-                  <legend>Are you Dealer?</legend>
+
+                  <legend>Are you Dealer</legend>
 
                   <div class="control-group">
                       <label for=Yes>Yes</label>
                       <input type="radio"   name="yes" value="Yes" id="Yes" checked >  
-                  </div>
-
-                  <div class="control-group">
-                      <label for=No1>No</label>
+                 
+                      <label id="label1" for=No1>No </label>
                       <input type="radio"   name="yes" value="no" id="no" >   
                   </div>
 
@@ -146,25 +150,24 @@
                   <div class="control-group">
                       <label for=selling>Sell</label>
                       <input type="checkbox"   name="selling" value="selling" id="selling" checked >  
-                  </div>
-
-                  <div class="control-group">
+            
                       <label for=Buying>Buy</label>
                       <input type="checkbox"   name="Buying" value="Buying" id="Buying" >   
                   </div>
 
               </fieldset>
 
-              <section class="submit-button">
-                <div >
-                  <input type="submit" value="Submit">
-                </div>
-
-
-              </section>
+          
              
              
         </form>
+        <section class="submit-button">
+            <div >
+              <input type="submit" value="Submit">
+            </div>
+
+
+          </section>
     
        
 
