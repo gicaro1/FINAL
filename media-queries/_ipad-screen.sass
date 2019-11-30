@@ -1,5 +1,106 @@
 
-@media only  screen and(min-device-width:415px) and (max-device-width:768px) 
+@media only  screen and(min-device-width:415px) and (max-device-width:768px)
+    .century-main-wrapper
+        .century-text-top
+            grid-area: century-text-top
+
+
+            p
+                font-size: 1.6rem
+                padding: 10px 70px
+              
+
+            .home-cat-icon-top
+                opacity: .5
+                width: 100px
+                height: 100px
+                margin: 0
+        
+        .century-text1, .century-text2,.century-text3 ,.century-text4,.century-text5, .century-text6
+            p 
+              
+                font-size: 1.6rem
+                padding: 10px
+
+        .century-card6, .century-card5, .century-card4 ,.century-card3 ,.century-card2, .century-card1 
+            h4 
+        
+                letter-spacing: .1rem
+            
+                margin-bottom: 3px
+                font-size: 1.6rem
+        
+            h3  
+                font-size: 2.6rem
+                margin-top: 40px
+
+            .century-img 
+                margin-bottom: 100px
+                margin-top: 40px
+            
+            .price
+            
+                width: 60%
+                bottom: 0
+                height: 0px
+                padding: 10px 30px
+                height: auto
+              
+                p 
+                    text-align: center
+                    font-size: 1.3rem
+                    padding: 0px
+                    text-align: left
+                
+                   
+             
+
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        // grid-template-rows: repeat(5, auto)
+        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2" "century-card3 century-text3" " century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 "
+
+        .century-card1
+            grid-area: century-card1
+
+        .century-text1
+            
+            grid-area: century-text1
+           
+        .century-card2
+            grid-area: century-card2
+
+
+        .century-text2
+            grid-area: century-text2
+        
+        .century-card3
+            grid-area: century-card3
+
+        .century-text3
+            grid-area: century-text3
+
+        .century-card4
+            grid-area: century-card4
+
+        .century-text4
+            grid-area: century-text4
+        
+        .century-card5
+            grid-area: century-card5
+
+        .century-text5
+            grid-area: century-text5
+
+        .century-card6
+            grid-area: century-card6
+
+        .century-text6
+            grid-area: century-text6
+        img 
+            margin-bottom: 50px
+            width: 200px
+            height: 200px 
 
     .form-icon
         width: 80px
@@ -119,58 +220,21 @@
         
             grid-area: values-B
 
-    .century-main-wrapper
-        display: grid
-        grid-template-columns: repeat(2, 1fr)
-        // grid-template-rows: repeat(5, auto)
-        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2" "century-card3 century-text3" " century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 "
+    
 
 
 
-        .century-text-top
-            grid-area: century-text-top
+
+
+
+
+
+
+
+
+
+
             
-        .century-card1
-            grid-area: century-card1
-
-        .century-text1
-            
-            grid-area: century-text1
-           
-        .century-card2
-            grid-area: century-card2
-
-
-        .century-text2
-            grid-area: century-text2
-        
-        .century-card3
-            grid-area: century-card3
-
-        .century-text3
-            grid-area: century-text3
-
-        .century-card4
-            grid-area: century-card4
-
-        .century-text4
-            grid-area: century-text4
-        
-        .century-card5
-            grid-area: century-card5
-
-        .century-text5
-            grid-area: century-text5
-
-        .century-card6
-            grid-area: century-card6
-
-        .century-text6
-            grid-area: century-text6
-        img 
-            margin-bottom: 50px
-            width: 200px
-            height: 200px
 
             
     .books-image-wrapper
@@ -256,55 +320,128 @@
             p 
                 font-size: 1.8rem
 
+    .table-wrapper
+    .delivery-caption
+        box-shadow: $shadow
+        background: #fafafa
+        margin: 10px
+       
+        p
+            font-size: 1.8rem
+            padding: 10px
+            text-align: center//
 
+            
+            
+        .delivery-truck-icon
+            width: 90px
+            height: 90px
+            display: block
+            margin: 5px auto
+            opacity: 0.5
 
     table
-        background: blue
+        width: 98%
+    
        
         .kg
-            // padding: 20px
-            // font-size: 1.4rem
+            padding: 10px
+            background: #80bb9b
+  
+            text-transform: uppercase
      
             
 
 
         td
             
-            // padding: 1rem .5rem
-            // display: block
-            // font-size: 1.3rem
+           
             color: #000 
             text-align: center
             border: 1px solid #DEDEDE
+            padding: 10px
             
             
         .eu, .uk,.re,.ue 
-            text-align: center
-            border: 1px solid #DEDEDE
-        .pr, .st
-         
-            border: 1px solid #DEDEDE
+            text-align: left
+            border: 2px solid #DEDEDE
+            padding: 5px
+            background: #bce4ce
+            text-transform: uppercase
+   
 
-            
-            
-            
-        
+
+        .pr, .st
+            padding: 10px
+            border: 2px solid #DEDEDE
+            background:  #bbebd1
+            font-style: italic
+            letter-spacing: .1rem
+           
+          
 
         tr 
        
         
         th 
-       
-            
-            
-            
+            border: 2px solid #DEDEDE
+  
         .premium
             // display: none
         .weight-kg
             //  display: none
     span 
             
-            display: none        
+            display: none  
+
+    .delivery-estimate-p
+        .delivery-package-icon
+            width: 70px
+            height: 70px
+            display: block
+            margin: 5px auto
+            opacity: 0.5
+            padding: 10px
+
+    
+        p 
+            font-size: 1.6rem
+            padding:  10px 50px 20px 50px 
+
+    .countries-list
+   
+        p 
+            line-height: 1.6rem
+        ul
+            padding: 15px
+            display: flex
+           
+
+            li 
+                padding: 20px
+                font-size: 1.4rem
+                
+        img 
+            width: 40px
+            height: 40px
+            padding-right: 6px
+            display: block
+            margin: 0 auto
+       
+
+    .delivery-dispath-p
+
+        img 
+            width: 70px
+            height: 70px
+            padding: 10px
+        p 
+            font-size: 1.6rem
+            padding:  10px 70px 20px 70px 
+          
+       
+
+         
          
 
 .skiplink
