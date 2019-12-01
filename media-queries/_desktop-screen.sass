@@ -1,19 +1,5 @@
 @media only  screen and(min-device-width:1025px)
-    .skiplink 
-        position: absolute
-        left: -10000px
-        padding: 10px
-        font-size: 1.3rem
-        margin-left: 10px
-        margin-top: 100px
-        text-decoration: none
-      
-        color: #fff
-        z-index: 1 
-        &:focus 
-            left: auto
-            top: 0
-            outline: none
+    
          
            
   
@@ -189,6 +175,7 @@
         // .top-buy,.top-sell,.top-img ,.top-img1,.top-img2 
         //     @extend .top1
         .home-img
+
     .century-main-wrapper
         display: grid
         grid-template-columns: repeat(2, 1fr)
@@ -198,13 +185,15 @@
 
         .century-text-top
             grid-area: century-text-top
-            padding: 50px
+          
             p
                 font-size: 2rem
+                
             img 
-                width: 250px
-                height: 300px
-                padding-bottom: 30px
+                width: 120px
+                height: 120px
+                padding: 5px
+           
             h4 
                 font-size: 1.9rem
                 font-style: italic
@@ -240,8 +229,7 @@
         .century-text6
             grid-area: century-text6
             
-        img 
-            margin-bottom: 50px
+     
     /* -----STAR BOOKS IPAD-PRO  MEDIUM SCREENS MEDIA QUERIES----*/
     .books-image-wrapper
         grid-template-rows: repeat(5, 1fr)
@@ -352,6 +340,8 @@
                 margin-bottom: 15px
 
         /*---- END BOOK PAGE IPAD-PRO MEDIA QUERIES ----*/
+
+    
    
 
   
@@ -369,6 +359,123 @@
                     a 
                         color: black
                         font-size: 1.1rem
+    /* ---  STAR DELIVERY PAGE IPAD DESTOP SCREENS -------*/
+
+    .table-wrapper
+    .delivery-caption
+        box-shadow: $shadow
+        background: #fafafa
+        margin: 10px
+        margin-bottom: 20px
+       
+        p
+            font-size: 1.8rem
+            padding: 10px
+            text-align: center
+            margin: 0px 120px
+
+        .delivery-truck-icon
+            width: 120px
+            height: 120px
+            display: block
+            margin: 0 auto
+            opacity: 0.5
+
+    table
+        width: 95%
+    
+
+        .kg
+            padding: 10px
+            background: $defaul-color
+            text-transform: uppercase
+            color: #fff
+            font-size: 1.3rem
+
+
+        td
+            
+           
+            color: #000 
+            text-align: center
+            border: 1px solid #DEDEDE
+            padding: 10px
+            font-size: 1.3rem
+            
+            
+        .eu, .uk,.re,.ue 
+            text-align: left
+            border: 2px solid #DEDEDE
+            padding: 5px
+            background: #bce4ce
+            text-transform: uppercase
+            font-size: 1.3rem
+   
+
+
+        .pr, .st
+            padding: 10px
+            border: 2px solid #DEDEDE
+            background:  #bbebd1
+            font-style: italic
+            letter-spacing: .1rem
+            font-size: 1.4rem
+
+        th 
+            border: 2px solid #DEDEDE
+  
+    span 
+            
+            display: none  
+
+    .delivery-estimate-p
+        .delivery-package-icon
+       
+            width: 100px
+            height: 100px
+            display: block
+            margin: 5px auto
+            opacity: 0.5
+         
+
+    
+        p 
+            font-size: 1.8rem
+            margin: 0px 100px
+            padding: 20px
+
+    .countries-list
+   
+        p 
+            line-height: 1.8rem
+        ul
+            padding: 15px
+            display: flex
+            justify-content: center
+           
+
+            li 
+                padding: 20px
+                font-size: 1.8rem
+               
+                
+        img 
+        
+            padding-right: 6px
+            display: block
+            margin: 0 auto
+       
+
+    .delivery-dispath-p
+
+        img 
+            width: 100px
+            height: 100px
+            padding: 10px
+        p 
+            font-size: 1.8rem
+            padding:  10px 90px 40px 90px 
+    /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/                   
                     
       
     .main-nav 
@@ -412,7 +519,21 @@
         width: 300px
         height: 300px
 
-    
+    .skiplink 
+        position: absolute
+        left: -10000px
+        z-index: 1
+        padding: 10px
+        font-size: 1.3rem
+        margin-left: 10px
+        margin-top: 100px
+        text-decoration: none
+        color: #fff
+
+        // &:focus 
+        //     left: auto
+        //     top: 0
+    //     // outline: none
 
 
     footer
@@ -425,6 +546,7 @@
         
                     font-size: 1.7rem 
                     letter-spacing: .2rem 
+    
     
 
                 

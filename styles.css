@@ -1370,9 +1370,6 @@ footer ul li a {
     font-size: 1.1rem;
     letter-spacing: .2rem;
   }
-  .skiplink {
-    display: none;
-  }
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
@@ -1778,7 +1775,6 @@ footer ul li a {
     display: grid;
     margin: 15px;
     /*---- END BOOK PAGE IPAD-PRO MEDIA QUERIES ----*/
-    /*---- STAR FOOTER  ----*/
   }
   .wrapper-book-base .books-base1, .wrapper-book-base .books-base2 {
     margin: 10px;
@@ -1792,6 +1788,109 @@ footer ul li a {
     height: 110px;
     margin-bottom: 15px;
   }
+  /* ---  STAR DELIVERY PAGE IPAD MEDIUM SCREENS -------*/
+  .delivery-caption {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .delivery-caption p {
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+    margin: 0px 80px;
+  }
+  .delivery-caption .delivery-truck-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  table {
+    width: 95%;
+  }
+  table .kg {
+    padding: 10px;
+    background: #236841;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  table td {
+    color: #000;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  table .eu, table .uk, table .re, table .ue {
+    text-align: left;
+    border: 2px solid #DEDEDE;
+    padding: 5px;
+    background: #bce4ce;
+    text-transform: uppercase;
+  }
+  table .pr, table .st {
+    padding: 10px;
+    border: 2px solid #DEDEDE;
+    background: #bbebd1;
+    font-style: italic;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+  }
+  table th {
+    border: 2px solid #DEDEDE;
+  }
+  span {
+    display: none;
+  }
+  .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 5px auto;
+    opacity: 0.5;
+  }
+  .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
+    font-size: 1.8rem;
+    margin: 0px 100px;
+    padding: 20px;
+  }
+  .countries-list p {
+    line-height: 1.8rem;
+  }
+  .countries-list ul {
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .countries-list ul li {
+    padding: 20px;
+    font-size: 1.8rem;
+  }
+  .countries-list img {
+    padding-right: 6px;
+    display: block;
+    margin: 0 auto;
+  }
+  .delivery-dispath-p img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .delivery-dispath-p p {
+    font-size: 1.8rem;
+    padding: 10px 90px 40px 90px;
+  }
+  /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/
+  /*---- STAR FOOTER  ----*/
   footer ul li {
     padding: 1.3rem;
     border-right: 1px solid #f2f1f1;
@@ -1803,22 +1902,6 @@ footer ul li a {
 }
 
 @media only screen and (min-device-width: 1025px) {
-  .skiplink {
-    position: absolute;
-    left: -10000px;
-    padding: 10px;
-    font-size: 1.3rem;
-    margin-left: 10px;
-    margin-top: 100px;
-    text-decoration: none;
-    color: #fff;
-    z-index: 1;
-  }
-  .skiplink:focus {
-    left: auto;
-    top: 0;
-    outline: none;
-  }
   .form-icon {
     width: 160px;
     height: 140px;
@@ -2006,15 +2089,14 @@ footer ul li a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: century-text-top;
-    padding: 50px;
   }
   .century-main-wrapper .century-text-top p, .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p, .century-main-wrapper .century-card6 p, .century-main-wrapper .century-card5 p, .century-main-wrapper .century-card4 p, .century-main-wrapper .century-card3 p, .century-main-wrapper .century-card2 p, .century-main-wrapper .century-card1 p {
     font-size: 2rem;
   }
   .century-main-wrapper .century-text-top img, .century-main-wrapper .century-text1 img, .century-main-wrapper .century-text2 img, .century-main-wrapper .century-text3 img, .century-main-wrapper .century-text4 img, .century-main-wrapper .century-text5 img, .century-main-wrapper .century-text6 img, .century-main-wrapper .century-card6 img, .century-main-wrapper .century-card5 img, .century-main-wrapper .century-card4 img, .century-main-wrapper .century-card3 img, .century-main-wrapper .century-card2 img, .century-main-wrapper .century-card1 img {
-    width: 250px;
-    height: 300px;
-    padding-bottom: 30px;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
   }
   .century-main-wrapper .century-text-top h4, .century-main-wrapper .century-text1 h4, .century-main-wrapper .century-text2 h4, .century-main-wrapper .century-text3 h4, .century-main-wrapper .century-text4 h4, .century-main-wrapper .century-text5 h4, .century-main-wrapper .century-text6 h4, .century-main-wrapper .century-card6 h4, .century-main-wrapper .century-card5 h4, .century-main-wrapper .century-card4 h4, .century-main-wrapper .century-card3 h4, .century-main-wrapper .century-card2 h4, .century-main-wrapper .century-card1 h4 {
     font-size: 1.9rem;
@@ -2084,9 +2166,6 @@ footer ul li a {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
     grid-area: century-text6;
-  }
-  .century-main-wrapper img {
-    margin-bottom: 50px;
   }
   /* -----STAR BOOKS IPAD-PRO  MEDIUM SCREENS MEDIA QUERIES----*/
   .books-image-wrapper {
@@ -2205,6 +2284,109 @@ footer ul li a {
     color: black;
     font-size: 1.1rem;
   }
+  /* ---  STAR DELIVERY PAGE IPAD DESTOP SCREENS -------*/
+  .delivery-caption {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .delivery-caption p {
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+    margin: 0px 120px;
+  }
+  .delivery-caption .delivery-truck-icon {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  table {
+    width: 95%;
+  }
+  table .kg {
+    padding: 10px;
+    background: #236841;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  table td {
+    color: #000;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+  table .eu, table .uk, table .re, table .ue {
+    text-align: left;
+    border: 2px solid #DEDEDE;
+    padding: 5px;
+    background: #bce4ce;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  table .pr, table .st {
+    padding: 10px;
+    border: 2px solid #DEDEDE;
+    background: #bbebd1;
+    font-style: italic;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+  }
+  table th {
+    border: 2px solid #DEDEDE;
+  }
+  span {
+    display: none;
+  }
+  .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 5px auto;
+    opacity: 0.5;
+  }
+  .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
+    font-size: 1.8rem;
+    margin: 0px 100px;
+    padding: 20px;
+  }
+  .countries-list p {
+    line-height: 1.8rem;
+  }
+  .countries-list ul {
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .countries-list ul li {
+    padding: 20px;
+    font-size: 1.8rem;
+  }
+  .countries-list img {
+    padding-right: 6px;
+    display: block;
+    margin: 0 auto;
+  }
+  .delivery-dispath-p img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  .delivery-dispath-p p {
+    font-size: 1.8rem;
+    padding: 10px 90px 40px 90px;
+  }
+  /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/
   .main-nav li {
     height: 20px;
   }
@@ -2234,6 +2416,17 @@ footer ul li a {
   .top .home-img {
     width: 300px;
     height: 300px;
+  }
+  .skiplink {
+    position: absolute;
+    left: -10000px;
+    z-index: 1;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 100px;
+    text-decoration: none;
+    color: #fff;
   }
   footer ul li {
     padding: 1.3rem;
@@ -2431,26 +2624,19 @@ section .submit-button input {
   border-radius: 20px;
 }
 
+a:focus {
+  outline: #fff dotted 2px;
+  letter-spacing: .1rem;
+}
+
+h3:focus, h4:focus, div:focus, table:focus, select:focus, input[type=submit]:focus, input[type=text]:focus, input[type=email]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
+  outline: #bd4444 dotted 3px;
+  letter-spacing: .1rem;
+}
+
 body {
   background: white;
   line-height: 1.3;
   font-family: 'PT Sans Narrow', sans-serif;
-}
-
-*:focus {
-  outline: none;
-}
-
-input:focus {
-  outline: #0099CC solid 2px;
-}
-
-input[type=submit]:focus {
-  outline: #669900 solid 2px;
-}
-
-a:focus {
-  outline: #fff dotted 2px;
-  letter-spacing: .1rem;
 }
 /*# sourceMappingURL=styles.css.map */
