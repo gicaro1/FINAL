@@ -188,7 +188,8 @@
 
             a
              margin: 0 auto
-  
+
+    /* ----STAR HOME PAGE MEDIA QUERIES IPAD DEVICES----*/
     .cat-1 
         display: grid
         grid-template-columns: repeat(3, 1fr)
@@ -198,30 +199,55 @@
         .top1
         
             grid-area: top1
+            margin: 10px
+            margin: 5 auto
+            padding: 20px
+        .home-img
         
+            padding-top: 20px
+            margin: 0 auto 
+            width: 100%
+        h2 
+            font-size: 2.8rem
+            line-height: 3.4rem
+    
+        
+        h3 
+            font-size: 2rem
+            line-height: 2rem
+            letter-spacing: .2rem
+            margin: 10px 
+            color: $defaul-color
+            // text-transform: uppercase
+        p 
+            margin: 15px
+            font-size: 1.3rem 
+            padding: 0px 30px
+        .list-items
+            text-align: left
+            margin-left: 50px
+            font-size: 1.3rem
 
-        .top-img 
+        .top-img, .top-img1, .top-img2
+            height: 500px
+            display: grid
+            justify-content: center
+     
         
+        .top-img 
             grid-area: top-img
         .top-img1 
-            
             grid-area: top-img1
         .top-img2 
-        
             grid-area: top-img2
     
         .top-buy 
-
             grid-area: top-buy
         .top-sell 
-        
             grid-area: top-sell
         .values-B
-        
             grid-area: values-B
-
-    
-
+    /*---  HOME PAGE IPAD MEDIA QUERIES --- */
 
 
 
@@ -231,94 +257,109 @@
 
 
 
-
-
-
-            
-
-            
+    /* -----STAR BOOKS IPAD MEDIUM SCREENS MEDIA QUERIES----*/
     .books-image-wrapper
-        grid-template-rows: 1fr 1fr 2fr 1fr 
+        grid-template-rows: repeat(5, 1fr)
         
 
         .text-book-cover
             grid-template-rows:  100px  
             display: grid
             align-content: center
-            background: green
+       
             h1 
-                font-size: 5rem
+                font-size: 6rem
                 grid-row-start: 1
                 grid-row-end: -1
                 letter-spacing: .4rem
     .century-sec 
   
-    .cent-box 
-      
-        font-size: 1.8rem
-        line-height: 1.6rem
-  
-
-        height: 90px
+        line-height: 1.7rem
+        height: 190px
+        a
+            font-size: 2rem
   
     .container-pics
         
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         grid-template-areas: "para-con para-con para-con"
-        grid-gap: 20px
-        margin: 20px
+        grid-gap: 5px
+      
         .para-con 
             grid-area: para-con
+
+            p 
+                font-size: 1.6rem
+                margin: 10px 30px
          
             h3 
              
                 font-size: 1.7rem
                 font-weight: 900
+
+        .icon-book-fist-p
         
-        img 
-            padding: 10px
-            width: 200px
-            height: 200px
-            border-radius: 50%
+            margin: 10px auto
+            width: 100px
+            height: 100px
+            padding: 20px
+        
+        .book-img-box 
+            
+            margin: 5px
+        
+            .books-img 
+            
+                width: 180px
+                height: 180px
 
-
-        // .icon-book-fist-p
-        //     display: block
-      
-        //     width: 80px
-        //     height: 80px
-        //     padding: 20px
-        //     opacity: .5
-      
-        .books-img 
-                padding: 20px 0px
+     
     .contaniner-meddle-section
         .box-middle
-            box-shadow: $shadow
-            background: #fafafa
-            margin: 20px
 
             .icon-books
            
-                width: 80px
-                height: 80px
-                padding: 20px
-                margin: auto
-                display: block
-                opacity: .5
+                width: 110px
+                height: 110px
+                padding: 10px
+            
             p
                 font-size: 1.8rem
-                text-align: center
+       
                 padding: 10px
 
         
     .wrapper-book-base
+
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-        display: grid
+        display: grid 
+        margin: 15px
+
         .books-base1 
+            margin: 10px
             p 
                 font-size: 1.8rem
+                height: 350px
+         
+
+            .icon-base
+                width: 100px
+                height: 100px
+                padding: 20px
+               
+              
+                    
+    /* ----- END BOOKS PAGE MEDIA QUERIES IPAD MEDIUM SCREEN ----*/
+
+
+
+
+
+
+
+
+    /* ---  STAR DELIVERY PAGE IPAD MEDIUM SCREENS -------*/
 
     .table-wrapper
     .delivery-caption
@@ -341,16 +382,14 @@
             opacity: 0.5
 
     table
-        width: 98%
+        width: 95%
     
-       
+
         .kg
             padding: 10px
-            background: #80bb9b
-  
+            background: $defaul-color
             text-transform: uppercase
-     
-            
+            color: #fff
 
 
         td
@@ -437,13 +476,25 @@
             padding: 10px
         p 
             font-size: 1.6rem
-            padding:  10px 70px 20px 70px 
+            padding:  10px 70px 40px 70px 
           
-       
+    .main-wrapper
+    
+    footer
+        ul 
+            li 
+                padding: 1.3rem
+                border-right: 1px solid rgb(242, 241, 241)
+    
+            a
+            
+                font-size: 1.1rem 
+                letter-spacing: .2rem      
 
-         
-         
 
-.skiplink
-    display: none
+    .skiplink
+        display: none
+    
+
+           
           

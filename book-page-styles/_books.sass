@@ -4,19 +4,15 @@
     .cover-img 
         background-position: center
         background-size: cover
-        width: 100%
-        height: 100%
+    
         position: absolute
         object-fit: cover
         background-repeat: no-repeat
     
 
-    /*-------- top cover image ---------*/
 .books-image-wrapper
     display: grid
     grid-template-rows: repeat(5, 1fr)
-    
-    height: 84vh
     overflow-y: hidden
     position: relative
 
@@ -35,10 +31,8 @@ h1
     display: grid
     align-content: center
     position: relative
-    // letter-spacing: .4rem
-    // padding: 20px
     margin: 0 auto
-    font-size: 5rem
+ 
     font-family: paris
     
  
@@ -46,18 +40,17 @@ h1
 .century-sec 
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-    padding-bottom: 10px
-    grid-gap: 10px
+
+      
  
     
 
     .cent-box 
-        // grid-column-start: 1
-        // grid-column-end: -1 
+       
         box-shadow: $shadow
      
         background: #fafafa
-        height: 90px
+     
         display: grid
         align-content: center
         text-align: center
@@ -66,51 +59,36 @@ h1
         color: black
 
 .container-pics
-       
-        // display: grid
-        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-        // grid-gap: 20px
 
         .para-con 
 
-            
-            // grid-column-start: 1
-            // grid-column-end: -1 
             box-shadow: $shadow
             background: #fafafa
-            margin: 20px
+           
             p 
-                padding: 20px 
+         
                 text-align: center
-                font-size: 1.3rem
+          
 
         .book-img-box
-            // grid-column-start: 1
-            // grid-column-end: -1 
+        
             background: #fafafa
             text-align: center
             color: black
             box-shadow: $shadow
-            margin-bottom: 20px
-            // margin: 20px
-       
+           
+  
         
             h3 
                 padding: 10px
-                font-size: 1.6rem
-                font-weight: 900
                 letter-spacing: .2rem
 
         .icon-book-fist-p
             display: block
-            margin: 10px auto
-            width: 80px
-            height: 80px
-            padding: 20px
             opacity: .5
       
         .books-img 
-                padding: 20px 0px
+              
                 border-radius: 50%
 
 .contaniner-meddle-section
@@ -118,19 +96,17 @@ h1
         background: green
         box-shadow: $shadow
         background: #fafafa
-        margin: 20px
+        
         .icon-books
             
-            width: 80px
-            height: 80px
-            padding: 20px
+         
             margin: auto
             display: block
             opacity: .5
         p
-                font-size: 1.3rem
+               
                 text-align: center
-                padding: 10px
+               
 // 
 
 
@@ -142,18 +118,15 @@ h1
         background: green
         box-shadow: $shadow
         background: #fafafa
-        margin: 20px
-        padding: 30px
+   
         text-align: center
         
         p
             
-        .icon-base
-            width: 80px
-            height: 80px
+        .icon-base     
             margin: 0 auto
             opacity: .5
-            padding: 20px
+      
     .books-base2
         @extend .books-base1
              

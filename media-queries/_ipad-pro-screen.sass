@@ -108,9 +108,45 @@
 
         .top1
             grid-area: top1
+            margin: 10px
+            margin: 5 auto
+            padding: 20px
+
+        .home-img
+        
+            padding-top: 20px
+            margin: 0 auto 
+            width: 100%
+        h2 
+            font-size: 3.5rem
+            padding: 10px
+            line-height: 3.4rem
+    
+        
+        h3 
+            font-size: 2.5rem
+            line-height: 2.5rem
+            letter-spacing: .2rem
+            margin: 10px 
+            justify-content: center
+            align-items: center
+          
+            // text-transform: uppercase
+        p 
+            margin: 15px
+            font-size: 1.6rem 
+            padding: 0px 60px
+        .list-items
+            text-align: left
+            margin-left: 50px
+            font-size: 1.3rem
+
+        .top-img, .top-img1, .top-img2
+            height: 350px
+            display: grid
+            justify-content: center
    
         .top-img 
-        
             grid-area: top-img
         .top-img1 
             
@@ -136,84 +172,118 @@
 
             width: 200px
             height: 200px
-           
-        
 
+    /*---- 19TH CENTURY PAGE IPAD-PROD MEDIA QUERIES ------*/
     .century-main-wrapper
+        .century-text-top
+            grid-area: century-text-top
+
+
+            p
+                font-size: 2rem
+                padding: 10px 70px
+              
+
+            .home-cat-icon-top
+                opacity: .5
+                width: 130px
+                height: 130px
+                margin: 0
+        
+        .century-text1, .century-text2,.century-text3 ,.century-text4,.century-text5, .century-text6
+            p 
+              
+                // font-size: 1.6rem
+                padding: 10px
+
+        .century-card6, .century-card5, .century-card4 ,.century-card3 ,.century-card2, .century-card1 
+            h4 
+        
+                letter-spacing: .1rem
+                margin-bottom: 3px
+                font-size: 2rem
+        
+            h3  
+                font-size: 3.5rem
+                margin-top: 40px
+
+            .century-img 
+                margin-bottom: 100px
+                margin-top: 40px
+            
+            .price
+            
+                width: 60%
+                bottom: 0
+                height: 0px
+                padding: 10px 30px
+                height: auto
+              
+                p 
+                    text-align: center
+                    font-size: 1.6rem
+                    padding: 0px
+                    text-align: left
+                
+                   
+             
+
         display: grid
         grid-template-columns: repeat(2, 1fr)
         // grid-template-rows: repeat(5, auto)
-        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2 " "century-card3 century-text3" "century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 "
-    
-
-        .century-text-top
-            grid-area: century-text-top
-            padding: 50px
-            p
-                font-size: 2rem
-            img 
-                width: 250px
-                height: 300px
-                padding-bottom: 30px
-            h4 
-                font-size: 1.9rem
-                font-style: italic
-                letter-spacing: .1rem
-                margin-bottom: 3px
-            h3  
-                font-size: 3rem
+        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2" "century-card3 century-text3" " century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 "
 
         .century-card1
             grid-area: century-card1
 
         .century-text1
+            
             grid-area: century-text1
-        
+           
         .century-card2
             grid-area: century-card2
+
+
         .century-text2
             grid-area: century-text2
+        
         .century-card3
             grid-area: century-card3
+
         .century-text3
             grid-area: century-text3
+
         .century-card4
             grid-area: century-card4
+
         .century-text4
             grid-area: century-text4
+        
         .century-card5
             grid-area: century-card5
+
         .century-text5
             grid-area: century-text5
+
         .century-card6
             grid-area: century-card6
+
         .century-text6
             grid-area: century-text6
-            
         img 
             margin-bottom: 50px
-       
-            
-            
-
+            width: 200px
+            height: 200px       
+        
 
     .toggle-wrapper
         display: none
-    .book-container
-       
-        display: grid
-        grid-template-columns: repeat(3, 1fr)
-        grid-auto-rows: 1fr
-        grid-gap: 10px
-        padding-bottom: 10px
 
-        .book-img-box
-            background: #fafafa
-            text-align: center
-            color: black
-            box-shadow: $shadow
 
+
+    /* -----STAR BOOKS IPAD-PRO  MEDIUM SCREENS MEDIA QUERIES----*/
     .books-image-wrapper
+        grid-template-rows: repeat(5, 1fr)
 
         .text-book-cover
             grid-template-rows:  100px  
@@ -221,15 +291,13 @@
             align-content: center
             
             h1 
-                font-size: 7rem
+                font-size: 9rem
                 grid-row-start: 1
                 grid-row-end: -1
                 letter-spacing: .4rem
-        
-
+                height: 150px
         .books-img 
-        
-           
+    
                 padding: 20px
 
     
@@ -237,61 +305,52 @@
         display: grid
         grid-template-columns: repeat(4, 1fr)
         padding-bottom: 10px
-        grid-column-gap: 10px
-    .cent-box 
-        box-shadow: $shadow
-        background: #fafafa
-        font-size: 1.8rem
-        line-height: 1.5rem
+        grid-column-gap: 5px
+        
+     
+        a 
+            font-size: 2.4rem
+            padding: 30px 10px
+            line-height: 2.3rem
 
-        height: 90px
-   
     .container-pics
        
         display: grid
         grid-template-columns: repeat(3, 1fr)
         grid-gap: 20px
+ 
 
         .para-con 
 
             grid-column-start: 1
             grid-column-end: -1 
-            box-shadow: $shadow
-            background: #fafafa
-            margin: 20px
+            height: auto
+
             p 
-                padding: 20px 
+                padding: 0px  60px
                 text-align: center
-                font-size: 1.8rem
-        img 
-            padding: 10px
-            width: 200px
-            height: 200px
-            border-radius: 50%
+                font-size: 2rem
+                padding: 10px
+            h3 
+             
+                font-size: 1.7rem
+                font-weight: 900
+
+        .icon-book-fist-p
+
+            width: 110px
+            height: 110px
+            // padding: 20px
 
         .book-img-box
-            background: #fafafa
-            text-align: center
-            color: black
-            box-shadow: $shadow
+            
             margin-bottom: 20px
 
             .books-img
                 padding-bottom: 20px
-            // margin: 20px
-        
-            h3 
-                padding: 10px
-                font-size: 1.9rem
-                font-weight: 900
+         
+    
 
-        .icon-book-fist-p
-            display: block
-            margin: 10px auto
-            width: 80px
-            height: 80px
-            padding: 20px
-            opacity: .5
 
     
 
@@ -308,49 +367,47 @@
           
             .icon-books
     
-                width: 80px
-                height: 80px
+                width: 110px
+                height: 110px
                 padding: 20px
-                margin: auto
-                display: block
-                opacity: .5
+              
             p
                 font-size: 1.8rem
-                text-align: center
-                padding: 10px
-        
-            .list-items
-           
-             font-size: 1.5rem
-           
- 
+                margin: 0px 60px
+                padding: 20px
 
-
-       
     .wrapper-book-base
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
         display: grid
-        
+        margin: 15px
 
         .books-base1
-       
+            margin: 10px
             p 
-        
-                text-align: center
-                font-size: 1.8rem
 
-        .icon-base
-        
-            width: 80px
-            height: 80px
-            opacity: .5
+                font-size: 1.8rem
+                height: 350px
+
+            .icon-base
+            
+                width: 110px
+                height: 110px
+                margin-bottom: 15px
+
+        /*---- END BOOK PAGE IPAD-PRO MEDIA QUERIES ----*/
+   
+            
+        /*---- STAR FOOTER  ----*/
     footer
-     ul  
-        grid-template-columns:  repeat(auto-fit, minmax(50px, 1fr))
-        li 
-            align-content: center
-            a 
-             font-size: 1.5rem
+        ul 
+            li 
+                padding: 1.3rem
+                border-right: 1px solid rgb(242, 241, 241)
+            
+                a
+        
+                    font-size: 1.7rem 
+                    letter-spacing: .2rem 
         
 
 
