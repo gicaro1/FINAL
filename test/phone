@@ -1,31 +1,31 @@
 @media only  screen and(max-device-width:414px)
- 
 
-            
-     
-           
-  
     /*-- CENTURY PAGE STAR--*/
 
     .century-text-top
         
         p
+            font-size: $Phone-paragraph
            
         .home-cat-icon-top
             opacity: .5
-            width: 70px
-            height: 70px
+            width: 60px
+            height: 60px
             margin: 10px
+            
             
     .century-card6, .century-card5, .century-card4 ,.century-card3 ,.century-card2, .century-card1 
         h4 
     
             letter-spacing: .1rem
             margin-bottom: 3px
-            font-size: 1.3rem
+            font-size: $h3Phone-tittle
     
         h3  
-            font-size: 2rem
+            font-size: $h4Phone-tittle
+            
+            
+
         
         .price
         
@@ -37,8 +37,10 @@
                 
                 display: block
                 margin: 0 auto
+                font-size: $phone-list
+             
                 &:first-child
-                    margin-left: -38px
+                    margin-left: -28px
               
          
       
@@ -315,79 +317,82 @@ h1
                 padding: 2px  0px 1px
                 margin: 2px 10px -10px 
                 color: black
-.cat-0
-    .top1
-        grid-area: top1
-    
-        padding: 20px
-        text-align: center
-        box-shadow: $shadow
-        background: #fafafa
-        margin: 10px
-
-        h2 
-            font-size: 2rem
-            padding: 10px
-            line-height: 1.3rem
-            background: $mainColor
-            color: #fff
-            font-family: paris
-            box-shadow: $shadow
-            display: flex
-            justify-content: center
-            align-items: center
-            padding: 10px 120px
-            
-
-        p 
-            margin: 15px
-            font-size: $Ipad-paragraph 
-            padding: 10px 10px
         
 .cat-1
+  
    
- 
-    .top-buy,.top-sell,.top-img ,.top-img1,.top-img2 
+
+    .top1
         margin: 10px
-        box-shadow: $shadow
-        
-        
+        margin: 5 auto
+        padding: 20px
        
-        // overflow: hidden
+
+    .top-buy,.top-sell,.top-img ,.top-img1,.top-img2 
+        @extend .top1
+        overflow: hidden
   
        
     .home-img
+        width: 150px
+        height: 150px
+        box-sizing: border-box
        
-        padding-top: 20px
-        margin: 0 auto 
-        width: 100%
-     
     
     h2 
-        font-size: 2.9rem
+        font-size: $h3Phone-tittle
         line-height: 3.4rem
     
         
     h3 
-        font-size: 2.5rem
+        font-size: $h4Phone-tittle
         margin: 10px 
         color: $defaul-color
-        line-height: 2.3rem
+        line-height: 1.5rem
         
         // text-transform: uppercase
     p 
         margin: 15px
-        font-size: 1.3rem 
+        font-size: $Phone-paragraph
 
     .list-items
         text-align: left
         margin-left: 50px
         font-size: 1rem
     .top-img, .top-img1, .top-img2
-        height: 400px
-        img
-            width: 260px
-            height: 280px
+        height:  0 auto
+
+
+
+    .top-buy
+        position: relative
+        
+       
+       
+    
+    .list-items
+        margin-left: -20px
+        margin-right: 20px
+
+     
+        padding-left: 1.5em
+        text-indent: -1.5em
+   
+        li
+            font-size: $phone-list
+            
+          
+            padding-left: 1.5em
+            text-indent: -1.5em
+            padding-top: 5px
+            height: 100%
+            &:before 
+                content: "📚"
+                padding-right: 3px
+  
+       
+        
+      
 
     /* -----STAR BOOKS PAGE SMALL SCREENS MEDIA QUERIES----*/
 .main-wrapper
@@ -412,7 +417,7 @@ h1
     
 h1  
    
-    font-size: 3rem
+    font-size: $h1phone-cover
 
 .century-sec 
   
@@ -420,7 +425,7 @@ h1
     grid-gap: 10px
     margin: 10px
     a   
-        font-size: 1rem
+        font-size: $h4Phone-tittle
  
     .cent-box 
     
@@ -436,7 +441,7 @@ h1
             p 
                 padding: 20px 
            
-                font-size: 1.3rem
+                font-size: $Phone-paragraph
 
         .book-img-box
         
@@ -447,18 +452,21 @@ h1
         
             h3 
           
-                font-size: 1.6rem
+                font-size: $h4Phone-tittle
 
         .icon-book-fist-p
         
             margin: 10px auto
-            width: 80px
-            height: 80px
+            width: 100px
+            height: 100px
             padding: 20px
+            box-sizing: border-box
   
       
         .books-img 
                 padding: 20px 0px
+                box-sizing: border-box
+
             
 
 .contaniner-meddle-section
@@ -466,12 +474,13 @@ h1
      
         margin: 20px
         .icon-books
-            
-            width: 80px
-            height: 80px
+            margin: 10px auto
+            width: 100px
+            height: 100px
             padding: 20px
+            box-sizing: border-box
         p
-            font-size: 1.3rem
+            font-size:  $Phone-paragraph
             padding: 10px
 // 
 
@@ -485,14 +494,17 @@ h1
         p
             
         .icon-base
-            width: 80px
-            height: 80px
+            margin: 10px auto
+            width: 100px
+            height: 100px
             padding: 20px
-    .books-base2
-        @extend .books-base1
+            box-sizing: border-box
+    .books-base2, .book-base2
+        p 
+            font-size:  $Phone-paragraph
 
-    .icon-base
-       @extend .icon-base
+        
+
     /*--- END BOOKS PAGE MEDIA QUERIES SMALL SCREENS---*/
         
    

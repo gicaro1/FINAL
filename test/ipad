@@ -1,32 +1,26 @@
 
 @media only  screen and(min-device-width:415px) and (max-device-width:768px)
-
-    /*------ ====== 19TH CENTURY PAGE STYLES IPAD ======= ---------*/
-
     .century-main-wrapper
         .century-text-top
             grid-area: century-text-top
 
+
             p
                 font-size: $Ipad-paragraph
-                width: 550px
-                display:  block
-                margin: 0 auto 
+                padding: 10px 70px
               
+
             .home-cat-icon-top
                 opacity: .5
-                width: 60px
-                height: 60px
-                margin: 10px
-  
+                width: 70px
+                height: 70px
+                margin: 0
+        
         .century-text1, .century-text2,.century-text3 ,.century-text4,.century-text5, .century-text6
             p 
               
-                font-size: $Ipad-paragraph
-                width: 300px
-                line-height: 2rem
-
-             
+                // font-size: $Ipad-paragraph
+                padding: 10px
 
         .century-card6, .century-card5, .century-card4 ,.century-card3 ,.century-card2, .century-card1 
             h4 
@@ -34,33 +28,31 @@
                 letter-spacing: .1rem
                 margin-bottom: 3px
                 font-size: $h4Ipad-tittle
-        
+                
+            
             h3  
+                
                 font-size: $h3Ipad-tittle
                 margin-top: 40px
 
             .century-img 
-                margin: 10PX
-                width: 150px
-                height: 150px 
+          
             
             .price
             
                 width: 60%
                 bottom: 0
                 height: 0px
-
+                padding: 10px 30px
+                height: auto
+              
                 p 
-                    font-size: $Ipad-list
                     text-align: center
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    width: 40%
-                    
-                    .century-star
-                        font-size: .8rem
-                        opacity: 9
+                    font-size: $Ipad-list
+                    padding: 0px
+                    &:first-child
+                        margin-left: -44px
+       
                 
                    
              
@@ -94,55 +86,25 @@
             grid-area: century-card6
         .century-text6
             grid-area: century-text6
+        img 
+    
+            width: 150px
+            height: 150px 
 
-
-
-
-
-    /*-------======= CONTACT PAGE STYLES IPAD ========----------*/
-
-    .contact-wrapper-details
-        display: grid 
-        margin: 10px
-        grid-template-columns: 1fr 1fr 1fr
-        grid-template-areas: "contact-p contact-p details-container"    
-        
-        .contact-p
-            grid-area: contact-p
-            font-size: $Ipad-paragraph
-            padding: 0px 70px 
-            margin-bottom: 10px
-            padding-bottom: 20px
-          
-            .form-icon
-                width: 50px
-                height: 50px
-                margin-top: 20px
-     
-                opacity: .3
-                box-sizing: border-box
-
-        .details-container 
-            grid-area: details-container 
-            margin-bottom: 10px
-            
-
-            .contac-email-logo
-         
-                width: 50px
-                height: 50px
-                margin-top: 20px
-                opacity: .4
-            
-
-
-            .email-text, .phone
-                p
-                    font-size: $Ipad-paragraph
-                
-                    
-
-            
+    .form-icon
+        width: 80px
+        height: 70px
+        padding: 10px
+        opacity: .3
+    .contact-p
+        font-size: 1.9rem
+        margin: 20px
+        padding: 20px
+        .contac-email-logo
+            width: 80px
+            height: 70px
+            padding: 10px
+            opacity: .4
     .google-maps 
         position: relative
         padding-bottom: 40%
@@ -150,7 +112,7 @@
         height: 0
         overflow: hidden
         box-shadow: $shadow
-    
+     
 
     form    
         grid-template-columns: 1fr 1fr
@@ -158,58 +120,40 @@
         margin: 0 auto
         margin-bottom: 15px
         grid-template-rows:  1fr 1fr 1fr 
-        grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy"
-
-        legend
-            font-size: $h4Ipad-tittle 
+        grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy" 
 
         .details 
-            label
-                font-size: $Ipad-paragraph
-                padding-left: 16px
-                
-
-            input 
-                display: block
-                margin: 0 auto
             
-            // grid-column: 1/2
-            // grid-row: 1/4
+            grid-column: 1/2
+            grid-row: 1/4
             // grid-area: details
-
         .centuries 
-            // grid-column: 2/3
-            // grid-row: 1/2
+            grid-column: 2/3
+            grid-row: 1/2
             // grid-area: centuries 
 
         .yes-and-no
             .control-group 
                 label
-                    font-size: $Ipad-paragraph
-                   
-            
+                    font-size: 1.5rem
+              
         .sell-and-buy
             .control-group 
-        
+         
                 label
-                    font-size: $Ipad-paragraph
+                    font-size: 1.5rem
         legend
-            font-size: $Ipad-paragraph
+            font-size: 1.6rem
 
     .submit-button
         input
-            // grid-column: 1/-1
-            // grid-row: 4/5
-            font-size: $Ipad-list
+            grid-column: 1/-1
+            grid-row: 4/5
+            font-size: 1.6rem
             width: 60%
-    /*-------======== END CONTACT STYELS =====-----*/
-
-
-
-
 
    
-    /*------===== NAVIGATIO MENU IPAD STYLES =======-------*/
+
 
     .toggle-wrapper
         display: none
@@ -233,118 +177,65 @@
 
             a
              margin: 0 auto
-    /*-------======== END CONTACT STYELS =====-----*/
 
-
-
-
-
-
-    /* ---- HOMEPAGE STYLES MEDIA QUERIES IPAD ----*/
-    .cat-0
-        .top1
-            grid-area: top1
-            display: flex
-            padding: 20px
-            text-align: center
-            box-shadow: $shadow
-            background: #fafafa
-            margin: 20px
-
-            h2 
-                font-size: 2rem
-                padding: 10px
-                line-height: 1.3rem
-                background: $mainColor
-                color: #fff
-                font-family: paris
-                box-shadow: $shadow
-                display: flex
-                justify-content: center
-                align-items: center
-                
-
-            p 
-                margin: 15px
-                font-size: $Ipad-paragraph 
-                padding: 0px 60px
-
+    /* ----STAR HOME PAGE MEDIA QUERIES IPAD DEVICES----*/
     .cat-1 
         display: grid
         grid-template-columns: repeat(3, 1fr)
         // grid-template-rows: repeat(5, auto)
         grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B"
 
+        .top1
         
-
+            grid-area: top1
+            margin: 10px
+            margin: 5 auto
+            padding: 20px
+        .home-img
+        
+            padding-top: 20px
+            margin: 0 auto 
+            width: 100%
+        h2 
+            font-size: $h3Ipad-tittle
+            line-height: 3rem
+    
+        
+        h3 
+            font-size: $h4Ipad-tittle
+            line-height: 2rem
+            letter-spacing: .2rem
+            margin: 10px 
+            color: $defaul-color
+            // text-transform: uppercase
+        p 
+            margin: 15px
+            font-size: $Ipad-paragraph
+            padding: 0px 30px
 
         .top-img, .top-img1, .top-img2
-            display: flex
-            flex-direction: column
-            height: auto
-            display: block
-
-
-            h3 
-                font-size: $h4Ipad-tittle
-                line-height: 1.7rem
-                letter-spacing: .2rem
+          
+            display: grid
+            justify-content: center
+     
         
-
-            img 
-                width: 150px
-                height: 150px
-            
-             
-                   
-            
         .top-img 
             grid-area: top-img
         .top-img1 
             grid-area: top-img1
         .top-img2 
             grid-area: top-img2
+    
         .top-buy 
             grid-area: top-buy
-
-        
-            p
-                  font-size: $Ipad-paragraph 
-                  padding: 10px 100px
-
-           
-            .list-items
-
-                margin-left: 70px
-                padding-left: 1.5em
-                text-indent: -1.5em
-                padding-bottom: 40px
-                font-size: $h3Ipad-tittle
-                // line-height: 1rem
-                // letter-spacing: .1rem
-           
-   
-            li
-                font-size: $Desktop-list
-                padding-left: 1.5em
-                text-indent: -1.5em
-               
-               
-                &:before 
-                    content: "📚"
-                    padding-right: 3px
-
         .top-sell 
             grid-area: top-sell
         .values-B
             grid-area: values-B
-
-            h3 
-                font-size: $h3Ipad-tittle
-
-            p 
-                
-                font-size: $Ipad-paragraph
+        .list-items
+      
+       
+            font-size: $Ipad-list
     /*---  HOME PAGE IPAD MEDIA QUERIES --- */
 
 
@@ -355,10 +246,9 @@
 
 
 
-    /* -----STAR BOOKS IPAD  STYLES MEDIA QUERIES----*/
+    /* -----STAR BOOKS IPAD MEDIUM SCREENS MEDIA QUERIES----*/
     .books-image-wrapper
         grid-template-rows: repeat(5, 1fr)
-        // height: 70%
         
 
         .text-book-cover
@@ -367,7 +257,7 @@
             align-content: center
        
             h1 
-                font-size: 6rem
+                font-size: $h3Ipad-tittle
                 grid-row-start: 1
                 grid-row-end: -1
                 letter-spacing: .4rem
@@ -376,7 +266,7 @@
         line-height: 1.7rem
         height: 190px
         a
-            font-size:  $h4Ipad-tittle
+            font-size: $Ipad-paragraph
   
     .container-pics
         
@@ -390,27 +280,23 @@
 
             p 
                 font-size: $Ipad-paragraph
-                padding: 15px  60px
                 margin: 10px 30px
          
-          
-        
+            h3 
+             
+                font-size: $h4Ipad-tittle
+           
 
         .icon-book-fist-p
         
-            margin: 0px auto
-            width: 60px
-            height: 60px
-         
+            margin: 10px auto
+            width: 100px
+            height: 100px
+            padding: 20px
         
         .book-img-box 
             
             margin: 5px
-            h3 
-             
-                font-size: $h4Ipad-tittle
-                color: $mainColor
-                line-height: 1.7rem
         
             .books-img 
             
@@ -422,17 +308,16 @@
         .box-middle
 
             .icon-books
-           
-                width: 60px
-                height: 60px
-                padding: 10px
+                margin: 10px auto
+                width: 100px
+                height: 100px
+                padding: 20px
+                // @extend  .icon-book-fist-p
             
             p
-                font-size: $Ipad-paragraph
-                padding: 10px 120px
-                margin-bottom: 20px
-
-      
+                font-size:  $Ipad-paragraph
+                padding: 10px
+                margin: 10px 100px
 
         
     .wrapper-book-base
@@ -444,13 +329,13 @@
         .books-base1 
             margin: 10px
             p 
-                font-size: $Ipad-paragraph
-       
+                font-size:  $Ipad-paragraph
+                height: 150px
          
 
             .icon-base
-                width: 60px
-                height: 60px
+                width: 100px
+                height: 100px
                 padding: 20px
                
               
@@ -582,22 +467,23 @@
         p 
             font-size: 1.6rem
             padding:  10px 70px 40px 70px 
-
-    /*---- FOOTER SECTION STYLES IPAD-----*/        
           
     .main-wrapper
+    
     footer
         ul 
             li 
-               
-
+                padding: 1.3rem
+                border-right: 1px solid rgb(242, 241, 241)
+    
             a
-               
             
-                   
+                font-size: 1.1rem 
+                letter-spacing: .2rem      
 
 
-  
+    // .skiplink
+    //     display: noneÛÛÛÛÛÛÛ
     
 
            

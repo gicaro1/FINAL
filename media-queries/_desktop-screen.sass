@@ -1,26 +1,48 @@
 @media only  screen and(min-device-width:1025px)
-    
-         
-           
-  
 
-
-    .form-icon
-        width: 160px
-        height: 140px
-        padding: 10px
-        opacity: .3
-    .contact-p
-        font-size: 2.5rem
-        padding: 70px
+    /*------ CONTACT PAGE  DESKTOP MEDIA QUERIES ---------*/
+    .contact-wrapper-details
+        display: grid 
+        grid-gap: 5px
         margin: 10px
-        .contac-email-logo
-            width: 160px
-            height: 140px
-            padding: 10px
-            opacity: .4
+      
+       
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-areas: "contact-p contact-p details-container "
+        
+    
+        .contact-p
+            grid-area: contact-p
+          
+            font-size: $Desktop-paragraph
+            padding: 0px 120px
+            margin: 5px
+         
+     
+
+            .form-icon
+                padding: 10px
+                width: 60px
+                height: 60px
+                opacity: .3
+        
+        .details-container 
+            grid-area: details-container 
+            margin: 5px
+
+           
+            .contac-email-logo
+                padding: 20px
+                width: 60px
+                height: 60px
+                opacity: .4
+            .emil-text, .phone
+                p
+                    font-size: $Desktop-paragraph
+
 
     .google-maps 
+        
         position: relative
         padding-bottom: 23%
         margin: 20px
@@ -31,54 +53,53 @@
 
     form    
         grid-template-columns: 1fr 1fr
-        grid-gap: 30px
-        margin: 0 auto
+        grid-gap: 10px
+        margin: 30px auto
+        box-sizing: border-box
         // margin-bottom: 15px
-        grid-template-rows:  1fr 1fr 1fr 
+        grid-template-rows:  1fr 1fr 
         grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy"
 
-
-
-
         legend
-            font-size: 2.5rem
+            font-size: $Desktop-paragraph
 
         .details 
             label
-                font-size: 1.6rem
-            
-            grid-column: 1/2
-            grid-row: 1/4
+                font-size: $Desktop-paragraph
+                // display: block
+                padding-left: 27px
 
-            
-            // grid-area: details
+            input 
+                display: block
+                margin: 0 auto 
+
         .centuries 
-            grid-column: 2/3
-            grid-row: 1/2
-            // grid-area: centuries 
+      
+       
 
         .yes-and-no
          
             .control-group 
                 label
-                font-size: 2.2rem
+                font-size: $Desktop-paragraph
          
        
             // grid-area: yes-and-no 
         .sell-and-buy 
             .control-group 
                 label
-                font-size: 2.2rem
+                font-size: $Desktop-paragraph
  
 
     .submit-button
         input
             grid-column: 1/-1
             grid-row: 4/5
-            font-size: 1.5rem
+            font-size: $Desktop-paragraph
             width: 60%
-   
 
+
+    /*------ NAVIGATION DESKTOP MEDIA QUERIES --------*/
       
     .main-wrapper
         .main-nav 
@@ -86,95 +107,156 @@
         
             ul  
                 display: grid
-                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
-                height: 50px
+                grid-template-columns: repeat(auto-fit, minmax(30px, 1fr))
+                height: 40px
+               
                
              
-                
-                align-content: center
             
             li      
            
-             text-decoration: none
-             padding: 5px
-             
-             
-            //     border: black
-            //     text-align: center
-               
+                text-decoration: none
+       
+                font-size: $nav-comm0n-bar
+                display: flex
+                justify-content: center 
+                align-items: center
+         
+           
+                &:hover
+                        background: white
+                        height: 20px
+                        a 
+                            color: black
+            
+            a 
+                text-align: center
+        
 
-            a
-             margin: 0 auto
+        .common-links
+        
+            ul
+                
+            
+            li 
+            
+                &:hover
+                        background: white
+                    
+                        a 
+                            color: black
+                            // font-size: 1.1rem
+
+
+    /*---- END NAVIGATION-------*/ 
+
+
+
+
+
+
+
+    /*----- HOME PAGE DESKTOP MEDIA QUERIES --------*/
+    .video-wrapper 
+  
+        .video-bg
+  
+            // min-height: 40vh
+            // min-width: 100% 
+            // position: absoute
+    .cat-0
+        .top1
+            grid-area: top1
+            display: flex
+            padding: 20px
+            text-align: center
+            box-shadow: $shadow
+            background: #fafafa
+            font-size: $h3Desktop-tittle
+            margin: 20px
+
+            h2 
+                font-size: 2rem
+                padding: 10px
+                line-height: 1.1rem
+                background: $mainColor
+                color: #fff
+                font-family: paris
+                box-shadow: $shadow
+                display: flex
+                justify-content: center
+                align-items: center
+                
+
+            p 
+                margin: 15px
+                font-size: $Desktop-paragraph
+                padding: 0px 150px
+
              
     .cat-1 
         display: grid
         grid-template-columns: repeat(3, 1fr)
-        // grid-template-rows: repeat(5, auto)
         grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B"
 
-        .top1
-            grid-area: top1
-            margin: 10px
-            margin: 5 auto
-            padding: 20px
-        .home-img
+   
+
         
-            padding-top: 20px
-            margin: 0 auto 
-            width: 100%
-        h2 
-            font-size: 4.5rem
-            padding: 10px
-            line-height: 3.4rem
-    
-        
-        h3 
-            font-size: 2.5rem
-            line-height: 2.5rem
-            letter-spacing: .2rem
-            margin: 10px 
-          
-            // text-transform: uppercase
-        p 
-            margin: 15px
-            font-size: 2rem 
-            padding: 0px 80px
-        .list-items
-            text-align: left
-            margin-left: 50px
-            font-size: 1.5rem
             
 
         .top-img, .top-img1, .top-img2
-            height: 500px
-            display: grid
-            justify-content: center
-            img     
-                width: 320px
-                height: 320px
-        
+            height: auto
 
+           
+            .home-img
+                width: 200px
+                height: 200px
+                box-sizing: border-box
+              
+            
         .top-img
             grid-area: top-img
         .top-img1  
             grid-area: top-img1
+
         .top-img2 
             grid-area: top-img2
         .top-buy 
             grid-area: top-buy
+          
+            p 
+            
+            .list-items
+                margin-left: 70px
+                margin-right: 20px
+                padding-left: 1.5em
+                text-indent: -1.5em
+                padding-bottom: 20px
+   
+            li
+                font-size: $Desktop-list
+                padding-left: 1.5em
+                text-indent: -1.5em
+                padding-top: 5px
+                height: 100%
+                &:before 
+                    content: "📚"
+                    padding-right: 3px
+
         .top-sell 
             grid-area: top-sell
         .values-B
-        
             grid-area: values-B
         
-        
-            p 
-            font-size: 1.5rem
+    /*-------END HOME PAGE -------*/
 
-        // .top-buy,.top-sell,.top-img ,.top-img1,.top-img2 
-        //     @extend .top1
-        .home-img
+
+
+
+
+
+      
+    /*-------19TH CENTURY PAGE DESKTOP MEDIA QUERIES  -------*/
 
     .century-main-wrapper
         display: grid
@@ -187,20 +269,70 @@
             grid-area: century-text-top
           
             p
-                font-size: 2rem
-                
-            img 
-                width: 120px
-                height: 120px
-                padding: 5px
-           
+                font-size: $Desktop-paragraph
+                margin: 0 auto
+                width: 550px
+          
+          
+
+            .home-cat-icon-top
+                opacity: .5
+                width: 80px
+                height: 80px
+                padding: 10PX
+        .century-text1, .century-text2,.century-text3 ,.century-text4,.century-text5, .century-text6
+            p 
+                 
+                font-size: $Desktop-paragraph  
+                line-height: 2.5rem
+            
+          
+        .century-card6, .century-card5, .century-card4 ,.century-card3 ,.century-card2, .century-card1
+
             h4 
-                font-size: 1.9rem
+                font-size: $h4Desktop-tittle
                 font-style: italic
                 letter-spacing: .1rem
                 margin-bottom: 3px
             h3  
-                font-size: 3rem
+                font-size: $h3Desktop-tittle
+
+
+            .century-img 
+             
+                width: 150px
+                height: 150px 
+                margin: 0
+
+            .price
+            
+                width: 40%
+                padding: 10px
+                height: 50px
+                overflow: hidden
+               
+              
+                p 
+                
+                    font-size: $Ipad-list
+                    text-align: center
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40%
+                    
+                .century-star
+                    font-size: .8rem
+             
+
+          
+                           
+                     
+
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        // grid-template-rows: repeat(5, auto)
+        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2 " "century-card3 century-text3" "century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 " 
 
         .century-card1
             grid-area: century-card1
@@ -228,6 +360,14 @@
             grid-area: century-card6
         .century-text6
             grid-area: century-text6
+
+
+
+        /*------- 19TH CENTURY PAGE -------*/
+
+
+
+
             
      
     /* -----STAR BOOKS IPAD-PRO  MEDIUM SCREENS MEDIA QUERIES----*/
@@ -238,9 +378,10 @@
             grid-template-rows:  1fr 
             display: grid
             align-content: center
+
             
             h1 
-                font-size: 9rem
+                font-size: 6rem
                 grid-row-start: 1
                 grid-row-end: -1
                 letter-spacing: .4rem
@@ -257,7 +398,7 @@
         
      
         a 
-            font-size: 2.4rem
+            font-size: $h4Desktop-tittle
             padding: 30px 10px
             line-height: 2.3rem
 
@@ -265,7 +406,7 @@
        
         display: grid
         grid-template-columns: repeat(3, 1fr)
-        grid-gap: 20px
+      
  
 
         .para-con 
@@ -277,89 +418,73 @@
             p 
                 padding: 20px  100px
                 text-align: center
-                font-size: 2rem
+                font-size: $Desktop-paragraph
            
            
 
         .icon-book-fist-p
 
-            width: 110px
-            height: 110px
-            // padding: 20px
+            width: 90px
+            height: 90px
+            box-sizing: border-box
+            padding: 10px
 
         .book-img-box
-            
-            margin-bottom: 20px
+            margin: 10px
             h3 
              
-                font-size: 2.5rem
-                line-height: 2.3rem
+                font-size: $h4Desktop-tittle
+                line-height: 2rem
         
-
             .books-img
-                padding-bottom: 20px
-        
-         
+                width: 150px
+                height: 150px
+            
     .contaniner-meddle-section
 
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr))
 
         .box-middle
-            background: green
-            box-shadow: $shadow
-            background: #fafafa
-            margin: 20px
-          
             .icon-books
     
-                width: 110px
-                height: 110px
-                padding: 20px
-              
+                width: 90px
+                height: 90px
+                box-sizing: border-box
+                padding: 10px
             p
-                font-size: 2rem
-                margin: 20px 100px
-                padding: 20px
-
+                font-size: $Desktop-paragraph
+                width: 550px
+                margin: 10px auto
+                padding: 0px
+              
     .wrapper-book-base
 
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
         display: grid
-        margin: 15px
+      
+        .books-base1, .books-base2
+            margin: 5px
 
-        .books-base1
-            margin: 10px
             p 
-
-                font-size: 2rem
-                height: 350px
+                font-size: $Desktop-paragraph
+                width: 550px
+                // box-sizing: border-box
+                margin: 0px auto
+            
             .icon-base
             
-                width: 110px
-                height: 110px
-                margin-bottom: 15px
-
+                width: 90px
+                height: 90px
+                box-sizing: border-box
+                padding: 10px
+    
         /*---- END BOOK PAGE IPAD-PRO MEDIA QUERIES ----*/
 
-    
-   
 
-  
-    .common-links
     
-        
-        ul
-             
-        
-        li 
-          
-            &:hover
-                    background: white
-                    height: 20px
-                    a 
-                        color: black
-                        font-size: 1.1rem
-    /* ---  STAR DELIVERY PAGE IPAD DESTOP SCREENS -------*/
+
+   
+        /* -----STAR DELIVERY PAGE IPAD DESTOP SCREENS -------*/
 
     .table-wrapper
     .delivery-caption
@@ -369,14 +494,15 @@
         margin-bottom: 20px
        
         p
-            font-size: 1.8rem
-            padding: 10px
-            text-align: center
-            margin: 0px 120px
+            font-size: $Desktop-paragraph
+            width: 400px
+            margin: 10px auto
+      
+       
 
         .delivery-truck-icon
-            width: 120px
-            height: 120px
+            width: 50px
+            height: 60px
             display: block
             margin: 0 auto
             opacity: 0.5
@@ -390,7 +516,7 @@
             background: $defaul-color
             text-transform: uppercase
             color: #fff
-            font-size: 1.3rem
+            font-size: $Desktop-paragraph
 
 
         td
@@ -400,7 +526,7 @@
             text-align: center
             border: 1px solid #DEDEDE
             padding: 10px
-            font-size: 1.3rem
+            font-size: $Desktop-list
             
             
         .eu, .uk,.re,.ue 
@@ -409,7 +535,7 @@
             padding: 5px
             background: #bce4ce
             text-transform: uppercase
-            font-size: 1.3rem
+            font-size: $Desktop-paragraph
    
 
 
@@ -419,85 +545,89 @@
             background:  #bbebd1
             font-style: italic
             letter-spacing: .1rem
-            font-size: 1.4rem
+            font-size: $Desktop-paragraph
 
         th 
             border: 2px solid #DEDEDE
   
     span 
             
-            display: none  
+            display: none 
 
-    .delivery-estimate-p
-        .delivery-package-icon
+    .delivery-countries-wrapper
+        display: grid 
+        grid-template-columns: repeat(3, 1fr)
        
-            width: 100px
-            height: 100px
-            display: block
-            margin: 5px auto
-            opacity: 0.5
-         
 
-    
-        p 
-            font-size: 1.8rem
-            margin: 0px 100px
-            padding: 20px
+        .delivery-estimate-p
 
-    .countries-list
-   
-        p 
-            line-height: 1.8rem
-        ul
-            padding: 15px
-            display: flex
-            justify-content: center
-           
+            .delivery-package-icon
 
-            li 
+                width: 50px
+                height: 50px
+                display: block
+                margin: 5px auto
+                opacity: 0.5
+                box-sizing: border-box
+
+            p 
+                font-size: $Desktop-paragraph
+                margin: 0px 100px
                 padding: 20px
-                font-size: 1.8rem
-               
+
+        .countries-list
+    
+            p 
+                line-height: $Desktop-paragraph
+            ul
+                padding: 15px
+                display: flex
+                justify-content: center
+            
+
+                li 
+                    padding: 20px
+                    font-size: $Desktop-list
                 
-        img 
+                    
+            img 
+            
+                padding-right: 6px
+                display: block
+                margin: 0 auto
         
-            padding-right: 6px
-            display: block
-            margin: 0 auto
-       
 
-    .delivery-dispath-p
+        .delivery-dispath-p
 
-        img 
-            width: 100px
-            height: 100px
-            padding: 10px
-        p 
-            font-size: 1.8rem
-            padding:  10px 90px 40px 90px 
-    /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/                   
+            .delivery-time-icon
+                width: 60px
+                height: 60px
+                box-sizing: border-box
+            
+            p 
+                font-size: $Desktop-paragraph
+                padding:  10px 90px 40px 90px 
+
+
+    /*------ END DELIVERY PAGE STYLES ------*/                   
                     
       
-    .main-nav 
+    // .main-nav 
 
-        ul
+    //     ul
            
 
-        li  
-            height: 20px
+    //     li  
+    //         height: 20px
     
-            &:hover
-                    background: white
-                    padding: 10px
-                    a
-                        color: #000
-                     
-           
-                    a 
-                        color: black
-                        font-size: 1.3rem
-                        justify-content: center
-                        text-transform: uppercase
+    //         &:hover
+    //                 background: white
+    //                 padding: 10px
+    //                 a 
+    //                     color: black
+    //                     font-size: 1.3rem
+    //                     justify-content: center
+    //                     text-transform: uppercase
  
 
     
@@ -539,12 +669,9 @@
     footer
         ul 
             li 
-                padding: 1.3rem
-                border-right: 1px solid rgb(242, 241, 241)
-            
-                a
-        
-                    font-size: 1.7rem 
+                
+                border-right: 1px solid rgb(242, 241, 241)          
+                a  
                     letter-spacing: .2rem 
     
     

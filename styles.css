@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'paris';
   src: url("fonts/parisr.eot");
@@ -112,7 +113,7 @@ table {
 }
 
 .main-wrapper .main-nav a {
-  font-size: 1.1rem;
+  font-size: 0.875rem;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
@@ -175,16 +176,19 @@ table {
 .video-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "video-bg";
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "video-bg"  "video-bg";
 }
 
 .video-wrapper .video-bg {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: video-bg;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 50 auto;
   z-index: -2;
 }
 
@@ -210,10 +214,7 @@ table {
 }
 
 .cat-1 .home-img {
-  position: relative;
-  display: block;
   margin: 0 auto;
-  height: auto;
 }
 
 .cat-1 h2 {
@@ -223,11 +224,7 @@ table {
 
 .cat-1 h3 {
   color: #236841;
-}
-
-.cat-1 .list-items {
-  margin-left: 50px;
-  font-size: 1rem;
+  overflow: hidden;
 }
 
 .values-B {
@@ -355,7 +352,7 @@ h1 {
 }
 
 .contaniner-meddle-section .box-middle .icon-books {
-  margin: auto;
+  margin: 0 auto;
   display: block;
   opacity: .5;
 }
@@ -399,7 +396,9 @@ footer ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: .5rem;
   text-align: center;
+  border-right: 1px solid #f2f1f1;
 }
 
 footer ul a {
@@ -408,6 +407,8 @@ footer ul a {
   text-transform: uppercase;
   color: #ddd;
   letter-spacing: .1rem;
+  font-size: 0.875rem;
+  letter-spacing: .2rem;
 }
 
 .century-main-wrapper {
@@ -441,7 +442,6 @@ footer ul a {
 
 .century-main-wrapper .century-text1 .price, .century-main-wrapper .century-text2 .price, .century-main-wrapper .century-text3 .price, .century-main-wrapper .century-text4 .price, .century-main-wrapper .century-text5 .price, .century-main-wrapper .century-text6 .price, .century-main-wrapper .century-card6 .price, .century-main-wrapper .century-card5 .price, .century-main-wrapper .century-card4 .price, .century-main-wrapper .century-card3 .price, .century-main-wrapper .century-card2 .price, .century-main-wrapper .century-card1 .price {
   background: #ece9ec;
-  opacity: .6;
   margin: 0 auto;
 }
 
@@ -449,8 +449,8 @@ footer ul a {
   color: black;
 }
 
-.century-main-wrapper .century-text1 img, .century-main-wrapper .century-text2 img, .century-main-wrapper .century-text3 img, .century-main-wrapper .century-text4 img, .century-main-wrapper .century-text5 img, .century-main-wrapper .century-text6 img, .century-main-wrapper .century-card6 img, .century-main-wrapper .century-card5 img, .century-main-wrapper .century-card4 img, .century-main-wrapper .century-card3 img, .century-main-wrapper .century-card2 img, .century-main-wrapper .century-card1 img {
-  padding: 30px;
+.century-main-wrapper .century-text1 .price .century-star, .century-main-wrapper .century-text2 .price .century-star, .century-main-wrapper .century-text3 .price .century-star, .century-main-wrapper .century-text4 .price .century-star, .century-main-wrapper .century-text5 .price .century-star, .century-main-wrapper .century-text6 .price .century-star, .century-main-wrapper .century-card6 .price .century-star, .century-main-wrapper .century-card5 .price .century-star, .century-main-wrapper .century-card4 .price .century-star, .century-main-wrapper .century-card3 .price .century-star, .century-main-wrapper .century-card2 .price .century-star, .century-main-wrapper .century-card1 .price .century-star {
+  color: #236841;
 }
 
 @media only screen and (max-device-width: 414px) {
@@ -492,7 +492,7 @@ footer ul a {
     padding: 10px;
     opacity: .3;
   }
-  .contact-p, section .details-container {
+  .contact-p {
     background: #fafafa;
     margin: 10px;
     color: black;
@@ -504,10 +504,10 @@ footer ul a {
     font-size: 1.9rem;
     padding: 20px;
   }
-  .contact-p p, section .details-container p {
+  .contact-p p {
     font-size: 1.3rem;
   }
-  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
+  .contact-p .contac-email-logo {
     width: 80px;
     height: 70px;
     padding: 10px;
@@ -721,18 +721,51 @@ h1 {
   color: black;
 }
 
+.cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
+  grid-area: top1;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  background: #fafafa;
+  margin: 10px;
+}
+
+.cat-0 .top1 h2, .cat-0 .cat-1 .top-buy h2, .cat-1 .cat-0 .top-buy h2, .cat-0 .cat-1 .top-sell h2, .cat-1 .cat-0 .top-sell h2, .cat-0 .cat-1 .top-img h2, .cat-1 .cat-0 .top-img h2, .cat-0 .cat-1 .top-img1 h2, .cat-1 .cat-0 .top-img1 h2, .cat-0 .cat-1 .top-img2 h2, .cat-1 .cat-0 .top-img2 h2 {
+  font-size: 2rem;
+  padding: 10px;
+  line-height: 1.3rem;
+  background: #236841;
+  color: #fff;
+  font-family: paris;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 120px;
+}
+
+.cat-0 .top1 p, .cat-0 .cat-1 .top-buy p, .cat-1 .cat-0 .top-buy p, .cat-0 .cat-1 .top-sell p, .cat-1 .cat-0 .top-sell p, .cat-0 .cat-1 .top-img p, .cat-1 .cat-0 .top-img p, .cat-0 .cat-1 .top-img1 p, .cat-1 .cat-0 .top-img1 p, .cat-0 .cat-1 .top-img2 p, .cat-1 .cat-0 .top-img2 p {
+  margin: 15px;
+  font-size: 1.0625rem;
+  padding: 10px 10px;
+}
+
 .cat-1 {
   /* -----STAR BOOKS PAGE SMALL SCREENS MEDIA QUERIES----*/
 }
 
-.cat-1 .top1, .cat-1 .top-buy, .cat-1 .top-sell, .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-  margin: 10px;
-  margin: 5 auto;
-  padding: 20px;
-}
-
 .cat-1 .top-buy, .cat-1 .top-sell, .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-  overflow: hidden;
+  margin: 10px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
 }
 
 .cat-1 .home-img {
@@ -881,6 +914,7 @@ footer ul li a {
 }
 
 @media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
+  /*------ ====== 19TH CENTURY PAGE STYLES IPAD ======= ---------*/
   .century-main-wrapper {
     display: -ms-grid;
     display: grid;
@@ -895,44 +929,58 @@ footer ul li a {
     grid-area: century-text-top;
   }
   .century-main-wrapper .century-text-top p, .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p, .century-main-wrapper .century-card6 p, .century-main-wrapper .century-card5 p, .century-main-wrapper .century-card4 p, .century-main-wrapper .century-card3 p, .century-main-wrapper .century-card2 p, .century-main-wrapper .century-card1 p {
-    font-size: 1.6rem;
-    padding: 10px 70px;
+    font-size: 1.0625rem;
+    width: 550px;
+    display: block;
+    margin: 0 auto;
   }
   .century-main-wrapper .century-text-top .home-cat-icon-top, .century-main-wrapper .century-text1 .home-cat-icon-top, .century-main-wrapper .century-text2 .home-cat-icon-top, .century-main-wrapper .century-text3 .home-cat-icon-top, .century-main-wrapper .century-text4 .home-cat-icon-top, .century-main-wrapper .century-text5 .home-cat-icon-top, .century-main-wrapper .century-text6 .home-cat-icon-top, .century-main-wrapper .century-card6 .home-cat-icon-top, .century-main-wrapper .century-card5 .home-cat-icon-top, .century-main-wrapper .century-card4 .home-cat-icon-top, .century-main-wrapper .century-card3 .home-cat-icon-top, .century-main-wrapper .century-card2 .home-cat-icon-top, .century-main-wrapper .century-card1 .home-cat-icon-top {
     opacity: .5;
-    width: 100px;
-    height: 100px;
-    margin: 0;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
   }
   .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p {
-    font-size: 1.6rem;
-    padding: 10px;
+    font-size: 1.0625rem;
+    width: 300px;
+    line-height: 2rem;
   }
   .century-main-wrapper .century-card6 h4, .century-main-wrapper .century-card5 h4, .century-main-wrapper .century-card4 h4, .century-main-wrapper .century-card3 h4, .century-main-wrapper .century-card2 h4, .century-main-wrapper .century-card1 h4 {
     letter-spacing: .1rem;
     margin-bottom: 3px;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
   }
   .century-main-wrapper .century-card6 h3, .century-main-wrapper .century-card5 h3, .century-main-wrapper .century-card4 h3, .century-main-wrapper .century-card3 h3, .century-main-wrapper .century-card2 h3, .century-main-wrapper .century-card1 h3 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     margin-top: 40px;
   }
   .century-main-wrapper .century-card6 .century-img, .century-main-wrapper .century-card5 .century-img, .century-main-wrapper .century-card4 .century-img, .century-main-wrapper .century-card3 .century-img, .century-main-wrapper .century-card2 .century-img, .century-main-wrapper .century-card1 .century-img {
-    margin-bottom: 100px;
-    margin-top: 40px;
+    margin: 10PX;
+    width: 150px;
+    height: 150px;
   }
   .century-main-wrapper .century-card6 .price, .century-main-wrapper .century-card5 .price, .century-main-wrapper .century-card4 .price, .century-main-wrapper .century-card3 .price, .century-main-wrapper .century-card2 .price, .century-main-wrapper .century-card1 .price {
     width: 60%;
     bottom: 0;
     height: 0px;
-    padding: 10px 30px;
-    height: auto;
   }
   .century-main-wrapper .century-card6 .price p, .century-main-wrapper .century-card5 .price p, .century-main-wrapper .century-card4 .price p, .century-main-wrapper .century-card3 .price p, .century-main-wrapper .century-card2 .price p, .century-main-wrapper .century-card1 .price p {
+    font-size: 0.875rem;
     text-align: center;
-    font-size: 1.3rem;
-    padding: 0px;
-    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+  }
+  .century-main-wrapper .century-card6 .price p .century-star, .century-main-wrapper .century-card5 .price p .century-star, .century-main-wrapper .century-card4 .price p .century-star, .century-main-wrapper .century-card3 .price p .century-star, .century-main-wrapper .century-card2 .price p .century-star, .century-main-wrapper .century-card1 .price p .century-star {
+    font-size: .8rem;
+    opacity: 9;
   }
   .century-main-wrapper .century-card1 {
     -ms-grid-row: 2;
@@ -994,27 +1042,47 @@ footer ul li a {
     -ms-grid-column: 1;
     grid-area: century-text6;
   }
-  .century-main-wrapper img {
-    margin-bottom: 50px;
-    width: 200px;
-    height: 200px;
+  /*-------======= CONTACT PAGE STYLES IPAD ========----------*/
+  .contact-wrapper-details {
+    display: -ms-grid;
+    display: grid;
+    margin: 10px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "contact-p contact-p details-container";
   }
-  .form-icon {
-    width: 80px;
-    height: 70px;
-    padding: 10px;
+  .contact-wrapper-details .contact-p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact-p;
+    font-size: 1.0625rem;
+    padding: 0px 70px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  .contact-wrapper-details .contact-p .form-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
     opacity: .3;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  .contact-p, section .details-container {
-    font-size: 1.9rem;
-    margin: 20px;
-    padding: 20px;
+  .contact-wrapper-details .details-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: details-container;
+    margin-bottom: 10px;
   }
-  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
-    width: 80px;
-    height: 70px;
-    padding: 10px;
+  .contact-wrapper-details .details-container .contac-email-logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
     opacity: .4;
+  }
+  .contact-wrapper-details .details-container .email-text p, .contact-wrapper-details .details-container .phone p {
+    font-size: 1.0625rem;
   }
   .google-maps {
     position: relative;
@@ -1035,39 +1103,32 @@ footer ul li a {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy";
   }
-  form .details {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1/4;
+  form legend {
+    font-size: 1.75rem;
   }
-  form .centuries {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
+  form .details label {
+    font-size: 1.0625rem;
+    padding-left: 16px;
+  }
+  form .details input {
+    display: block;
+    margin: 0 auto;
   }
   form .yes-and-no .control-group label {
-    font-size: 1.5rem;
+    font-size: 1.0625rem;
   }
   form .sell-and-buy .control-group label {
-    font-size: 1.5rem;
+    font-size: 1.0625rem;
   }
   form legend {
-    font-size: 1.6rem;
+    font-size: 1.0625rem;
   }
   .submit-button input {
-    grid-column: 1/-1;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-    font-size: 1.6rem;
+    font-size: 0.875rem;
     width: 60%;
   }
+  /*-------======== END CONTACT STYELS =====-----*/
+  /*------===== NAVIGATIO MENU IPAD STYLES =======-------*/
   .toggle-wrapper {
     display: none;
   }
@@ -1091,7 +1152,47 @@ footer ul li a {
   .main-wrapper .main-nav a {
     margin: 0 auto;
   }
-  /* ----STAR HOME PAGE MEDIA QUERIES IPAD DEVICES----*/
+  /*-------======== END CONTACT STYELS =====-----*/
+  /* ---- HOMEPAGE STYLES MEDIA QUERIES IPAD ----*/
+  .cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: top1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+    margin: 20px;
+  }
+  .cat-0 .top1 h2, .cat-0 .cat-1 .top-buy h2, .cat-1 .cat-0 .top-buy h2, .cat-0 .cat-1 .top-sell h2, .cat-1 .cat-0 .top-sell h2, .cat-0 .cat-1 .top-img h2, .cat-1 .cat-0 .top-img h2, .cat-0 .cat-1 .top-img1 h2, .cat-1 .cat-0 .top-img1 h2, .cat-0 .cat-1 .top-img2 h2, .cat-1 .cat-0 .top-img2 h2 {
+    font-size: 2rem;
+    padding: 10px;
+    line-height: 1.3rem;
+    background: #236841;
+    color: #fff;
+    font-family: paris;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cat-0 .top1 p, .cat-0 .cat-1 .top-buy p, .cat-1 .cat-0 .top-buy p, .cat-0 .cat-1 .top-sell p, .cat-1 .cat-0 .top-sell p, .cat-0 .cat-1 .top-img p, .cat-1 .cat-0 .top-img p, .cat-0 .cat-1 .top-img1 p, .cat-1 .cat-0 .top-img1 p, .cat-0 .cat-1 .top-img2 p, .cat-1 .cat-0 .top-img2 p {
+    margin: 15px;
+    font-size: 1.0625rem;
+    padding: 0px 60px;
+  }
   .cat-1 {
     display: -ms-grid;
     display: grid;
@@ -1099,48 +1200,25 @@ footer ul li a {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B";
   }
-  .cat-1 .top1, .cat-1 .top-buy, .cat-1 .top-sell, .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: top1;
-    margin: 10px;
-    margin: 5 auto;
-    padding: 20px;
-  }
-  .cat-1 .home-img {
-    padding-top: 20px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .cat-1 h2 {
-    font-size: 2.8rem;
-    line-height: 3.4rem;
-  }
-  .cat-1 h3 {
-    font-size: 2rem;
-    line-height: 2rem;
-    letter-spacing: .2rem;
-    margin: 10px;
-    color: #236841;
-  }
-  .cat-1 p {
-    margin: 15px;
-    font-size: 1.3rem;
-    padding: 0px 30px;
-  }
-  .cat-1 .list-items {
-    text-align: left;
-    margin-left: 50px;
-    font-size: 1.3rem;
-  }
   .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-    height: 500px;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    display: block;
+  }
+  .cat-1 .top-img h3, .cat-1 .top-img1 h3, .cat-1 .top-img2 h3 {
+    font-size: 1.75rem;
+    line-height: 1.7rem;
+    letter-spacing: .2rem;
+  }
+  .cat-1 .top-img img, .cat-1 .top-img1 img, .cat-1 .top-img2 img {
+    width: 150px;
+    height: 150px;
   }
   .cat-1 .top-img {
     -ms-grid-row: 2;
@@ -1163,6 +1241,26 @@ footer ul li a {
     -ms-grid-column-span: 3;
     grid-area: top-buy;
   }
+  .cat-1 .top-buy p {
+    font-size: 1.0625rem;
+    padding: 10px 100px;
+  }
+  .cat-1 .top-buy .list-items {
+    margin-left: 70px;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  .cat-1 .top-buy li {
+    font-size: 0.875rem;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+  }
+  .cat-1 .top-buy li:before {
+    content: "📚";
+    padding-right: 3px;
+  }
   .cat-1 .top-sell {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
@@ -1175,8 +1273,14 @@ footer ul li a {
     -ms-grid-column-span: 3;
     grid-area: values-B;
   }
+  .cat-1 .values-B h3 {
+    font-size: 2.5rem;
+  }
+  .cat-1 .values-B p {
+    font-size: 1.0625rem;
+  }
   /*---  HOME PAGE IPAD MEDIA QUERIES --- */
-  /* -----STAR BOOKS IPAD MEDIUM SCREENS MEDIA QUERIES----*/
+  /* -----STAR BOOKS IPAD  STYLES MEDIA QUERIES----*/
   .books-image-wrapper {
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
@@ -1201,7 +1305,7 @@ footer ul li a {
     height: 190px;
   }
   .century-sec a {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .container-pics {
     display: -ms-grid;
@@ -1218,34 +1322,36 @@ footer ul li a {
     grid-area: para-con;
   }
   .container-pics .para-con p {
-    font-size: 1.6rem;
+    font-size: 1.0625rem;
+    padding: 15px  60px;
     margin: 10px 30px;
   }
-  .container-pics .para-con h3 {
-    font-size: 1.7rem;
-    font-weight: 900;
-  }
   .container-pics .icon-book-fist-p {
-    margin: 10px auto;
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+    margin: 0px auto;
+    width: 60px;
+    height: 60px;
   }
   .container-pics .book-img-box {
     margin: 5px;
   }
+  .container-pics .book-img-box h3 {
+    font-size: 1.75rem;
+    color: #236841;
+    line-height: 1.7rem;
+  }
   .container-pics .book-img-box .books-img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
   .contaniner-meddle-section .box-middle .icon-books {
-    width: 110px;
-    height: 110px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
   }
   .contaniner-meddle-section .box-middle p {
-    font-size: 1.8rem;
-    padding: 10px;
+    font-size: 1.0625rem;
+    padding: 10px 120px;
+    margin-bottom: 20px;
   }
   .wrapper-book-base {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
@@ -1258,12 +1364,11 @@ footer ul li a {
     margin: 10px;
   }
   .wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p {
-    font-size: 1.8rem;
-    height: 350px;
+    font-size: 1.0625rem;
   }
   .wrapper-book-base .books-base1 .icon-base, .wrapper-book-base .books-base2 .icon-base {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     padding: 20px;
   }
   /* ----- END BOOKS PAGE MEDIA QUERIES IPAD MEDIUM SCREEN ----*/
@@ -1362,33 +1467,48 @@ footer ul li a {
     font-size: 1.6rem;
     padding: 10px 70px 40px 70px;
   }
-  footer ul li {
-    padding: 1.3rem;
-    border-right: 1px solid #f2f1f1;
-  }
-  footer ul a {
-    font-size: 1.1rem;
-    letter-spacing: .2rem;
-  }
+  /*---- FOOTER SECTION STYLES IPAD-----*/
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  .form-icon {
-    width: 140px;
-    height: 110px;
+  /*-------======= CONTACT PAGE STYLES IPAD ========----------*/
+  .contact-wrapper-details {
+    display: -ms-grid;
+    display: grid;
+    margin: 10px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "contact-p contact-p details-container";
+  }
+  .contact-wrapper-details .contact-p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact-p;
+    font-size: 1.0625rem;
+    padding: 0px 120px 30px 120px;
+    margin: 5px;
+  }
+  .contact-wrapper-details .contact-p .form-icon {
+    width: 60px;
+    height: 60px;
     padding: 10px;
     opacity: .3;
   }
-  .contact-p, section .details-container {
-    font-size: 2.5rem;
-    padding: 70px;
-    margin: 10px;
+  .contact-wrapper-details .details-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: details-container;
+    margin: 5px;
   }
-  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
-    width: 140px;
-    height: 110px;
-    padding: 10px;
+  .contact-wrapper-details .details-container .contac-email-logo {
+    padding: 20px;
+    width: 60px;
+    height: 60px;
     opacity: .4;
+  }
+  .contact-wrapper-details .details-container .emil-text p, .contact-wrapper-details .details-container .phone p {
+    font-size: 1.0625rem;
   }
   .google-maps {
     position: relative;
@@ -1403,25 +1523,22 @@ footer ul li a {
   form {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 10px;
     margin: 0 auto;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy";
   }
   form legend {
-    font-size: 2.5rem;
-  }
-  form .details {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1/4;
+    font-size: 1.75rem;
   }
   form .details label {
-    font-size: 1.6rem;
+    font-size: 1.0625rem;
+    padding-left: 22px;
+  }
+  form .details input {
+    display: block;
+    margin: 0 auto;
   }
   form .centuries {
     -ms-grid-column: 2;
@@ -1432,17 +1549,17 @@ footer ul li a {
     grid-row: 1/2;
   }
   form .yes-and-no .control-group {
-    font-size: 2.2rem;
+    font-size: 1.0625rem;
   }
   form .sell-and-buy .control-group {
-    font-size: 2.2rem;
+    font-size: 1.0625rem;
   }
   .submit-button input {
     grid-column: 1/-1;
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
-    font-size: 1.5rem;
+    font-size: 1.0625rem;
     width: 60%;
   }
   .main-wrapper .main-nav ul {
@@ -1462,37 +1579,34 @@ footer ul li a {
   .main-wrapper .main-nav a {
     margin: 0 auto;
   }
-  .cat-1 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B";
-  }
-  .cat-1 .top1, .cat-1 .top-buy, .cat-1 .top-sell, .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
+  /*---- HOME PAGE STYLES IPAD-PRO-------*/
+  .cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: top1;
-    margin: 10px;
-    margin: 5 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 20px;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+    margin: 20px;
   }
-  .cat-1 .home-img {
-    padding-top: 20px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .cat-1 h2 {
-    font-size: 3.5rem;
+  .cat-0 .top1 h2, .cat-0 .cat-1 .top-buy h2, .cat-1 .cat-0 .top-buy h2, .cat-0 .cat-1 .top-sell h2, .cat-1 .cat-0 .top-sell h2, .cat-0 .cat-1 .top-img h2, .cat-1 .cat-0 .top-img h2, .cat-0 .cat-1 .top-img1 h2, .cat-1 .cat-0 .top-img1 h2, .cat-0 .cat-1 .top-img2 h2, .cat-1 .cat-0 .top-img2 h2 {
+    font-size: 2rem;
     padding: 10px;
-    line-height: 3.4rem;
-  }
-  .cat-1 h3 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: .2rem;
-    margin: 10px;
+    line-height: 1.1rem;
+    background: #236841;
+    color: #fff;
+    font-family: paris;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1500,18 +1614,30 @@ footer ul li a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .cat-1 p {
+  .cat-0 .top1 p, .cat-0 .cat-1 .top-buy p, .cat-1 .cat-0 .top-buy p, .cat-0 .cat-1 .top-sell p, .cat-1 .cat-0 .top-sell p, .cat-0 .cat-1 .top-img p, .cat-1 .cat-0 .top-img p, .cat-0 .cat-1 .top-img1 p, .cat-1 .cat-0 .top-img1 p, .cat-0 .cat-1 .top-img2 p, .cat-1 .cat-0 .top-img2 p {
     margin: 15px;
-    font-size: 1.6rem;
+    font-size: 1.0625rem;
     padding: 0px 60px;
   }
-  .cat-1 .list-items {
-    text-align: left;
-    margin-left: 50px;
-    font-size: 1.3rem;
+  .cat-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B";
+  }
+  .cat-1 h3 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    padding: 10px;
+  }
+  .cat-1 p {
+    margin: 15px;
+    font-size: 1.0625rem;
+    padding: 0px 60px;
   }
   .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-    height: 350px;
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -1539,6 +1665,26 @@ footer ul li a {
     -ms-grid-column-span: 3;
     grid-area: top-buy;
   }
+  .cat-1 .top-buy .list-items {
+    margin-left: 70px;
+    margin-right: 20px;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+  .cat-1 .top-buy li {
+    font-size: 0.875rem;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    padding-top: 5px;
+    height: 100%;
+  }
+  .cat-1 .top-buy li:before {
+    content: "📚";
+    padding-right: 3px;
+  }
   .cat-1 .top-sell {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
@@ -1551,10 +1697,6 @@ footer ul li a {
     -ms-grid-column-span: 3;
     grid-area: values-B;
     font-size: 1.5rem;
-  }
-  .cat-1 .home-img {
-    width: 200px;
-    height: 200px;
   }
   /*---- 19TH CENTURY PAGE IPAD-PROD MEDIA QUERIES ------*/
   .century-main-wrapper {
@@ -1571,43 +1713,57 @@ footer ul li a {
     grid-area: century-text-top;
   }
   .century-main-wrapper .century-text-top p, .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p, .century-main-wrapper .century-card6 p, .century-main-wrapper .century-card5 p, .century-main-wrapper .century-card4 p, .century-main-wrapper .century-card3 p, .century-main-wrapper .century-card2 p, .century-main-wrapper .century-card1 p {
-    font-size: 2rem;
-    padding: 10px 70px;
+    font-size: 1.0625rem;
+    width: 550px;
+    margin: 0 auto;
   }
   .century-main-wrapper .century-text-top .home-cat-icon-top, .century-main-wrapper .century-text1 .home-cat-icon-top, .century-main-wrapper .century-text2 .home-cat-icon-top, .century-main-wrapper .century-text3 .home-cat-icon-top, .century-main-wrapper .century-text4 .home-cat-icon-top, .century-main-wrapper .century-text5 .home-cat-icon-top, .century-main-wrapper .century-text6 .home-cat-icon-top, .century-main-wrapper .century-card6 .home-cat-icon-top, .century-main-wrapper .century-card5 .home-cat-icon-top, .century-main-wrapper .century-card4 .home-cat-icon-top, .century-main-wrapper .century-card3 .home-cat-icon-top, .century-main-wrapper .century-card2 .home-cat-icon-top, .century-main-wrapper .century-card1 .home-cat-icon-top {
     opacity: .5;
-    width: 130px;
-    height: 130px;
-    margin: 0;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
   }
   .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p {
-    padding: 10px;
+    font-size: 1.0625rem;
+    width: 350px;
+    line-height: 2rem;
   }
   .century-main-wrapper .century-card6 h4, .century-main-wrapper .century-card5 h4, .century-main-wrapper .century-card4 h4, .century-main-wrapper .century-card3 h4, .century-main-wrapper .century-card2 h4, .century-main-wrapper .century-card1 h4 {
     letter-spacing: .1rem;
     margin-bottom: 3px;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .century-main-wrapper .century-card6 h3, .century-main-wrapper .century-card5 h3, .century-main-wrapper .century-card4 h3, .century-main-wrapper .century-card3 h3, .century-main-wrapper .century-card2 h3, .century-main-wrapper .century-card1 h3 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-top: 40px;
   }
   .century-main-wrapper .century-card6 .century-img, .century-main-wrapper .century-card5 .century-img, .century-main-wrapper .century-card4 .century-img, .century-main-wrapper .century-card3 .century-img, .century-main-wrapper .century-card2 .century-img, .century-main-wrapper .century-card1 .century-img {
-    margin-bottom: 100px;
-    margin-top: 40px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
   }
   .century-main-wrapper .century-card6 .price, .century-main-wrapper .century-card5 .price, .century-main-wrapper .century-card4 .price, .century-main-wrapper .century-card3 .price, .century-main-wrapper .century-card2 .price, .century-main-wrapper .century-card1 .price {
     width: 60%;
     bottom: 0;
-    height: 0px;
-    padding: 10px 30px;
-    height: auto;
+    height: 60px;
   }
   .century-main-wrapper .century-card6 .price p, .century-main-wrapper .century-card5 .price p, .century-main-wrapper .century-card4 .price p, .century-main-wrapper .century-card3 .price p, .century-main-wrapper .century-card2 .price p, .century-main-wrapper .century-card1 .price p {
+    font-size: 0.875rem;
     text-align: center;
-    font-size: 1.6rem;
-    padding: 0px;
-    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+  }
+  .century-main-wrapper .century-card6 .price p .century-star, .century-main-wrapper .century-card5 .price p .century-star, .century-main-wrapper .century-card4 .price p .century-star, .century-main-wrapper .century-card3 .price p .century-star, .century-main-wrapper .century-card2 .price p .century-star, .century-main-wrapper .century-card1 .price p .century-star {
+    font-size: .8rem;
+    opacity: 9;
   }
   .century-main-wrapper .century-card1 {
     -ms-grid-row: 2;
@@ -1669,15 +1825,10 @@ footer ul li a {
     -ms-grid-column: 1;
     grid-area: century-text6;
   }
-  .century-main-wrapper img {
-    margin-bottom: 50px;
-    width: 200px;
-    height: 200px;
-  }
   .toggle-wrapper {
     display: none;
   }
-  /* -----STAR BOOKS IPAD-PRO  MEDIUM SCREENS MEDIA QUERIES----*/
+  /* -----STAR BOOKS IPAD-PRO  STYLES MEDIA QUERIES----*/
   .books-image-wrapper {
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
@@ -1691,7 +1842,7 @@ footer ul li a {
         align-content: center;
   }
   .books-image-wrapper .text-book-cover h1 {
-    font-size: 9rem;
+    font-size: 7rem;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: -1;
@@ -1710,7 +1861,7 @@ footer ul li a {
     grid-column-gap: 5px;
   }
   .century-sec a {
-    font-size: 2.4rem;
+    font-size: 1.75rem;
     padding: 30px 10px;
     line-height: 2.3rem;
   }
@@ -1719,33 +1870,32 @@ footer ul li a {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
   }
   .container-pics .para-con {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: -1;
-    height: auto;
   }
   .container-pics .para-con p {
-    padding: 0px  60px;
+    padding: 15px  60px;
     text-align: center;
-    font-size: 2rem;
-    padding: 10px;
+    font-size: 1.0625rem;
   }
-  .container-pics .para-con h3 {
-    font-size: 1.7rem;
-    font-weight: 900;
+  .container-pics .para-con .books-img {
+    width: 150px;
+    height: 150px;
   }
   .container-pics .icon-book-fist-p {
-    width: 110px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
   }
   .container-pics .book-img-box {
-    margin-bottom: 20px;
+    margin: 10px;
   }
-  .container-pics .book-img-box .books-img {
-    padding-bottom: 20px;
+  .container-pics .book-img-box h3 {
+    font-size: 2.5rem;
+    color: #236841;
+    line-height: 2.2rem;
   }
   .contaniner-meddle-section {
     -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
@@ -1759,14 +1909,14 @@ footer ul li a {
     margin: 20px;
   }
   .contaniner-meddle-section .box-middle .icon-books {
-    width: 110px;
-    height: 110px;
-    padding: 20px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
   }
   .contaniner-meddle-section .box-middle p {
-    font-size: 1.8rem;
-    margin: 0px 60px;
-    padding: 20px;
+    font-size: 1.0625rem;
+    margin: 0px 140px;
+    padding-bottom: 30px;
   }
   .wrapper-book-base {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
@@ -1780,13 +1930,11 @@ footer ul li a {
     margin: 10px;
   }
   .wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p {
-    font-size: 1.8rem;
-    height: 350px;
+    font-size: 1.0625rem;
   }
   .wrapper-book-base .books-base1 .icon-base, .wrapper-book-base .books-base2 .icon-base {
-    width: 110px;
-    height: 110px;
-    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
   }
   /* ---  STAR DELIVERY PAGE IPAD MEDIUM SCREENS -------*/
   .delivery-caption {
@@ -1797,14 +1945,14 @@ footer ul li a {
     margin-bottom: 20px;
   }
   .delivery-caption p {
-    font-size: 1.8rem;
+    font-size: 1.0625rem;
     padding: 10px;
     text-align: center;
-    margin: 0px 80px;
+    margin: 0px 160px;
   }
   .delivery-caption .delivery-truck-icon {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     display: block;
     margin: 0 auto;
     opacity: 0.5;
@@ -1824,22 +1972,24 @@ footer ul li a {
     text-align: center;
     border: 1px solid #DEDEDE;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.0625rem;
   }
   table .eu, table .uk, table .re, table .ue {
     text-align: left;
     border: 2px solid #DEDEDE;
     padding: 5px;
-    background: #bce4ce;
+    background: #175c37;
     text-transform: uppercase;
+    color: #fff;
   }
   table .pr, table .st {
     padding: 10px;
     border: 2px solid #DEDEDE;
     background: #bbebd1;
+    color: #236841;
     font-style: italic;
     letter-spacing: .1rem;
-    font-size: 1.2rem;
+    font-size: 1.0625rem;
   }
   table th {
     border: 2px solid #DEDEDE;
@@ -1847,23 +1997,27 @@ footer ul li a {
   span {
     display: none;
   }
-  .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
-    width: 80px;
-    height: 80px;
+  .delivery-countries-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .delivery-countries-wrapper .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
+    width: 70px;
+    height: 70px;
     display: block;
     margin: 5px auto;
     opacity: 0.5;
   }
-  .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
-    font-size: 1.8rem;
-    margin: 0px 100px;
+  .delivery-countries-wrapper .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
+    font-size: 1.0625rem;
     padding: 20px;
   }
-  .countries-list p {
-    line-height: 1.8rem;
+  .delivery-countries-wrapper .countries-list p {
+    line-height: 1.4rem;
   }
-  .countries-list ul {
-    padding: 15px;
+  .delivery-countries-wrapper .countries-list ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1871,53 +2025,64 @@ footer ul li a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .countries-list ul li {
-    padding: 20px;
-    font-size: 1.8rem;
-  }
-  .countries-list img {
-    padding-right: 6px;
-    display: block;
-    margin: 0 auto;
-  }
-  .delivery-dispath-p img {
-    width: 80px;
-    height: 80px;
+  .delivery-countries-wrapper .countries-list ul li {
     padding: 10px;
+    font-size: 0.875rem;
   }
-  .delivery-dispath-p p {
-    font-size: 1.8rem;
-    padding: 10px 90px 40px 90px;
+  .delivery-countries-wrapper .delivery-dispath-p img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 5px auto;
+    opacity: 0.5;
+  }
+  .delivery-countries-wrapper .delivery-dispath-p p {
+    font-size: 1.0625rem;
+    padding: 0px 20px 10px 20px;
   }
   /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/
-  /*---- STAR FOOTER  ----*/
-  footer ul li {
-    padding: 1.3rem;
-    border-right: 1px solid #f2f1f1;
-  }
-  footer ul li a {
-    font-size: 1.7rem;
-    letter-spacing: .2rem;
-  }
 }
 
 @media only screen and (min-device-width: 1025px) {
-  .form-icon {
-    width: 160px;
-    height: 140px;
+  /*------ CONTACT PAGE  DESKTOP MEDIA QUERIES ---------*/
+  .contact-wrapper-details {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 5px;
+    margin: 10px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "contact-p contact-p details-container ";
+  }
+  .contact-wrapper-details .contact-p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact-p;
+    font-size: 1.3125rem;
+    padding: 0px 120px;
+    margin: 5px;
+  }
+  .contact-wrapper-details .contact-p .form-icon {
     padding: 10px;
+    width: 60px;
+    height: 60px;
     opacity: .3;
   }
-  .contact-p, section .details-container {
-    font-size: 2.5rem;
-    padding: 70px;
-    margin: 10px;
+  .contact-wrapper-details .details-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: details-container;
+    margin: 5px;
   }
-  .contact-p .contac-email-logo, section .details-container .contac-email-logo {
-    width: 160px;
-    height: 140px;
-    padding: 10px;
+  .contact-wrapper-details .details-container .contac-email-logo {
+    padding: 20px;
+    width: 60px;
+    height: 60px;
     opacity: .4;
+  }
+  .contact-wrapper-details .details-container .emil-text p, .contact-wrapper-details .details-container .phone p {
+    font-size: 1.3125rem;
   }
   .google-maps {
     position: relative;
@@ -1931,63 +2096,117 @@ footer ul li a {
   form {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    margin: 0 auto;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 30px auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "details centuries"  "details yes-and-no" "details sell-and-buy";
   }
   form legend {
-    font-size: 2.5rem;
-  }
-  form .details {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1/4;
+    font-size: 1.3125rem;
   }
   form .details label {
-    font-size: 1.6rem;
+    font-size: 1.3125rem;
+    padding-left: 27px;
   }
-  form .centuries {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
+  form .details input {
+    display: block;
+    margin: 0 auto;
   }
   form .yes-and-no .control-group {
-    font-size: 2.2rem;
+    font-size: 1.3125rem;
   }
   form .sell-and-buy .control-group {
-    font-size: 2.2rem;
+    font-size: 1.3125rem;
   }
   .submit-button input {
     grid-column: 1/-1;
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
-    font-size: 1.5rem;
+    font-size: 1.3125rem;
     width: 60%;
   }
+  /*------ NAVIGATION DESKTOP MEDIA QUERIES --------*/
   .main-wrapper .main-nav ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(50px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    height: 50px;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -ms-grid-columns: (minmax(30px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    height: 40px;
   }
   .main-wrapper .main-nav li {
     text-decoration: none;
-    padding: 5px;
+    font-size: 0.875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-wrapper .main-nav li:hover {
+    background: white;
+    height: 20px;
+  }
+  .main-wrapper .main-nav li:hover a {
+    color: black;
   }
   .main-wrapper .main-nav a {
-    margin: 0 auto;
+    text-align: center;
+  }
+  .main-wrapper .common-links li:hover {
+    background: white;
+  }
+  .main-wrapper .common-links li:hover a {
+    color: black;
+  }
+  /*---- END NAVIGATION-------*/
+  /*----- HOME PAGE DESKTOP MEDIA QUERIES --------*/
+  .cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: top1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    background: #fafafa;
+    font-size: 3rem;
+    margin: 20px;
+  }
+  .cat-0 .top1 h2, .cat-0 .cat-1 .top-buy h2, .cat-1 .cat-0 .top-buy h2, .cat-0 .cat-1 .top-sell h2, .cat-1 .cat-0 .top-sell h2, .cat-0 .cat-1 .top-img h2, .cat-1 .cat-0 .top-img h2, .cat-0 .cat-1 .top-img1 h2, .cat-1 .cat-0 .top-img1 h2, .cat-0 .cat-1 .top-img2 h2, .cat-1 .cat-0 .top-img2 h2 {
+    font-size: 2rem;
+    padding: 10px;
+    line-height: 1.1rem;
+    background: #236841;
+    color: #fff;
+    font-family: paris;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000;
+            box-shadow: 0px 10px 13px -7px #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cat-0 .top1 p, .cat-0 .cat-1 .top-buy p, .cat-1 .cat-0 .top-buy p, .cat-0 .cat-1 .top-sell p, .cat-1 .cat-0 .top-sell p, .cat-0 .cat-1 .top-img p, .cat-1 .cat-0 .top-img p, .cat-0 .cat-1 .top-img1 p, .cat-1 .cat-0 .top-img1 p, .cat-0 .cat-1 .top-img2 p, .cat-1 .cat-0 .top-img2 p {
+    margin: 15px;
+    font-size: 1.3125rem;
+    padding: 0px 150px;
   }
   .cat-1 {
     display: -ms-grid;
@@ -1996,52 +2215,14 @@ footer ul li a {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B";
   }
-  .cat-1 .top1, .cat-1 .top-buy, .cat-1 .top-sell, .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: top1;
-    margin: 10px;
-    margin: 5 auto;
-    padding: 20px;
-  }
-  .cat-1 .home-img {
-    padding-top: 20px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .cat-1 h2 {
-    font-size: 4.5rem;
-    padding: 10px;
-    line-height: 3.4rem;
-  }
-  .cat-1 h3 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: .2rem;
-    margin: 10px;
-  }
-  .cat-1 p {
-    margin: 15px;
-    font-size: 2rem;
-    padding: 0px 80px;
-  }
-  .cat-1 .list-items {
-    text-align: left;
-    margin-left: 50px;
-    font-size: 1.5rem;
-  }
   .cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-    height: 500px;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: auto;
   }
-  .cat-1 .top-img img, .cat-1 .top-img1 img, .cat-1 .top-img2 img {
-    width: 320px;
-    height: 320px;
+  .cat-1 .top-img .home-img, .cat-1 .top-img1 .home-img, .cat-1 .top-img2 .home-img {
+    width: 200px;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .cat-1 .top-img {
     -ms-grid-row: 2;
@@ -2064,6 +2245,24 @@ footer ul li a {
     -ms-grid-column-span: 3;
     grid-area: top-buy;
   }
+  .cat-1 .top-buy .list-items {
+    margin-left: 70px;
+    margin-right: 20px;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    padding-bottom: 20px;
+  }
+  .cat-1 .top-buy li {
+    font-size: 0.875rem;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    padding-top: 5px;
+    height: 100%;
+  }
+  .cat-1 .top-buy li:before {
+    content: "📚";
+    padding-right: 3px;
+  }
   .cat-1 .top-sell {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
@@ -2075,14 +2274,19 @@ footer ul li a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: values-B;
-    font-size: 1.5rem;
   }
+  /*-------END HOME PAGE -------*/
+  /*-------19TH CENTURY PAGE DESKTOP MEDIA QUERIES  -------*/
   .century-main-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2 " "century-card3 century-text3" "century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 ";
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "century-text-top century-text-top" "century-card1 century-text1" "century-text2 century-card2 " "century-card3 century-text3" "century-text4 century-card4 " "century-card5 century-text5" "century-text6 century-card6 ";
+    /*------- 19TH CENTURY PAGE -------*/
   }
   .century-main-wrapper .century-text-top, .century-main-wrapper .century-text1, .century-main-wrapper .century-text2, .century-main-wrapper .century-text3, .century-main-wrapper .century-text4, .century-main-wrapper .century-text5, .century-main-wrapper .century-text6, .century-main-wrapper .century-card6, .century-main-wrapper .century-card5, .century-main-wrapper .century-card4, .century-main-wrapper .century-card3, .century-main-wrapper .century-card2, .century-main-wrapper .century-card1 {
     -ms-grid-row: 1;
@@ -2091,21 +2295,56 @@ footer ul li a {
     grid-area: century-text-top;
   }
   .century-main-wrapper .century-text-top p, .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p, .century-main-wrapper .century-card6 p, .century-main-wrapper .century-card5 p, .century-main-wrapper .century-card4 p, .century-main-wrapper .century-card3 p, .century-main-wrapper .century-card2 p, .century-main-wrapper .century-card1 p {
+    font-size: 1.3125rem;
+    margin: 0 auto;
+    width: 550px;
+  }
+  .century-main-wrapper .century-text-top .home-cat-icon-top, .century-main-wrapper .century-text1 .home-cat-icon-top, .century-main-wrapper .century-text2 .home-cat-icon-top, .century-main-wrapper .century-text3 .home-cat-icon-top, .century-main-wrapper .century-text4 .home-cat-icon-top, .century-main-wrapper .century-text5 .home-cat-icon-top, .century-main-wrapper .century-text6 .home-cat-icon-top, .century-main-wrapper .century-card6 .home-cat-icon-top, .century-main-wrapper .century-card5 .home-cat-icon-top, .century-main-wrapper .century-card4 .home-cat-icon-top, .century-main-wrapper .century-card3 .home-cat-icon-top, .century-main-wrapper .century-card2 .home-cat-icon-top, .century-main-wrapper .century-card1 .home-cat-icon-top {
+    opacity: .5;
+    width: 80px;
+    height: 80px;
+    padding: 10PX;
+  }
+  .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p {
+    font-size: 1.3125rem;
+    line-height: 2.5rem;
+  }
+  .century-main-wrapper .century-card6 h4, .century-main-wrapper .century-card5 h4, .century-main-wrapper .century-card4 h4, .century-main-wrapper .century-card3 h4, .century-main-wrapper .century-card2 h4, .century-main-wrapper .century-card1 h4 {
     font-size: 2rem;
-  }
-  .century-main-wrapper .century-text-top img, .century-main-wrapper .century-text1 img, .century-main-wrapper .century-text2 img, .century-main-wrapper .century-text3 img, .century-main-wrapper .century-text4 img, .century-main-wrapper .century-text5 img, .century-main-wrapper .century-text6 img, .century-main-wrapper .century-card6 img, .century-main-wrapper .century-card5 img, .century-main-wrapper .century-card4 img, .century-main-wrapper .century-card3 img, .century-main-wrapper .century-card2 img, .century-main-wrapper .century-card1 img {
-    width: 120px;
-    height: 120px;
-    padding: 5px;
-  }
-  .century-main-wrapper .century-text-top h4, .century-main-wrapper .century-text1 h4, .century-main-wrapper .century-text2 h4, .century-main-wrapper .century-text3 h4, .century-main-wrapper .century-text4 h4, .century-main-wrapper .century-text5 h4, .century-main-wrapper .century-text6 h4, .century-main-wrapper .century-card6 h4, .century-main-wrapper .century-card5 h4, .century-main-wrapper .century-card4 h4, .century-main-wrapper .century-card3 h4, .century-main-wrapper .century-card2 h4, .century-main-wrapper .century-card1 h4 {
-    font-size: 1.9rem;
     font-style: italic;
     letter-spacing: .1rem;
     margin-bottom: 3px;
   }
-  .century-main-wrapper .century-text-top h3, .century-main-wrapper .century-text1 h3, .century-main-wrapper .century-text2 h3, .century-main-wrapper .century-text3 h3, .century-main-wrapper .century-text4 h3, .century-main-wrapper .century-text5 h3, .century-main-wrapper .century-text6 h3, .century-main-wrapper .century-card6 h3, .century-main-wrapper .century-card5 h3, .century-main-wrapper .century-card4 h3, .century-main-wrapper .century-card3 h3, .century-main-wrapper .century-card2 h3, .century-main-wrapper .century-card1 h3 {
+  .century-main-wrapper .century-card6 h3, .century-main-wrapper .century-card5 h3, .century-main-wrapper .century-card4 h3, .century-main-wrapper .century-card3 h3, .century-main-wrapper .century-card2 h3, .century-main-wrapper .century-card1 h3 {
     font-size: 3rem;
+  }
+  .century-main-wrapper .century-card6 .century-img, .century-main-wrapper .century-card5 .century-img, .century-main-wrapper .century-card4 .century-img, .century-main-wrapper .century-card3 .century-img, .century-main-wrapper .century-card2 .century-img, .century-main-wrapper .century-card1 .century-img {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+  }
+  .century-main-wrapper .century-card6 .price, .century-main-wrapper .century-card5 .price, .century-main-wrapper .century-card4 .price, .century-main-wrapper .century-card3 .price, .century-main-wrapper .century-card2 .price, .century-main-wrapper .century-card1 .price {
+    width: 40%;
+    padding: 10px;
+    height: 50px;
+    overflow: hidden;
+  }
+  .century-main-wrapper .century-card6 .price p, .century-main-wrapper .century-card5 .price p, .century-main-wrapper .century-card4 .price p, .century-main-wrapper .century-card3 .price p, .century-main-wrapper .century-card2 .price p, .century-main-wrapper .century-card1 .price p {
+    font-size: 0.875rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+  }
+  .century-main-wrapper .century-card6 .price .century-star, .century-main-wrapper .century-card5 .price .century-star, .century-main-wrapper .century-card4 .price .century-star, .century-main-wrapper .century-card3 .price .century-star, .century-main-wrapper .century-card2 .price .century-star, .century-main-wrapper .century-card1 .price .century-star {
+    font-size: .8rem;
   }
   .century-main-wrapper .century-card1 {
     -ms-grid-row: 2;
@@ -2181,7 +2420,7 @@ footer ul li a {
         align-content: center;
   }
   .books-image-wrapper .text-book-cover h1 {
-    font-size: 9rem;
+    font-size: 6rem;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: -1;
@@ -2199,7 +2438,7 @@ footer ul li a {
     grid-column-gap: 5px;
   }
   .century-sec a {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 30px 10px;
     line-height: 2.3rem;
   }
@@ -2208,7 +2447,6 @@ footer ul li a {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
   }
   .container-pics .para-con {
     -ms-grid-column: 1;
@@ -2219,72 +2457,66 @@ footer ul li a {
   .container-pics .para-con p {
     padding: 20px  100px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3125rem;
   }
   .container-pics .icon-book-fist-p {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
   }
   .container-pics .book-img-box {
-    margin-bottom: 20px;
+    margin: 10px;
   }
   .container-pics .book-img-box h3 {
-    font-size: 2.5rem;
-    line-height: 2.3rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
   .container-pics .book-img-box .books-img {
-    padding-bottom: 20px;
+    width: 150px;
+    height: 150px;
   }
   .contaniner-meddle-section {
     -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
-  .contaniner-meddle-section .box-middle {
-    background: green;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000;
-            box-shadow: 0px 10px 13px -7px #000000;
-    background: #fafafa;
-    margin: 20px;
-  }
   .contaniner-meddle-section .box-middle .icon-books {
-    width: 110px;
-    height: 110px;
-    padding: 20px;
+    width: 90px;
+    height: 90px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
   }
   .contaniner-meddle-section .box-middle p {
-    font-size: 2rem;
-    margin: 20px 100px;
-    padding: 20px;
+    font-size: 1.3125rem;
+    width: 550px;
+    margin: 10px auto;
+    padding: 0px;
   }
   .wrapper-book-base {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: -ms-grid;
     display: grid;
-    margin: 15px;
     /*---- END BOOK PAGE IPAD-PRO MEDIA QUERIES ----*/
+    /* -----STAR DELIVERY PAGE IPAD DESTOP SCREENS -------*/
   }
-  .wrapper-book-base .books-base1, .wrapper-book-base .books-base2 {
-    margin: 10px;
+  .wrapper-book-base .books-base1, .wrapper-book-base .books-base2, .wrapper-book-base .books-base2 {
+    margin: 5px;
   }
-  .wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p {
-    font-size: 2rem;
-    height: 350px;
+  .wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p, .wrapper-book-base .books-base2 p {
+    font-size: 1.3125rem;
+    width: 550px;
+    margin: 0px auto;
   }
-  .wrapper-book-base .books-base1 .icon-base, .wrapper-book-base .books-base2 .icon-base {
-    width: 110px;
-    height: 110px;
-    margin-bottom: 15px;
+  .wrapper-book-base .books-base1 .icon-base, .wrapper-book-base .books-base2 .icon-base, .wrapper-book-base .books-base2 .icon-base {
+    width: 90px;
+    height: 90px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
   }
-  .common-links li:hover {
-    background: white;
-    height: 20px;
-  }
-  .common-links li:hover a {
-    color: black;
-    font-size: 1.1rem;
-  }
-  /* ---  STAR DELIVERY PAGE IPAD DESTOP SCREENS -------*/
   .delivery-caption {
     -webkit-box-shadow: 0px 10px 13px -7px #000000;
             box-shadow: 0px 10px 13px -7px #000000;
@@ -2293,14 +2525,13 @@ footer ul li a {
     margin-bottom: 20px;
   }
   .delivery-caption p {
-    font-size: 1.8rem;
-    padding: 10px;
-    text-align: center;
-    margin: 0px 120px;
+    font-size: 1.3125rem;
+    width: 400px;
+    margin: 10px auto;
   }
   .delivery-caption .delivery-truck-icon {
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 60px;
     display: block;
     margin: 0 auto;
     opacity: 0.5;
@@ -2313,14 +2544,14 @@ footer ul li a {
     background: #236841;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.3125rem;
   }
   table td {
     color: #000;
     text-align: center;
     border: 1px solid #DEDEDE;
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 0.875rem;
   }
   table .eu, table .uk, table .re, table .ue {
     text-align: left;
@@ -2328,7 +2559,7 @@ footer ul li a {
     padding: 5px;
     background: #bce4ce;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.3125rem;
   }
   table .pr, table .st {
     padding: 10px;
@@ -2336,7 +2567,7 @@ footer ul li a {
     background: #bbebd1;
     font-style: italic;
     letter-spacing: .1rem;
-    font-size: 1.4rem;
+    font-size: 1.3125rem;
   }
   table th {
     border: 2px solid #DEDEDE;
@@ -2344,22 +2575,30 @@ footer ul li a {
   span {
     display: none;
   }
-  .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
-    width: 100px;
-    height: 100px;
+  .delivery-countries-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .delivery-countries-wrapper .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
+    width: 50px;
+    height: 50px;
     display: block;
     margin: 5px auto;
     opacity: 0.5;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
-    font-size: 1.8rem;
+  .delivery-countries-wrapper .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
+    font-size: 1.3125rem;
     margin: 0px 100px;
     padding: 20px;
   }
-  .countries-list p {
-    line-height: 1.8rem;
+  .delivery-countries-wrapper .countries-list p {
+    line-height: 1.3125rem;
   }
-  .countries-list ul {
+  .delivery-countries-wrapper .countries-list ul {
     padding: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2368,43 +2607,26 @@ footer ul li a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .countries-list ul li {
+  .delivery-countries-wrapper .countries-list ul li {
     padding: 20px;
-    font-size: 1.8rem;
+    font-size: 0.875rem;
   }
-  .countries-list img {
+  .delivery-countries-wrapper .countries-list img {
     padding-right: 6px;
     display: block;
     margin: 0 auto;
   }
-  .delivery-dispath-p img {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+  .delivery-countries-wrapper .delivery-dispath-p .delivery-time-icon {
+    width: 60px;
+    height: 60px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  .delivery-dispath-p p {
-    font-size: 1.8rem;
+  .delivery-countries-wrapper .delivery-dispath-p p {
+    font-size: 1.3125rem;
     padding: 10px 90px 40px 90px;
   }
-  /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/
-  .main-nav li {
-    height: 20px;
-  }
-  .main-nav li:hover {
-    background: white;
-    padding: 10px;
-  }
-  .main-nav li:hover a {
-    color: #000;
-  }
-  .main-nav li:hover a {
-    color: black;
-    font-size: 1.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-transform: uppercase;
-  }
+  /*------ END DELIVERY PAGE STYLES ------*/
   .toggle-wrapper {
     display: none;
   }
@@ -2429,11 +2651,9 @@ footer ul li a {
     color: #fff;
   }
   footer ul li {
-    padding: 1.3rem;
     border-right: 1px solid #f2f1f1;
   }
   footer ul li a {
-    font-size: 1.7rem;
     letter-spacing: .2rem;
   }
 }
@@ -2480,7 +2700,7 @@ footer ul li a {
   text-align: center;
 }
 
-section .contact-p, section .details-container {
+section .contact-p {
   background: #fafafa;
   color: black;
   display: block;
@@ -2488,6 +2708,15 @@ section .contact-p, section .details-container {
   text-align: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
+}
+
+section .details-container {
+  background: #fafafa;
+  color: black;
+  margin: 5 auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000;
+          box-shadow: 0px 10px 13px -7px #000000;
+  text-align: center;
 }
 
 section .google-maps iframe {
@@ -2509,12 +2738,8 @@ section form .details {
   border: 1px solid #b9b8bb;
   background: #fafafa;
   color: black;
-  display: block;
-  margin: 0 auto;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
-  padding: 20px;
-  margin-bottom: 10px;
 }
 
 section form .centuries {
@@ -2530,7 +2755,7 @@ section form .centuries {
 section form select {
   width: 70%;
   border: 1px solid #b9b8bb;
-  font-size: 1rem;
+  font-size: 1.3125rem;
   display: block;
   overflow: hidden;
 }
@@ -2542,7 +2767,6 @@ section form .yes-and-no {
   color: black;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
-  padding: 20px;
 }
 
 section form .yes-and-no .control-group {
@@ -2565,11 +2789,19 @@ section form .sell-and-buy {
   grid-area: sell-and-buy;
   border: 1px solid #b9b8bb;
   background: #fafafa;
+  padding: 20px;
   color: black;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
-  padding: 20px;
-  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section form .sell-and-buy .control-group {
@@ -2585,7 +2817,8 @@ section form .sell-and-buy .control-group label {
 }
 
 section form .sell-and-buy .control-group input {
-  margin: 10px auto;
+  width: 100%;
+  padding-left: 20px;
 }
 
 section form #name, section form #surname, section form #email, section form #tittle {
@@ -2598,7 +2831,6 @@ section form #name, section form #surname, section form #email, section form #ti
 }
 
 section form #century {
-  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2617,21 +2849,11 @@ section form legend {
 section .submit-button input {
   display: block;
   color: #fff;
-  letter-spacing: .2rem;
+  letter-spacing: .8rem;
   background: #236841;
   margin: 10px auto;
   padding: 10px;
   border-radius: 20px;
-}
-
-a:focus {
-  outline: #fff dotted 2px;
-  letter-spacing: .1rem;
-}
-
-h3:focus, h4:focus, div:focus, table:focus, select:focus, input[type=submit]:focus, input[type=text]:focus, input[type=email]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
-  outline: #bd4444 dotted 3px;
-  letter-spacing: .1rem;
 }
 
 body {
