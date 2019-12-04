@@ -454,7 +454,10 @@ footer ul a {
 }
 
 @media only screen and (max-device-width: 414px) {
-  /*-- CENTURY PAGE STAR--*/
+  /*-----====== CENTURY PAGE STYLES=====----*/
+  .century-text-top p, .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p, .century-main-wrapper .century-card6 p, .century-main-wrapper .century-card5 p, .century-main-wrapper .century-card4 p, .century-main-wrapper .century-card3 p, .century-main-wrapper .century-card2 p, .century-main-wrapper .century-card1 p {
+    font-size: 1.0625rem;
+  }
   .century-text-top .home-cat-icon-top, .century-main-wrapper .century-text1 .home-cat-icon-top, .century-main-wrapper .century-text2 .home-cat-icon-top, .century-main-wrapper .century-text3 .home-cat-icon-top, .century-main-wrapper .century-text4 .home-cat-icon-top, .century-main-wrapper .century-text5 .home-cat-icon-top, .century-main-wrapper .century-text6 .home-cat-icon-top, .century-main-wrapper .century-card6 .home-cat-icon-top, .century-main-wrapper .century-card5 .home-cat-icon-top, .century-main-wrapper .century-card4 .home-cat-icon-top, .century-main-wrapper .century-card3 .home-cat-icon-top, .century-main-wrapper .century-card2 .home-cat-icon-top, .century-main-wrapper .century-card1 .home-cat-icon-top {
     opacity: .5;
     width: 70px;
@@ -464,10 +467,14 @@ footer ul a {
   .century-card6 h4, .century-card5 h4, .century-card4 h4, .century-card3 h4, .century-card2 h4, .century-card1 h4 {
     letter-spacing: .1rem;
     margin-bottom: 3px;
-    font-size: 1.3rem;
+    font-size: 1.3125rem;
+    line-height: 1rem;
   }
   .century-card6 h3, .century-card5 h3, .century-card4 h3, .century-card3 h3, .century-card2 h3, .century-card1 h3 {
     font-size: 2rem;
+  }
+  .century-card6 .century-img, .century-card5 .century-img, .century-card4 .century-img, .century-card3 .century-img, .century-card2 .century-img, .century-card1 .century-img {
+    padding: 40px;
   }
   .century-card6 .price, .century-card5 .price, .century-card4 .price, .century-card3 .price, .century-card2 .price, .century-card1 .price {
     width: 80%;
@@ -476,23 +483,18 @@ footer ul a {
   .century-card6 .price p, .century-card5 .price p, .century-card4 .price p, .century-card3 .price p, .century-card2 .price p, .century-card1 .price p {
     display: block;
     margin: 0 auto;
+    font-size: 0.75rem;
   }
   .century-card6 .price p:first-child, .century-card5 .price p:first-child, .century-card4 .price p:first-child, .century-card3 .price p:first-child, .century-card2 .price p:first-child, .century-card1 .price p:first-child {
-    margin-left: -38px;
+    margin-left: -16px;
   }
   .century-text1 p, .century-text2 p, .century-text3 p, .century-text4 p,
   .century-text5 p, .century-text6 p {
-    font-size: 1.3rem;
+    font-size: 1.0625rem;
   }
   /*------ END ------- */
-  /*-- DELIVERY PAGE  START -- */
-  .form-icon {
-    width: 80px;
-    height: 70px;
-    padding: 10px;
-    opacity: .3;
-  }
-  .contact-p {
+  /*-----========  CONTACT PAGE STYLES======------- */
+  .contact-wrapper-details .contact-p {
     background: #fafafa;
     margin: 10px;
     color: black;
@@ -501,17 +503,32 @@ footer ul a {
     text-align: center;
     -webkit-box-shadow: 0px 10px 13px -7px #000000;
             box-shadow: 0px 10px 13px -7px #000000;
-    font-size: 1.9rem;
+    font-size: 1.0625rem;
     padding: 20px;
   }
-  .contact-p p {
-    font-size: 1.3rem;
-  }
-  .contact-p .contac-email-logo {
-    width: 80px;
-    height: 70px;
+  .contact-wrapper-details .contact-p .form-icon {
+    width: 50px;
+    height: 50px;
     padding: 10px;
+    opacity: .3;
+  }
+  .contact-wrapper-details .details-container {
+    margin-bottom: 10px;
+  }
+  .contact-wrapper-details .details-container .contac-email-logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
     opacity: .4;
+  }
+  .contact-wrapper-details .details-container .email-text p {
+    font-size: 1.0625rem;
+  }
+  .contact-wrapper-details .details-container .phone {
+    padding-bottom: 20px;
+  }
+  .contact-wrapper-details .details-container .phone p {
+    font-size: 1.0625rem;
   }
   .google-maps {
     position: relative;
@@ -541,31 +558,32 @@ footer ul a {
         grid-template-rows: repeat(4, auto);
         grid-template-areas: "details" "centuries" "yes-and-no" "sell-and-buy";
   }
-  form label {
-    font-size: 1.3rem;
-  }
   form legend {
-    font-size: 1.6rem;
+    font-size: 1.3125rem;
+  }
+  form .details label {
+    font-size: 1.0625rem;
+    padding-left: 16px;
+    padding-bottom: 5px;
+  }
+  form .details input {
+    display: block;
+    margin: 0 auto;
   }
   form .yes-and-no .control-group label {
-    font-size: 1.5rem;
+    font-size: 1.0625rem;
   }
   form .sell-and-buy .control-group label {
-    font-size: 1.5rem;
-  }
-  form .sell-and-buy .control-group input {
-    margin: 10px auto;
-  }
-  .submit-button {
-    /*-----DELIVERY PAGE-------*/
+    font-size: 1.0625rem;
   }
   .submit-button input {
-    font-size: 1.3rem;
-    width: 95%;
+    width: 90%;
   }
   .submit-button .sell-and-buy .control-group label {
-    font-size: 1.5rem;
+    font-size: 1.0625rem;
   }
+  /*-----======== END CONTACT =======-------*/
+  /*-----====== DELIVERY PAGE STYLES =========-------*/
   .delivery-caption {
     -webkit-box-shadow: 0px 10px 13px -7px #000000;
             box-shadow: 0px 10px 13px -7px #000000;
@@ -573,13 +591,13 @@ footer ul a {
     margin: 10px;
   }
   .delivery-caption p {
-    font-size: 1.3rem;
-    padding: 10px;
+    font-size: 1.0625rem;
+    padding: 10px 60PX;
     text-align: center;
   }
   .delivery-caption .delivery-truck-icon {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: block;
     margin: 0px auto;
     opacity: 0.5;
@@ -589,12 +607,12 @@ footer ul a {
   }
   table .kg {
     padding: 10px;
-    font-size: 1.4rem;
+    font-size: 1.0625rem;
   }
   table td {
     padding: 1rem .5rem;
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.0625rem;
     color: #000;
     left: 0;
     border: 1px solid #DEDEDE;
@@ -603,7 +621,7 @@ footer ul a {
     text-align: center;
     padding: 10px;
     border: 1px solid #DEDEDE;
-    font-size: 2rem;
+    font-size: 1.3125rem;
     background: #236841;
     color: #fff;
     letter-spacing: .2rem;
@@ -628,97 +646,60 @@ footer ul a {
     display: none;
   }
   span {
-    font-size: 1.3rem;
+    font-size: 1.0625rem;
     margin-left: 100px;
   }
   .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: block;
-    margin: 5px auto;
+    margin: 10px auto;
     opacity: 0.5;
-    padding: 10px;
   }
   .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
-    font-size: 1.3rem;
-    padding: 10px 40px 10px 40px;
+    font-size: 1.0625rem;
+    padding: 0px 60px  20px;
   }
-  .countries-list p {
-    line-height: 1.5rem;
+  .countries-list h3 {
+    font-size: 1.3125rem;
+    line-height: 1.3rem;
+    padding: 20px;
+  }
+  .countries-list ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .countries-list ul li {
-    font-size: 1.3rem;
+    font-size: 1.0625rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
   }
   .countries-list ul li img {
-    width: 20px;
-    height: 20px;
+    display: block;
+    width: 0px;
+    height: 30px;
+    height: 0px;
+    margin: 0 auto;
   }
-}
-
-.delivery-dispath-p img {
-  width: 70px;
-  height: 70px;
-  padding: 10px;
-}
-
-.delivery-dispath-p p {
-  font-size: 1.3rem;
-}
-
-h1 {
-  letter-spacing: .4rem;
-  font-size: 3.5rem;
-  overflow: hidden;
-}
-
-.wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p {
-  font-size: 1.3rem;
-}
-
-.wrapper-book-base .main-wrapper .top-img1 .home-img {
-  background: pink;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: -1;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.wrapper-book-base .main-wrapper .top-img1 h4 {
-  font-size: 1.3rem;
-  background: blue;
-  letter-spacing: .1rem;
-  margin-bottom: 3px;
-}
-
-.wrapper-book-base .main-wrapper .top-img1 h3 {
-  font-size: 3rem;
-}
-
-.wrapper-book-base .main-wrapper .top-img1 .price {
-  background: grey;
-  margin-left: 0;
-  opacity: .6;
-}
-
-.wrapper-book-base .main-wrapper .top-img1 p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: star;
-          flex-direction: star;
-  padding: 2px  0px 1px;
-  margin: 2px 10px -10px;
-  color: black;
+  .delivery-dispath-p p {
+    font-size: 1.0625rem;
+    padding: 5px 50px 25px;
+  }
+  .delivery-dispath-p .delivery-time-icon {
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+  }
+  /*-------========== END DELYVERY STYLES ========-------*/
+  /*-------======== HOME  PAGE STYLES =======--------*/
 }
 
 .cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
@@ -780,30 +761,41 @@ h1 {
 }
 
 .cat-1 h3 {
-  font-size: 2.5rem;
-  margin: 10px;
+  font-size: 2rem;
+  margin: 20px 0px 0px;
   color: #236841;
   line-height: 2.3rem;
 }
 
 .cat-1 p {
-  margin: 15px;
-  font-size: 1.3rem;
+  margin: 15px 40px;
+  font-size: 1.0625rem;
 }
 
 .cat-1 .list-items {
   text-align: left;
-  margin-left: 50px;
-  font-size: 1rem;
+  margin-left: 10px;
+  font-size: 0.75rem;
+  padding: 20px;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
 }
 
-.cat-1 .top-img, .cat-1 .top-img1, .cat-1 .top-img2 {
-  height: 400px;
+.cat-1 .list-items li {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  line-height: 1rem;
+}
+
+.cat-1 .list-items li:before {
+  content: "📚";
+  padding-right: 3px;
+  font-size: 7px;
 }
 
 .cat-1 .top-img img, .cat-1 .top-img1 img, .cat-1 .top-img2 img {
-  width: 260px;
-  height: 280px;
+  width: 150px;
+  height: 150px;
 }
 
 .main-wrapper .cover-img {
@@ -820,7 +812,7 @@ h1 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: rem/2;
 }
 
 .century-sec {
@@ -830,7 +822,8 @@ h1 {
 }
 
 .century-sec a {
-  font-size: 1rem;
+  font-size: 1.3125rem;
+  line-height: 1.5rem;
 }
 
 .century-sec .cent-box {
@@ -842,8 +835,15 @@ h1 {
 }
 
 .container-pics .para-con p {
-  padding: 20px;
-  font-size: 1.3rem;
+  padding: 20px  60px;
+  font-size: 1.0625rem;
+}
+
+.container-pics .para-con .icon-book-fist-p {
+  margin: 0px auto;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
 }
 
 .container-pics .book-img-box {
@@ -852,18 +852,15 @@ h1 {
 }
 
 .container-pics .book-img-box h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  color: #236841;
+  line-height: 1.8rem;
 }
 
-.container-pics .icon-book-fist-p {
-  margin: 10px auto;
-  width: 80px;
-  height: 80px;
-  padding: 20px;
-}
-
-.container-pics .books-img {
+.container-pics .book-img-box .books-img {
   padding: 20px 0px;
+  width: 150px;
+  height: 150px;
 }
 
 .contaniner-meddle-section .box-middle {
@@ -871,14 +868,13 @@ h1 {
 }
 
 .contaniner-meddle-section .box-middle .icon-books {
-  width: 80px;
-  height: 80px;
-  padding: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .contaniner-meddle-section .box-middle p {
-  font-size: 1.3rem;
-  padding: 10px;
+  font-size: 1.0625rem;
+  padding: 20px 60px;
 }
 
 .wrapper-book-base {
@@ -887,17 +883,19 @@ h1 {
 
 .wrapper-book-base .books-base1, .wrapper-book-base .books-base2 {
   margin: 20px;
-  padding: 30px;
+}
+
+.wrapper-book-base .books-base1 p, .wrapper-book-base .books-base2 p {
+  font-size: 1.0625rem;
+  padding: 20px 60px;
 }
 
 .wrapper-book-base .books-base1 .icon-base, .wrapper-book-base .books-base2 .icon-base {
-  width: 80px;
-  height: 80px;
-  padding: 20px;
+  width: 60px;
+  height: 60px;
 }
 
 footer ul li {
-  padding: .5rem;
   border-bottom: 1px solid #f2f1f1;
 }
 
@@ -906,11 +904,7 @@ footer ul li:nth-child(2) {
 }
 
 footer ul li a {
-  font-size: 1rem;
-}
-
-.skiplink {
-  display: none;
+  font-size: 0.75rem;
 }
 
 @media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
@@ -1240,26 +1234,30 @@ footer ul li a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: top-buy;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .cat-1 .top-buy p {
     font-size: 1.0625rem;
-    padding: 10px 100px;
   }
   .cat-1 .top-buy .list-items {
-    margin-left: 70px;
     padding-left: 1.5em;
     text-indent: -1.5em;
-    padding-bottom: 40px;
+    padding: 60px 20px;
     font-size: 2.5rem;
   }
   .cat-1 .top-buy li {
     font-size: 0.875rem;
     padding-left: 1.5em;
     text-indent: -1.5em;
+    margin: 5px;
   }
   .cat-1 .top-buy li:before {
     content: "📚";
     padding-right: 3px;
+    font-size: 11px;
   }
   .cat-1 .top-sell {
     -ms-grid-row: 4;
@@ -1327,7 +1325,7 @@ footer ul li a {
     margin: 10px 30px;
   }
   .container-pics .icon-book-fist-p {
-    margin: 0px auto;
+    margin: px auto;
     width: 60px;
     height: 60px;
   }
@@ -1380,15 +1378,15 @@ footer ul li a {
     margin: 10px;
   }
   .delivery-caption p {
-    font-size: 1.8rem;
-    padding: 10px;
+    font-size: 1.0625rem;
+    margin: 10px 160px;
     text-align: center;
   }
   .delivery-caption .delivery-truck-icon {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     display: block;
-    margin: 5px auto;
+    margin: 0px auto;
     opacity: 0.5;
   }
   table {
@@ -1405,6 +1403,7 @@ footer ul li a {
     text-align: center;
     border: 1px solid #DEDEDE;
     padding: 10px;
+    font-size: 1.0625rem;
   }
   table .eu, table .uk, table .re, table .ue {
     text-align: left;
@@ -1419,6 +1418,7 @@ footer ul li a {
     background: #bbebd1;
     font-style: italic;
     letter-spacing: .1rem;
+    font-size: 1.0625rem;
   }
   table th {
     border: 2px solid #DEDEDE;
@@ -1426,46 +1426,64 @@ footer ul li a {
   span {
     display: none;
   }
-  .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
-    width: 70px;
-    height: 70px;
+  .delivery-countries-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .delivery-countries-wrapper .delivery-estimate-p .delivery-package-icon, .delivery-countries-wrapper .countries-list .delivery-package-icon {
+    width: 60px;
+    height: 60px;
     display: block;
-    margin: 5px auto;
+    margin: 0px auto;
     opacity: 0.5;
-    padding: 10px;
+    padding-top: 30px;
   }
-  .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
-    font-size: 1.6rem;
-    padding: 10px 50px 20px 50px;
+  .delivery-countries-wrapper .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
+    font-size: 1.0625rem;
+    padding: 20px;
   }
-  .countries-list p {
-    line-height: 1.6rem;
+  .delivery-countries-wrapper .countries-list h3 {
+    font-size: 1.75rem;
+    line-height: 1.7rem;
+    padding: 20px;
   }
-  .countries-list ul {
-    padding: 15px;
+  .delivery-countries-wrapper .countries-list ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .delivery-countries-wrapper .countries-list ul li {
+    font-size: 1.0625rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 5px;
   }
-  .countries-list ul li {
-    padding: 20px;
-    font-size: 1.4rem;
-  }
-  .countries-list img {
-    width: 40px;
-    height: 40px;
-    padding-right: 6px;
+  .delivery-countries-wrapper .countries-list ul li img {
     display: block;
+    width: 30px;
+    height: 30px;
+    height: 0px;
     margin: 0 auto;
   }
-  .delivery-dispath-p img {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
+  .delivery-countries-wrapper .delivery-dispath-p img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 5px auto;
+    opacity: 0.5;
+    padding-top: 30px;
   }
-  .delivery-dispath-p p {
-    font-size: 1.6rem;
-    padding: 10px 70px 40px 70px;
+  .delivery-countries-wrapper .delivery-dispath-p p {
+    font-size: 1.0625rem;
+    padding: 20px 30px;
   }
   /*---- FOOTER SECTION STYLES IPAD-----*/
 }
@@ -1664,22 +1682,25 @@ footer ul li a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: top-buy;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .cat-1 .top-buy h3 {
+    padding-top: 40px;
   }
   .cat-1 .top-buy .list-items {
-    margin-left: 70px;
-    margin-right: 20px;
     padding-left: 1.5em;
     text-indent: -1.5em;
-    padding-bottom: 20px;
+    padding: 70px 100px;
     font-size: 2.5rem;
-    padding: 10px;
   }
   .cat-1 .top-buy li {
     font-size: 0.875rem;
     padding-left: 1.5em;
     text-indent: -1.5em;
     padding-top: 5px;
-    height: 100%;
   }
   .cat-1 .top-buy li:before {
     content: "📚";
@@ -2009,13 +2030,16 @@ footer ul li a {
     display: block;
     margin: 5px auto;
     opacity: 0.5;
+    padding-top: 30px;
   }
   .delivery-countries-wrapper .delivery-estimate-p p, .delivery-countries-wrapper .countries-list p {
     font-size: 1.0625rem;
     padding: 20px;
   }
-  .delivery-countries-wrapper .countries-list p {
-    line-height: 1.4rem;
+  .delivery-countries-wrapper .countries-list h3 {
+    font-size: 1.75rem;
+    line-height: 1.3rem;
+    padding: 20px 70px;
   }
   .delivery-countries-wrapper .countries-list ul {
     display: -webkit-box;
@@ -2029,16 +2053,22 @@ footer ul li a {
     padding: 10px;
     font-size: 0.875rem;
   }
+  .delivery-countries-wrapper .countries-list ul li img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
   .delivery-countries-wrapper .delivery-dispath-p img {
     width: 70px;
     height: 70px;
     display: block;
     margin: 5px auto;
     opacity: 0.5;
+    padding-top: 30px;
   }
   .delivery-countries-wrapper .delivery-dispath-p p {
     font-size: 1.0625rem;
-    padding: 0px 20px 10px 20px;
+    padding: 20px 30px;
   }
   /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/
 }
@@ -2244,6 +2274,10 @@ footer ul li a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: top-buy;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .cat-1 .top-buy .list-items {
     margin-left: 70px;
@@ -2595,8 +2629,10 @@ footer ul li a {
     margin: 0px 100px;
     padding: 20px;
   }
-  .delivery-countries-wrapper .countries-list p {
-    line-height: 1.3125rem;
+  .delivery-countries-wrapper .countries-list h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: 20px;
   }
   .delivery-countries-wrapper .countries-list ul {
     padding: 15px;
@@ -2610,6 +2646,11 @@ footer ul li a {
   .delivery-countries-wrapper .countries-list ul li {
     padding: 20px;
     font-size: 0.875rem;
+  }
+  .delivery-countries-wrapper .countries-list ul li img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
   }
   .delivery-countries-wrapper .countries-list img {
     padding-right: 6px;
@@ -2638,17 +2679,6 @@ footer ul li a {
   .top .home-img {
     width: 300px;
     height: 300px;
-  }
-  .skiplink {
-    position: absolute;
-    left: -10000px;
-    z-index: 1;
-    padding: 10px;
-    font-size: 1.3rem;
-    margin-left: 10px;
-    margin-top: 100px;
-    text-decoration: none;
-    color: #fff;
   }
   footer ul li {
     border-right: 1px solid #f2f1f1;
@@ -2687,7 +2717,6 @@ footer ul li a {
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
   background: #fafafa;
-  margin: 10px;
 }
 
 .delivery-dispath-p img {
@@ -2854,6 +2883,36 @@ section .submit-button input {
   margin: 10px auto;
   padding: 10px;
   border-radius: 20px;
+}
+
+.main-wrapper .skiplink {
+  position: absolute;
+  left: -10000px;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  margin-top: 200px;
+  text-decoration: none;
+  z-index: 1;
+  color: #fff;
+}
+
+.main-wrapper .skiplink:focus {
+  outline: 1px solid #8495;
+  padding: 10px;
+  border-radius: 2px;
+  left: auto;
+  top: 0;
+  background: #236841;
+}
+
+a:focus {
+  outline: #fff dotted 2px;
+  letter-spacing: .1rem;
+}
+
+h3:focus, h4:focus, div:focus, table:focus, select:focus, input[type=submit]:focus, input[type=text]:focus, input[type=email]:focus, input[type=radio]:focus, input[type=checkbox]:focus, form:focus {
+  outline: #669900  dotted 3px;
+  letter-spacing: .1rem;
 }
 
 body {

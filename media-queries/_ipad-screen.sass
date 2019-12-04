@@ -270,10 +270,16 @@
                 padding: 0px 60px
 
     .cat-1 
+        
+
+
+        
+
         display: grid
         grid-template-columns: repeat(3, 1fr)
         // grid-template-rows: repeat(5, auto)
         grid-template-areas: "top1 top1 top1" "top-img top-img1 top-img2" "top-buy top-buy top-buy" "top-sell top-sell top-sell " "values-B values-B values-B"
+        
 
         
 
@@ -306,33 +312,44 @@
             grid-area: top-img2
         .top-buy 
             grid-area: top-buy
+            display: grid
+            grid-template-columns: 1fr 1fr
 
         
             p
                   font-size: $Ipad-paragraph 
-                  padding: 10px 100px
+                  
+     
 
            
             .list-items
 
-                margin-left: 70px
+             
                 padding-left: 1.5em
                 text-indent: -1.5em
-                padding-bottom: 40px
+                padding: 60px 20px
+         
+             
+               
+         
                 font-size: $h3Ipad-tittle
-                // line-height: 1rem
+             
                 // letter-spacing: .1rem
            
    
             li
-                font-size: $Desktop-list
+                font-size: $Ipad-list
                 padding-left: 1.5em
                 text-indent: -1.5em
+                margin: 5px
+              
                
                
                 &:before 
                     content: "📚"
                     padding-right: 3px
+                    font-size: 11px
+                   
 
         .top-sell 
             grid-area: top-sell
@@ -398,7 +415,7 @@
 
         .icon-book-fist-p
         
-            margin: 0px auto
+            margin: px auto
             width: 60px
             height: 60px
          
@@ -473,17 +490,17 @@
         margin: 10px
        
         p
-            font-size: 1.8rem
-            padding: 10px
+            font-size: $Ipad-paragraph
+            margin: 10px 160px 
             text-align: center//
 
             
             
         .delivery-truck-icon
-            width: 90px
-            height: 90px
+            width: 60px
+            height: 60px
             display: block
-            margin: 5px auto
+            margin: 0px auto
             opacity: 0.5
 
     table
@@ -504,6 +521,7 @@
             text-align: center
             border: 1px solid #DEDEDE
             padding: 10px
+            font-size: $Ipad-paragraph
             
             
         .eu, .uk,.re,.ue 
@@ -521,6 +539,7 @@
             background:  #bbebd1
             font-style: italic
             letter-spacing: .1rem
+            font-size: $Ipad-paragraph
            
           
 
@@ -530,58 +549,76 @@
         th 
             border: 2px solid #DEDEDE
   
-        .premium
-            // display: none
-        .weight-kg
-            //  display: none
     span 
             
             display: none  
+    .delivery-countries-wrapper
+        display: grid 
+        grid-template-columns: repeat(3, 1fr)
 
-    .delivery-estimate-p
-        .delivery-package-icon
-            width: 70px
-            height: 70px
-            display: block
-            margin: 5px auto
-            opacity: 0.5
-            padding: 10px
-
+        .delivery-estimate-p
+            .delivery-package-icon
+                width: 60px
+                height: 60px
+                display: block
+                margin: 0px auto
+                opacity: 0.5
+                padding-top: 30px
     
-        p 
-            font-size: 1.6rem
-            padding:  10px 50px 20px 50px 
 
-    .countries-list
-   
-        p 
-            line-height: 1.6rem
-        ul
-            padding: 15px
-            display: flex
-           
+        
+            p 
+                font-size: $Ipad-paragraph
+                padding:  20px 
 
-            li 
+        .countries-list
+    
+            h3 
+                font-size: $h4Ipad-tittle
+                line-height: 1.7rem
                 padding: 20px
-                font-size: 1.4rem
+            ul 
+                display: grid
+                grid-template-columns: 1fr 1fr
+    
+                li 
                 
-        img 
-            width: 40px
-            height: 40px
-            padding-right: 6px
-            display: block
-            margin: 0 auto
-       
+                    font-size: $Ipad-paragraph
+                    display: flex
+                    flex-direction: column
+                    padding-bottom: 5px
+               
+                    // align-items: center
+                
+                    img
+                    
+                        display: block
+                        width: 30px
+                        height: 30px
+                
+                        height: 0px
+                    
+                        margin:  0 auto
+                        // padding: 10px
+                        
+                    
+        
+                
+        
 
-    .delivery-dispath-p
+        .delivery-dispath-p
 
-        img 
-            width: 70px
-            height: 70px
-            padding: 10px
-        p 
-            font-size: 1.6rem
-            padding:  10px 70px 40px 70px 
+            img 
+                width: 50px
+                height: 50px
+                display: block
+                margin: 5px auto
+                opacity: 0.5
+                padding-top: 30px
+    
+            p 
+                font-size: $Ipad-paragraph
+                padding: 20px 30px
 
     /*---- FOOTER SECTION STYLES IPAD-----*/        
           

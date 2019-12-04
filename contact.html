@@ -16,11 +16,11 @@
   <div class="main-wrapper">
     
 
- <!-- <a href="#hearth" class="skiplink">Skip paragraph 1 The Heart of the Matter</a>
- <a href="#buy" class="skiplink">Skip paragraph 2 buying </a>
- <a href="#sell" class="skiplink">Skip paragraph 3 selling</a>
- <a href="#value" class="skiplink">Skip paragraph 4 valuing</a>
- <a href="#fot" class="skiplink">Skip footer</a>  -->
+      <a href="#top-paragraph" class="skiplink">Skip top paragraph rare books</a>
+      <a href="#map" class="skiplink">Skip map</a>
+      <a href="#form" class="skiplink">Skip form </a>
+      <a href="#" class="skiplink">Skip paragraph 4 valuing</a>
+      <a href="#" class="skiplink">Skip footer</a> 
 
 
     <div class="toggle-wrapper">
@@ -77,9 +77,9 @@
   </header>
     <section>
       
-      <div class="contact-wrapper-details">
+      <div tabindex="0"  id="top-paragraph" class="contact-wrapper-details">
 
-        <div class="contact-p">
+        <div  class="contact-p">
           <img    class="form-icon" src="/img/contact/forms.png" alt="">
           <p> Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are looking to sell a book, have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt. </p>
 
@@ -98,12 +98,13 @@
 
 
       </div>
-          <div class="google-maps">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.86265576045!2d-0.15586051244560592!3d51.509259279215236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605255643cb2b%3A0x261185c6bcdb02d2!2sMayfair%2C+London%2C+UK!5e0!3m2!1sen!2s!4v1564511981758!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          <div  tabindex="0" id="map" class="google-maps">
+              <iframe  tabindex="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.86265576045!2d-0.15586051244560592!3d51.509259279215236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605255643cb2b%3A0x261185c6bcdb02d2!2sMayfair%2C+London%2C+UK!5e0!3m2!1sen!2s!4v1564511981758!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
            </div>
       
         
-        <form  action="confirmation.html" method="POST">
+        <form  tabindex="0" id="form"  action="confirmation.html" method="POST">
         
 
               <fieldset  class="details" >
@@ -125,10 +126,10 @@
               
             
 
-                <fieldset  class="centuries" >
+                <fieldset class="centuries" >
                   <legend>Interest</legend>
 
-                  <select  tabindex="0" id="century">
+                  <select   tabindex="0" id="century">
                       <option  class="please-select" value="">-Please Select-</option>
                       <option value="20th century">20th Century </option>
                       <option value="19th century">19th Century </option>
@@ -148,7 +149,7 @@
                       <input  tabindex="0" type="radio"   name="yes" value="Yes" id="Yes" checked >  
                  
                       <label id="label1" for=No1>No </label>
-                      <input tabindex="0" type="radio"   name="yes" value="no" id="no" >   
+                      <input tabindex="0" type="radio"  name="yes" value="no" id="no" >   
                   </div>
 
               </fieldset>
@@ -170,9 +171,9 @@
              
              
         </form>
-        <section class="submit-button">
+        <section  id="fot" class="submit-button">
             <div >
-              <input type="submit" value="Submit">
+              <input  tabindex="0" type="submit" value="Submit">
             </div>
 
 
@@ -183,11 +184,11 @@
      
 
     </section>
-    <footer tabindex="0" id="fot">
+    <footer id="fot">
         <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Returns</a></li>
+          <li><a tabindex="0"  href="#">Privacy</a></li>
+          <li><a  tabindex="0" href="#">Terms & Conditions</a></li>
+          <li><a tabindex="0"  href="#">Returns</a></li>
         </ul>
       </footer>
 

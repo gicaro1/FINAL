@@ -179,26 +179,32 @@
             grid-area: top-img2
         .top-buy
             grid-area: top-buy
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+            h3 
+                padding-top: 40px
 
             p 
 
             .list-items
-                margin-left: 70px
-                margin-right: 20px
+              
                 padding-left: 1.5em
                 text-indent: -1.5em
-                padding-bottom: 20px
+                padding: 70px 100px
+                
+                
                 font-size: $h3Ipad-tittle
                 // line-height: 2rem
                 // letter-spacing: .2rem
-                padding: 10px
+          
    
             li
-                font-size: $Desktop-list
+                font-size: $Ipad-list
                 padding-left: 1.5em
                 text-indent: -1.5em
                 padding-top: 5px
-                height: 100%
+          
                 &:before 
                     content: "📚"
                     padding-right: 3px
@@ -434,6 +440,9 @@
         /*---- END BOOK PAGE IPAD-PRO MEDIA QUERIES ----*/
 
 
+
+
+
     /* ---  STAR DELIVERY PAGE IPAD MEDIUM SCREENS -------*/
     .table-wrapper
     .delivery-caption
@@ -499,8 +508,7 @@
         th 
             border: 2px solid #DEDEDE
   
-    span 
-            
+    span   
             display: none  
     .delivery-countries-wrapper
         display: grid 
@@ -513,6 +521,7 @@
                 display: block
                 margin: 5px auto
                 opacity: 0.5
+                padding-top: 30px
             
 
         
@@ -523,8 +532,10 @@
 
         .countries-list
     
-            p 
-                line-height: 1.4rem
+            h3 
+                font-size: $h4Ipad-tittle
+                line-height: 1.3rem
+                padding: 20px 70px
             ul
           
                 display: flex
@@ -534,16 +545,12 @@
                 li 
                     padding: 10px
                     font-size: $Ipad-list
-                    
-                    img 
-                    
-                    
-                        // display: block
-                        // margin: 0 auto
-                       
-                      
-        
 
+                    img 
+                        width: 40px
+                        height: 40px
+                        padding: 10px
+                
         .delivery-dispath-p
 
             img 
@@ -552,10 +559,11 @@
                 display: block
                 margin: 5px auto
                 opacity: 0.5
+                padding-top: 30px
    
             p 
                 font-size: $Ipad-paragraph
-                padding: 0px 20px 10px 20px
+                padding: 20px 30px
                
     /*------ END DELIVERY STYLES IPAD-PRO MEDIA QUERIES ------*/
 

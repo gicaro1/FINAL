@@ -1,15 +1,12 @@
 @media only  screen and(max-device-width:414px)
  
 
-            
-     
-           
-  
-    /*-- CENTURY PAGE STAR--*/
+    /*-----====== CENTURY PAGE STYLES=====----*/
 
     .century-text-top
         
         p
+            font-size: $Phone-paragraph
            
         .home-cat-icon-top
             opacity: .5
@@ -22,10 +19,15 @@
     
             letter-spacing: .1rem
             margin-bottom: 3px
-            font-size: 1.3rem
+            font-size: $h4Phone-tittle
+            line-height: 1rem
     
         h3  
-            font-size: 2rem
+            font-size: $h3Phone-tittle
+
+        .century-img
+            padding: 40px
+
         
         .price
         
@@ -37,54 +39,75 @@
                 
                 display: block
                 margin: 0 auto
+                font-size: $phone-list
+                
                 &:first-child
-                    margin-left: -38px
-              
-         
+                    margin-left: -16px
       
-          
-        
-            
-
-
-           
-     
-       
-
-            
     .century-text1, .century-text2,.century-text3 ,.century-text4,
     .century-text5, .century-text6
         p
-            font-size: 1.3rem
+            font-size: $Phone-paragraph
+
     /*------ END ------- */
 
 
-    /*-- DELIVERY PAGE  START -- */
-    .table-wrappper  
-    .form-icon
-        width: 80px
-        height: 70px
-        padding: 10px
-        opacity: .3
-    .contact-p
-        background: #fafafa
-        margin: 10px
-        color: black
-        display: block
-        margin: 5 auto
-        text-align: center
-        box-shadow: $shadow
-        font-size: 1.9rem
-        padding: 20px
 
-        p
-            font-size: 1.3rem
 
-        .contac-email-logo
-            width: 80px
-            height: 70px
-            padding: 10px
-            opacity: .4
+
+
+
+
+    /*-----========  CONTACT PAGE STYLES======------- */
+
+   
+    .contact-wrapper-details
+
+        .contact-p
+            background: #fafafa
+            margin: 10px
+            color: black
+            display: block
+            margin: 5 auto
+            text-align: center
+            box-shadow: $shadow
+            font-size: $Phone-paragraph
+            padding: 20px
+
+
+            .form-icon
+                width: 50px
+                height: 50px
+                padding: 10px
+                opacity: .3
+
+        .details-container 
+        
+            margin-bottom: 10px
+        
+            .contac-email-logo
+        
+                width: 50px
+                height: 50px
+                margin-top: 20px
+                opacity: .4
+        
+            .email-text
+          
+                p
+                    font-size: $Ipad-paragraph
+            .phone
+                    padding-bottom: 20px
+                    p
+                        font-size: $Ipad-paragraph
+
+                    
+                    
+            
+            
+           
+
+        
     .google-maps 
         position: relative
         padding-bottom: 40%
@@ -98,7 +121,6 @@
         top: 0
         left: 0
         width: 100% 
- 
         height: 300px 
         margin-bottom: 7% 
     
@@ -110,37 +132,48 @@
         
         grid-template-rows: repeat(4, auto)
         grid-template-areas: "details" "centuries" "yes-and-no" "sell-and-buy"
-        label
-            font-size: 1.3rem
+        
         legend
-            font-size: 1.6rem
+            font-size: $h4Phone-tittle
+
+        .details
+            label
+                font-size: $Phone-paragraph
+                padding-left: 16px
+                padding-bottom: 5px
+            input
+                    display: block
+                    margin: 0 auto
+            
+
 
         .yes-and-no
             .control-group 
                 label
-                    font-size: 1.5rem
+                    font-size: $Phone-paragraph
               
         .sell-and-buy
             .control-group 
          
                 label
-                    font-size: 1.5rem
+                    font-size: $Phone-paragraph
                
        
 
-                input
-                    margin: 10px auto
+                
     .submit-button
 
         input
-            font-size: 1.3rem
-            width: 95%
+            width: 90%
         .sell-and-buy
             .control-group 
                 label
-                    font-size: 1.5rem
+                    font-size: $Phone-paragraph
+    /*-----======== END CONTACT =======-------*/
 
-        /*-----DELIVERY PAGE-------*/
+
+
+    /*-----====== DELIVERY PAGE STYLES =========-------*/
     .table-wrapper
     .delivery-caption
         box-shadow: $shadow
@@ -148,15 +181,15 @@
         margin: 10px
        
         p
-            font-size: 1.3rem
-            padding: 10px
+            font-size: $Phone-paragraph
+            padding: 10px 60PX
             text-align: center
 
             
             
         .delivery-truck-icon
-            width: 70px
-            height: 70px
+            width: 50px
+            height: 50px
             display: block
             margin: 0px auto
             opacity: 0.5
@@ -167,7 +200,7 @@
 
         .kg
             padding: 10px
-            font-size: 1.4rem
+            font-size: $Phone-paragraph
            
 
 
@@ -175,7 +208,7 @@
             
             padding: 1rem .5rem
             display: block
-            font-size: 1.3rem
+            font-size: $Phone-paragraph
             color: #000 
             left: 0
             border: 1px solid #DEDEDE
@@ -184,7 +217,7 @@
             text-align: center
             padding: 10px 
             border: 1px solid #DEDEDE
-            font-size: 2rem
+            font-size: $h4Phone-tittle
             background: $defaul-color
             color: #fff
             letter-spacing: .2rem
@@ -210,111 +243,123 @@
             display: none
     span 
         
-        font-size: 1.3rem
+        font-size: $Phone-paragraph
         margin-left: 100px
 
 
 
     .delivery-estimate-p
         .delivery-package-icon
-            width: 70px
-            height: 70px
+            width: 50px
+            height: 50px
             display: block
-            margin: 5px auto
+            margin: 10px auto
             opacity: 0.5
-            padding: 10px
+
+       
 
         p 
-            font-size: 1.3rem
-            padding:  10px 40px 10px 40px
+
+            font-size: $Phone-paragraph
+            padding:  0px 60px  20px
             
     .countries-list
     
-        p 
-            line-height: 1.5rem
+        h3 
+            font-size: $h4Phone-tittle
+            line-height: 1.3rem
+            padding: 20px
             
         ul 
+            display: grid
+            grid-template-columns: 1fr 1fr
   
-            
-
             li 
                
-                font-size: 1.3rem
+                font-size: $Phone-paragraph
                 display: flex
+                flex-direction: column
+                padding: 10px
+                // align-items: center
+            
+                img
+                  
+                    display: block
+                    width: 0px
+                    height: 30px
+              
+                    height: 0px
                 
-                align-items: center
-                // flex-direction: row
-                // justify-content: center
-                
-                img 
-                    width: 20px
-                    height: 20px
+                    margin:  0 auto
                     // padding: 10px
                    
               
                 
 
-.delivery-dispath-p
+    .delivery-dispath-p
+        p 
+            font-size: $Phone-paragraph
+            padding: 5px 50px 25px
 
-    img 
-        width: 70px
-        height: 70px
-        padding: 10px
-    p 
-        font-size: 1.3rem
+        .delivery-time-icon
+            width: 50px
+            height: 50px
+            padding-top: 10px
+
+    /*-------========== END DELYVERY STYLES ========-------*/
+      
+           
  
 
 
     
-h1  
-    
-    letter-spacing: .4rem
-    font-size: 3.5rem
-    overflow: hidden
 
 
-.wrapper-book-base
-    
-    .books-base1
-    
-        p
-            font-size: 1.3rem
-    .main-wrapper
-        .top-img1
 
-            .home-img
-                background: pink
-                grid-column-start: 1
-                grid-column-end: -1
-                grid-row-start: 2
-                grid-row-end: 3
+
+
+
+
+
+    /*-------======== HOME  PAGE STYLES =======--------*/
+
+    // .main-wrapper
+    //     .top-img1
+
+    //         .home-img
+    //             background: pink
+    //             grid-column-start: 1
+    //             grid-column-end: -1
+    //             grid-row-start: 2
+    //             grid-row-end: 3
 
             
 
-            h4 
-                font-size: 1.3rem
-                background: blue
+    //         h4 
+    //             font-size: $h3Phone-tittle
+    //             background: blue
         
-                letter-spacing: .1rem
-                margin-bottom: 3px
+    //             letter-spacing: .1rem
+    //             margin-bottom: 3px
     
-            h3  
-                font-size: 3rem
+    //         h3  
+    //             font-size: $h3Phone-tittle
+
                 
 
-            .price
-                background: grey
-                margin-left: 0
-                opacity: .6
+            // .price
+            //     background: grey
+            //     margin-left: 0
+            //     opacity: .6
             
             
-            p
+            // p
             
-                display: flex
-                flex-direction: star
-                padding: 2px  0px 1px
-                margin: 2px 10px -10px 
-                color: black
+            //     display: flex
+            //     flex-direction: star
+            //     padding: 2px  0px 1px
+            //     margin: 2px 10px -10px 
+            //     color: black
 .cat-0
     .top1
         grid-area: top1
@@ -341,7 +386,7 @@ h1
 
         p 
             margin: 15px
-            font-size: $Ipad-paragraph 
+            font-size: $Phone-paragraph 
             padding: 10px 10px
         
 .cat-1
@@ -369,25 +414,37 @@ h1
     
         
     h3 
-        font-size: 2.5rem
-        margin: 10px 
+        font-size: $h3Phone-tittle
+        margin: 20px 0px 0px
         color: $defaul-color
         line-height: 2.3rem
+       
         
         // text-transform: uppercase
     p 
-        margin: 15px
-        font-size: 1.3rem 
+        margin: 15px 40px
+        font-size: $Phone-paragraph
 
     .list-items
         text-align: left
-        margin-left: 50px
-        font-size: 1rem
+        margin-left: 10px
+        font-size: $phone-list
+        padding: 20px
+        padding-left: 1.5em
+        text-indent: -1.5em
+        li  
+            padding-left: 1.5em
+            text-indent: -1.5em
+            line-height: 1rem
+            &:before 
+                    content: "📚"
+                    padding-right: 3px
+                    font-size: 7px
     .top-img, .top-img1, .top-img2
-        height: 400px
+  
         img
-            width: 260px
-            height: 280px
+            width: 150px
+            height: 150px
 
     /* -----STAR BOOKS PAGE SMALL SCREENS MEDIA QUERIES----*/
 .main-wrapper
@@ -403,8 +460,6 @@ h1
     
     height: 84vh
 
-
-
 .text-book-cover
  
     height: 100%
@@ -412,7 +467,7 @@ h1
     
 h1  
    
-    font-size: 3rem
+    font-size: $h1phone-cover
 
 .century-sec 
   
@@ -420,7 +475,8 @@ h1
     grid-gap: 10px
     margin: 10px
     a   
-        font-size: 1rem
+        font-size: $h4Phone-tittle
+        line-height: 1.5rem
  
     .cent-box 
     
@@ -429,50 +485,47 @@ h1
 
 .container-pics
 
-        .para-con 
+    .para-con 
+        margin: 20px
+        p 
+            padding: 20px  60px
+            font-size: $Phone-paragraph
 
-       
-            margin: 20px
-            p 
-                padding: 20px 
-           
-                font-size: 1.3rem
-
-        .book-img-box
-        
-        
-            margin-bottom: 20px
-            margin: 20px
-  
-        
-            h3 
-          
-                font-size: 1.6rem
+    
 
         .icon-book-fist-p
         
-            margin: 10px auto
-            width: 80px
-            height: 80px
-            padding: 20px
-  
-      
+            margin: 0px auto
+            width: 50px
+            height: 50px
+            padding-top: 10px
+
+    .book-img-box
+        margin-bottom: 20px
+        margin: 20px
+
+        h3 
+            font-size: $h3Phone-tittle
+            color: $mainColor
+            line-height: 1.8rem
+
         .books-img 
-                padding: 20px 0px
+            padding: 20px 0px
+            width: 150px
+            height: 150px
             
 
 .contaniner-meddle-section
     .box-middle
-     
         margin: 20px
+
         .icon-books
-            
-            width: 80px
-            height: 80px
-            padding: 20px
+            width: 50px
+            height: 50px
+
         p
-            font-size: 1.3rem
-            padding: 10px
+            font-size: $Phone-paragraph
+            padding: 20px 60px
 // 
 
 
@@ -480,14 +533,16 @@ h1
     
     .books-base1
         margin: 20px
-        padding: 30px
+
       
-        p
-            
+        p 
+            font-size: $Phone-paragraph
+            padding: 20px 60px 
+
         .icon-base
-            width: 80px
-            height: 80px
-            padding: 20px
+            width: 60px
+            height: 60px
+        
     .books-base2
         @extend .books-base1
 
@@ -501,16 +556,15 @@ h1
 footer
     ul 
         li 
-            padding: .5rem
+       
             border-bottom: 1px solid rgb(242, 241, 241)
             &:nth-child(2)
                 padding-left: 35px
        
             a
             
-                font-size: 1rem
-.skiplink
-    display: none
+                font-size: $phone-list
+
             
 
   
