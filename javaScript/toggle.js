@@ -1,15 +1,16 @@
+
 function myFunction(x) {
-  x.classList.toggle("change");
-}
-function myFunction(x) {
-  
+
+
+    x.classList.toggle("change"); 
     var x = document.getElementById("burger");
     
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
       x.style.display = "none";
+    } else {
+      x.style.display = "block";
 
-    }    
+    }  
+      
 }
 

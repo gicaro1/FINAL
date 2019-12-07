@@ -25,7 +25,6 @@
   position: absolute
   top: 17px
   padding: 6px
-
   opacity: .5
   z-index: 99
   display: inline-block
@@ -38,21 +37,29 @@
     margin: 5px
     color: $white-color
     margin-left: 20px
+    transition: all .4s ease-in-out
 
 
 /* -----------ROTATE LINES HAMBURGUER MENU-----------*/
 .change
 
   .lines1
-   -webkit-transform: rotate(-45deg) translate(-9px, 6px)
-   -ms-flex-transform: rotate(-45deg) translate(-9px, 6px)
-    flex-transform: rotate(-45deg) translate(-9px, 6px)
-    transform: rotate(-45deg) translate(-9px, 6px)
-    color: black
+    transform: rotate(360deg) translate(0px, -8px)
+    margin-bottom: -8px
+  //  -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+  //  -ms-flex-transform: rotate(-45deg) translate(-9px, 6px)
+    // flex-transform: rotate(360deg) translate(-9px, 6px)
+    // transform: rotate(-360deg) translate(8px, 0px)
+   
 
   .lines2
-    opacity: 5
+    // opacity: 0
+    // margin-top: 12px
    
   .lines3
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px)
+    // -webkit-transform: rotate(45deg) translate(-8px, -8px)
+    // flex-transform: rotate(360deg) translate(-8px, -8px)
+    transform: rotate(360deg) translate(0px, -8px)
+    margin-top: 12px
+
+

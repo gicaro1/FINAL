@@ -153,24 +153,21 @@ table {
   margin: 5px;
   color: #FFFFFF;
   margin-left: 20px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 /* -----------ROTATE LINES HAMBURGUER MENU-----------*/
 .change .lines1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  -ms-flex-transform: rotate(-45deg) translate(-9px, 6px);
-  -ms-flex-transform-flex-transform: rotate(-45deg) translate(-9px, 6px);
-  -ms-flex-transform-transform: rotate(-45deg) translate(-9px, 6px);
-  -ms-flex-transform-color: black;
-}
-
-.change .lines2 {
-  opacity: 5;
+  -webkit-transform: rotate(360deg) translate(0px, -8px);
+          transform: rotate(360deg) translate(0px, -8px);
+  margin-bottom: -8px;
 }
 
 .change .lines3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(360deg) translate(0px, -8px);
+          transform: rotate(360deg) translate(0px, -8px);
+  margin-top: 12px;
 }
 
 .video-wrapper {
@@ -211,6 +208,10 @@ table {
   text-align: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.cat-1 .top-buy p, .cat-1 .top-sell p, .cat-1 .top-img p, .cat-1 .top-img1 p, .cat-1 .top-img2 p {
+  color: black;
 }
 
 .cat-1 .home-img {
@@ -342,6 +343,8 @@ h1 {
 
 .container-pics .books-img {
   border-radius: 50%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .contaniner-meddle-section .box-middle {
@@ -472,6 +475,7 @@ footer ul a {
   }
   .century-card6 h3, .century-card5 h3, .century-card4 h3, .century-card3 h3, .century-card2 h3, .century-card1 h3 {
     font-size: 2rem;
+    color: #236841;
   }
   .century-card6 .century-img, .century-card5 .century-img, .century-card4 .century-img, .century-card3 .century-img, .century-card2 .century-img, .century-card1 .century-img {
     padding: 40px;
@@ -486,7 +490,7 @@ footer ul a {
     font-size: 0.75rem;
   }
   .century-card6 .price p:first-child, .century-card5 .price p:first-child, .century-card4 .price p:first-child, .century-card3 .price p:first-child, .century-card2 .price p:first-child, .century-card1 .price p:first-child {
-    margin-left: -16px;
+    margin-left: -12px;
   }
   .century-text1 p, .century-text2 p, .century-text3 p, .century-text4 p,
   .century-text5 p, .century-text6 p {
@@ -569,6 +573,9 @@ footer ul a {
   form .details input {
     display: block;
     margin: 0 auto;
+  }
+  form .centuries select {
+    font-size: 0.75rem;
   }
   form .yes-and-no .control-group label {
     font-size: 1.0625rem;
@@ -813,6 +820,11 @@ footer ul a {
 
 h1 {
   font-size: rem/2;
+  font-size: 2rem;
+  overflow: hidden;
+  color: #fff;
+  letter-spacing: 1rem;
+  color: #fff;
 }
 
 .century-sec {
@@ -954,9 +966,9 @@ footer ul li a {
     height: 150px;
   }
   .century-main-wrapper .century-card6 .price, .century-main-wrapper .century-card5 .price, .century-main-wrapper .century-card4 .price, .century-main-wrapper .century-card3 .price, .century-main-wrapper .century-card2 .price, .century-main-wrapper .century-card1 .price {
-    width: 60%;
+    width: 80%;
     bottom: 0;
-    height: 0px;
+    height: 60px;
   }
   .century-main-wrapper .century-card6 .price p, .century-main-wrapper .century-card5 .price p, .century-main-wrapper .century-card4 .price p, .century-main-wrapper .century-card3 .price p, .century-main-wrapper .century-card2 .price p, .century-main-wrapper .century-card1 .price p {
     font-size: 0.875rem;
@@ -971,6 +983,9 @@ footer ul li a {
         -ms-flex-align: center;
             align-items: center;
     width: 40%;
+  }
+  .century-main-wrapper .century-card6 .price p:first-child, .century-main-wrapper .century-card5 .price p:first-child, .century-main-wrapper .century-card4 .price p:first-child, .century-main-wrapper .century-card3 .price p:first-child, .century-main-wrapper .century-card2 .price p:first-child, .century-main-wrapper .century-card1 .price p:first-child {
+    margin-left: 65px;
   }
   .century-main-wrapper .century-card6 .price p .century-star, .century-main-wrapper .century-card5 .price p .century-star, .century-main-wrapper .century-card4 .price p .century-star, .century-main-wrapper .century-card3 .price p .century-star, .century-main-wrapper .century-card2 .price p .century-star, .century-main-wrapper .century-card1 .price p .century-star {
     font-size: .8rem;
@@ -1853,6 +1868,8 @@ footer ul li a {
   .books-image-wrapper {
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
   }
   .books-image-wrapper .text-book-cover {
     -ms-grid-rows: 100px;
@@ -1869,6 +1886,7 @@ footer ul li a {
     grid-row-end: -1;
     letter-spacing: .4rem;
     height: 150px;
+    color: #fff;
   }
   .books-image-wrapper .books-img {
     padding: 20px;
@@ -2878,7 +2896,7 @@ section form legend {
 section .submit-button input {
   display: block;
   color: #fff;
-  letter-spacing: .8rem;
+  letter-spacing: .3rem;
   background: #236841;
   margin: 10px auto;
   padding: 10px;
@@ -2911,7 +2929,7 @@ a:focus {
 }
 
 h3:focus, h4:focus, div:focus, table:focus, select:focus, input[type=submit]:focus, input[type=text]:focus, input[type=email]:focus, input[type=radio]:focus, input[type=checkbox]:focus, form:focus {
-  outline: #669900  dotted 3px;
+  outline: #fff  dotted 8px;
   letter-spacing: .1rem;
 }
 

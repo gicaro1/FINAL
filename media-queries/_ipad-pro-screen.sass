@@ -21,6 +21,7 @@
                 padding: 10px
                 opacity: .3
         .details-container 
+            
             grid-area: details-container 
             margin: 5px
             
@@ -181,6 +182,7 @@
             grid-area: top-buy
             display: grid
             grid-template-columns: 1fr 1fr
+            
 
             h3 
                 padding-top: 40px
@@ -336,11 +338,17 @@
     /* -----STAR BOOKS IPAD-PRO  STYLES MEDIA QUERIES----*/
     .books-image-wrapper
         grid-template-rows: repeat(5, 1fr)
+        // -webkit-filter: sepia(1)
+        // filter: sepia(1)
+        -webkit-filter: grayscale(1)
+        filter: grayscale(1)
 
         .text-book-cover
             grid-template-rows:  100px  
             display: grid
             align-content: center
+            // -webkit-filter: grayscale(1)
+            // filter: grayscale(1)
             
             h1 
                 font-size: 7rem
@@ -348,9 +356,11 @@
                 grid-row-end: -1
                 letter-spacing: .4rem
                 height: 150px
+                color: #fff
         .books-img 
-    
                 padding: 20px
+                
+               
 
     
     .century-sec 
@@ -382,8 +392,11 @@
                 text-align: center
                 font-size: $Ipad-paragraph
             .books-img
+                
+              
                 width: 150px
                 height: 150px
+                
 
         .icon-book-fist-p
 
