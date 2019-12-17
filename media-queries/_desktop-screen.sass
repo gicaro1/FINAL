@@ -97,33 +97,40 @@
             grid-column: 1/-1
             grid-row: 4/5
             font-size: $Desktop-paragraph
-            width: 60%
+            width: 30%
+            cursor: pointer 
+            &:hover
+                background: #87CC85
+                width: 60%
 
 
     /*------ NAVIGATION DESKTOP MEDIA QUERIES --------*/
       
     .main-wrapper
         .main-nav 
-        
-        
-            ul  
-                display: grid
-                grid-template-columns: repeat(auto-fit, minmax(30px, 1fr))
-                height: 40px
-               
-               
-             
+            // background: black
             
+            width: 100%
+       
+            ul  
+                display: flex
+                flex-direction: row
+                justify-content: center
+                border-bottom: 1px solid rgba(128,127,127,.5)
+         
+                height: 40px
+             
             li      
            
                 text-decoration: none
-       
                 font-size: $nav-comm0n-bar
+                width: auto 
                 display: flex
-                justify-content: center 
-                align-items: center
-         
-           
+              
+                text-align: center
+                margin-right: 80px
+                
+   
                 &:hover
                         background: white
                         height: 20px
@@ -159,12 +166,54 @@
 
     /*----- HOME PAGE DESKTOP MEDIA QUERIES --------*/
     .video-wrapper 
-  
-        .video-bg
-  
-            // min-height: 40vh
-            // min-width: 100% 
-            // position: absoute
+    
+    .video-bg
+        // position: relative
+    .layout
+     
+    .video-tittle-container     
+        
+    
+
+    
+        width: 100%
+        top: 20%
+        
+        h1 
+        
+            font-size: 10rem 
+        
+            
+            margin: 40px
+            line-height: 4.5rem
+        
+            font-weight: bolder 
+            height: 300px
+           
+    
+    
+            &::after
+            
+                margin-right: 490px
+                font-size: 4.5rem
+                padding: 37px
+          
+            
+                
+            &::before
+            
+        
+                transform: rotate(180deg)
+                margin-left: 470px
+                padding: 10px
+                
+                font-size: 4.5rem
+            
+
+            
+        
+     
+        animation: myfirst 4s linear 1s 
     .cat-0
         .top1
             grid-area: top1
@@ -181,7 +230,7 @@
                 padding: 10px
                 line-height: 1.1rem
                 background: $mainColor
-                color: #fff
+                color: $white
                 font-family: paris
                 box-shadow: $shadow
                 display: flex
@@ -213,6 +262,9 @@
                 width: 200px
                 height: 200px
                 box-sizing: border-box
+                transition: all 0.75s ease-in-out
+                &:hover
+                    transform: scale(1.4)
               
             
         .top-img
@@ -260,6 +312,25 @@
 
       
     /*-------19TH CENTURY PAGE DESKTOP MEDIA QUERIES  -------*/
+    .main-wrapper
+        
+    .century-image-wrapper
+        height: 100vh
+        overflow: hidden
+        position: relative
+        display: grid
+        justify-items: center
+    
+        .century-cover-img
+            height: 100vh
+            width: 100vw
+      
+    
+        h1
+            position: absolute
+            font-size: 4rem
+            top: 40%
+            font-family: paris
 
     .century-main-wrapper
         display: grid
@@ -297,8 +368,12 @@
                 font-style: italic
                 letter-spacing: .1rem
                 margin-bottom: 3px
+                font-family: paris
+                color: $footer-main 
             h3  
                 font-size: $h3Desktop-tittle
+                font-family: paris
+                color: $mainColor
 
 
             .century-img 
@@ -306,6 +381,12 @@
                 width: 150px
                 height: 150px 
                 margin: 0
+                padding: 50px
+                transition: all 0.75s ease-in-out
+
+                &:hover
+                    transform: scale(1.2)
+                
 
             .price
             
@@ -425,12 +506,12 @@
            
            
 
-        .icon-book-fist-p
+            .icon-book-fist-p
 
-            width: 90px
-            height: 90px
-            box-sizing: border-box
-            padding: 10px
+                width: 80px
+                height: 80px
+                padding: 15px
+     
 
         .book-img-box
             margin: 10px
@@ -442,6 +523,27 @@
             .books-img
                 width: 150px
                 height: 150px
+                transition: all 0.75s ease-in-out
+                &:hover
+                    transform: scale(1.3)
+        .cant-link-container
+            height: 50px
+            margin: 20px
+
+        .cat-link-readmore
+            
+             
+            padding: 20px
+            font-size: $h4Phone-tittle
+            cursor: pointer
+            text-decoration: none
+            letter-spacing: .1rem
+            font-style: italic
+            color: $gray-dark
+           
+            &:hover
+                text-decoration: underline
+                color: #259C9B
             
     .contaniner-meddle-section
 
@@ -518,7 +620,7 @@
             padding: 10px
             background: $defaul-color
             text-transform: uppercase
-            color: #fff
+            color: $white
             font-size: $Desktop-paragraph
 
 
@@ -620,30 +722,6 @@
 
 
     /*------ END DELIVERY PAGE STYLES ------*/                   
-                    
-      
-    // .main-nav 
-
-    //     ul
-           
-
-    //     li  
-    //         height: 20px
-    
-    //         &:hover
-    //                 background: white
-    //                 padding: 10px
-    //                 a 
-    //                     color: black
-    //                     font-size: 1.3rem
-    //                     justify-content: center
-    //                     text-transform: uppercase
- 
-
-    
-       
-                        
-
 
     .toggle-wrapper
         display: none

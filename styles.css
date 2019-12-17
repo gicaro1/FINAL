@@ -80,8 +80,12 @@ table {
   text-transform: uppercase;
   cursor: pointer;
   font-size: .7rem;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: .2rem;
+}
+
+.main-wrapper .main-nav {
+  z-index: 100;
 }
 
 .main-wrapper .main-nav ul {
@@ -91,8 +95,6 @@ table {
           flex-direction: column;
   background: black;
   height: 87vh;
-  overflow: hidden;
-  width: 100%;
   display: none;
   list-style: none;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
@@ -109,13 +111,12 @@ table {
           justify-content: flex-start;
   padding: 10px 10px;
   width: 80%;
-  margin-left: 24px;
 }
 
 .main-wrapper .main-nav a {
-  font-size: 0.875rem;
+  font-size: 1.0625rem;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   letter-spacing: .2rem;
 }
@@ -185,16 +186,107 @@ table {
   grid-area: video-bg;
   position: relative;
   width: 100%;
-  height: 50 auto;
+  height: 86vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -2;
 }
 
 .video-wrapper .layout {
   position: absolute;
-  height: 100%;
+  height: 86vh;
   background: rgba(35, 104, 65, 0.3);
   width: 100%;
   z-index: -1;
+}
+
+.video-wrapper .video-bg {
+  position: relative;
+}
+
+.video-tittle-container {
+  position: absolute;
+  z-index: 1;
+}
+
+.video-tittle-container h1 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #000;
+  font-weight: bolder;
+  opacity: 1;
+}
+
+.video-tittle-container h1::after {
+  content: "⏄";
+}
+
+.video-tittle-container h1::before {
+  content: "⏄";
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    color: black;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transform-opacity: .4;
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: .6;
+  }
+  75% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    opacity: .1;
+  }
+  100% {
+    color: Black;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 2;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    color: black;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transform-opacity: .4;
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: .6;
+  }
+  75% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    opacity: .1;
+  }
+  100% {
+    color: Black;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 2;
+  }
 }
 
 .cat-1 {
@@ -226,6 +318,7 @@ table {
 .cat-1 h3 {
   color: #236841;
   overflow: hidden;
+  background: #fafafa;
 }
 
 .values-B {
@@ -392,7 +485,7 @@ footer ul {
   list-style: none;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  background: black;
+  background: #1c3a01;
 }
 
 footer ul li {
@@ -408,7 +501,7 @@ footer ul a {
   text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
-  color: #ddd;
+  color: #ffffff;
   letter-spacing: .1rem;
   font-size: 0.875rem;
   letter-spacing: .2rem;
@@ -441,11 +534,13 @@ footer ul a {
 .century-main-wrapper .century-text1 h4, .century-main-wrapper .century-text2 h4, .century-main-wrapper .century-text3 h4, .century-main-wrapper .century-text4 h4, .century-main-wrapper .century-text5 h4, .century-main-wrapper .century-text6 h4, .century-main-wrapper .century-card6 h4, .century-main-wrapper .century-card5 h4, .century-main-wrapper .century-card4 h4, .century-main-wrapper .century-card3 h4, .century-main-wrapper .century-card2 h4, .century-main-wrapper .century-card1 h4 {
   font-style: italic;
   letter-spacing: .1rem;
+  font-family: paris;
 }
 
 .century-main-wrapper .century-text1 .price, .century-main-wrapper .century-text2 .price, .century-main-wrapper .century-text3 .price, .century-main-wrapper .century-text4 .price, .century-main-wrapper .century-text5 .price, .century-main-wrapper .century-text6 .price, .century-main-wrapper .century-card6 .price, .century-main-wrapper .century-card5 .price, .century-main-wrapper .century-card4 .price, .century-main-wrapper .century-card3 .price, .century-main-wrapper .century-card2 .price, .century-main-wrapper .century-card1 .price {
   background: #ece9ec;
   margin: 0 auto;
+  font-family: paris;
 }
 
 .century-main-wrapper .century-text1 .price p, .century-main-wrapper .century-text2 .price p, .century-main-wrapper .century-text3 .price p, .century-main-wrapper .century-text4 .price p, .century-main-wrapper .century-text5 .price p, .century-main-wrapper .century-text6 .price p, .century-main-wrapper .century-card6 .price p, .century-main-wrapper .century-card5 .price p, .century-main-wrapper .century-card4 .price p, .century-main-wrapper .century-card3 .price p, .century-main-wrapper .century-card2 .price p, .century-main-wrapper .century-card1 .price p {
@@ -458,6 +553,31 @@ footer ul a {
 
 @media only screen and (max-device-width: 414px) {
   /*-----====== CENTURY PAGE STYLES=====----*/
+  .books-image-wrapper {
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  .books-image-wrapper .cover-img {
+    height: 100%;
+    width: 100%;
+  }
+  .books-image-wrapper h1 {
+    font-size: 2rem;
+  }
+  .main-nav ul li {
+    margin-left: 24px;
+    margin-top: 30px;
+  }
+  .main-nav ul li a {
+    margin-left: 0px;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e6e4e588;
+  }
   .century-text-top p, .century-main-wrapper .century-text1 p, .century-main-wrapper .century-text2 p, .century-main-wrapper .century-text3 p, .century-main-wrapper .century-text4 p, .century-main-wrapper .century-text5 p, .century-main-wrapper .century-text6 p, .century-main-wrapper .century-card6 p, .century-main-wrapper .century-card5 p, .century-main-wrapper .century-card4 p, .century-main-wrapper .century-card3 p, .century-main-wrapper .century-card2 p, .century-main-wrapper .century-card1 p {
     font-size: 1.0625rem;
   }
@@ -472,6 +592,7 @@ footer ul a {
     margin-bottom: 3px;
     font-size: 1.3125rem;
     line-height: 1rem;
+    padding: 10px;
   }
   .century-card6 h3, .century-card5 h3, .century-card4 h3, .century-card3 h3, .century-card2 h3, .century-card1 h3 {
     font-size: 2rem;
@@ -498,6 +619,11 @@ footer ul a {
   }
   /*------ END ------- */
   /*-----========  CONTACT PAGE STYLES======------- */
+  .books-image-wrapper .cover-img {
+    background-size: cover;
+    background-repeat: no repeat;
+    position: absolute;
+  }
   .contact-wrapper-details .contact-p {
     background: #fafafa;
     margin: 10px;
@@ -630,7 +756,7 @@ footer ul a {
     border: 1px solid #DEDEDE;
     font-size: 1.3125rem;
     background: #236841;
-    color: #fff;
+    color: #ffffff;
     letter-spacing: .2rem;
   }
   table .pr, table .st {
@@ -724,7 +850,7 @@ footer ul a {
   padding: 10px;
   line-height: 1.3rem;
   background: #236841;
-  color: #fff;
+  color: #ffffff;
   font-family: paris;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
@@ -746,6 +872,34 @@ footer ul a {
   padding: 10px 10px;
 }
 
+.video-tittle-container {
+  width: 100%;
+  top: 20%;
+}
+
+.video-tittle-container h1 {
+  font-size: 3rem;
+  line-height: 2.9rem;
+  padding: 20px;
+  font-weight: bolder;
+  height: 300px;
+  -webkit-animation: myfirst 4s linear 1s;
+          animation: myfirst 4s linear 1s;
+}
+
+.video-tittle-container h1::after {
+  margin-right: 190px;
+  font-size: 2.5rem;
+  padding: 8px;
+}
+
+.video-tittle-container h1::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 170px;
+  font-size: 2.5rem;
+}
+
 .cat-1 {
   /* -----STAR BOOKS PAGE SMALL SCREENS MEDIA QUERIES----*/
 }
@@ -762,16 +916,38 @@ footer ul a {
   width: 100%;
 }
 
+.cat-1 .cant-link-container {
+  height: 50px;
+  margin: 20px;
+}
+
+.cat-1 .cant-link-container .cat-link-readmore {
+  padding: 20px;
+  font-size: 1.3125rem;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  font-style: italic;
+  color: #444444;
+}
+
+.cat-1 .cant-link-container .cat-link-readmore:hover {
+  text-decoration: underline;
+  color: #259C9B;
+}
+
 .cat-1 h2 {
   font-size: 2.9rem;
   line-height: 3.4rem;
+  font-family: paris;
 }
 
 .cat-1 h3 {
   font-size: 2rem;
-  margin: 20px 0px 0px;
+  padding: 30px;
+  line-height: 1.8rem;
   color: #236841;
-  line-height: 2.3rem;
+  font-family: paris;
 }
 
 .cat-1 p {
@@ -805,26 +981,20 @@ footer ul a {
   height: 150px;
 }
 
-.main-wrapper .cover-img {
+.books-image-wrapper .cover-img {
+  height: 100%;
   width: 100%;
-  height: 100%;
-}
-
-.books-image-wrapper {
-  height: 84vh;
-}
-
-.text-book-cover {
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 h1 {
   font-size: rem/2;
-  font-size: 2rem;
+  font-size: 2.5rem;
   overflow: hidden;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 1rem;
-  color: #fff;
+  overflow: hidden;
 }
 
 .century-sec {
@@ -867,12 +1037,34 @@ h1 {
   font-size: 2rem;
   color: #236841;
   line-height: 1.8rem;
+  font-family: paris;
 }
 
 .container-pics .book-img-box .books-img {
-  padding: 20px 0px;
   width: 150px;
   height: 150px;
+  border: 4px solid #444444;
+  margin-bottom: 20px;
+}
+
+.container-pics .book-link-container {
+  width: 100%;
+  height: 50px;
+}
+
+.container-pics .book-link-container .books-link-img {
+  padding: 40px;
+  position: relative;
+  font-size: 1.3125rem;
+  text-decoration: none;
+  color: #444444;
+  font-style: italic;
+  letter-spacing: .1rem;
+}
+
+.container-pics .book-link-container .books-link-img:hover {
+  text-decoration: underline;
+  color: #259C9B;
 }
 
 .contaniner-meddle-section .box-middle {
@@ -921,6 +1113,23 @@ footer ul li a {
 
 @media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
   /*------ ====== 19TH CENTURY PAGE STYLES IPAD ======= ---------*/
+  .century-image-wrapper {
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  .century-image-wrapper .century-cover-img {
+    height: 100%;
+    width: 100%;
+  }
+  .century-image-wrapper h1 {
+    position: absolute;
+    font-size: 2rem;
+    top: 40%;
+  }
   .century-main-wrapper {
     display: -ms-grid;
     display: grid;
@@ -955,10 +1164,14 @@ footer ul li a {
     letter-spacing: .1rem;
     margin-bottom: 3px;
     font-size: 1.75rem;
+    color: #1c3a01;
+    font-family: paris;
   }
   .century-main-wrapper .century-card6 h3, .century-main-wrapper .century-card5 h3, .century-main-wrapper .century-card4 h3, .century-main-wrapper .century-card3 h3, .century-main-wrapper .century-card2 h3, .century-main-wrapper .century-card1 h3 {
     font-size: 2.5rem;
     margin-top: 40px;
+    color: #236841;
+    font-family: paris;
   }
   .century-main-wrapper .century-card6 .century-img, .century-main-wrapper .century-card5 .century-img, .century-main-wrapper .century-card4 .century-img, .century-main-wrapper .century-card3 .century-img, .century-main-wrapper .century-card2 .century-img, .century-main-wrapper .century-card1 .century-img {
     margin: 10PX;
@@ -1132,9 +1345,12 @@ footer ul li a {
   form legend {
     font-size: 1.0625rem;
   }
+  .submit-button {
+    width: 100%;
+  }
   .submit-button input {
     font-size: 0.875rem;
-    width: 60%;
+    width: 350px;
   }
   /*-------======== END CONTACT STYELS =====-----*/
   /*------===== NAVIGATIO MENU IPAD STYLES =======-------*/
@@ -1163,6 +1379,28 @@ footer ul li a {
   }
   /*-------======== END CONTACT STYELS =====-----*/
   /* ---- HOMEPAGE STYLES MEDIA QUERIES IPAD ----*/
+  .video-tittle-container {
+    width: 100%;
+    top: 20%;
+  }
+  .video-tittle-container h1 {
+    font-size: 6rem;
+    margin: 40px;
+    line-height: 4.5rem;
+    font-weight: bolder;
+    height: 300px;
+  }
+  .video-tittle-container h1::after {
+    margin-right: 290px;
+    font-size: 3.5rem;
+    padding: 17px;
+  }
+  .video-tittle-container h1::before {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    margin-left: 270px;
+    font-size: 3.5rem;
+  }
   .cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1183,7 +1421,7 @@ footer ul li a {
     padding: 10px;
     line-height: 1.3rem;
     background: #236841;
-    color: #fff;
+    color: #ffffff;
     font-family: paris;
     -webkit-box-shadow: 0px 10px 13px -7px #000000;
             box-shadow: 0px 10px 13px -7px #000000;
@@ -1307,7 +1545,7 @@ footer ul li a {
         align-content: center;
   }
   .books-image-wrapper .text-book-cover h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: -1;
@@ -1339,7 +1577,7 @@ footer ul li a {
     padding: 15px  60px;
     margin: 10px 30px;
   }
-  .container-pics .icon-book-fist-p {
+  .container-pics .para-con .icon-book-fist-p {
     margin: px auto;
     width: 60px;
     height: 60px;
@@ -1355,6 +1593,23 @@ footer ul li a {
   .container-pics .book-img-box .books-img {
     width: 150px;
     height: 150px;
+  }
+  .container-pics .cant-link-container {
+    height: 50px;
+    margin: 20px;
+  }
+  .container-pics .cat-link-readmore {
+    padding: 20px;
+    font-size: 1.3125rem;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    font-style: italic;
+    color: #444444;
+  }
+  .container-pics .cat-link-readmore:hover {
+    text-decoration: underline;
+    color: #259C9B;
   }
   .contaniner-meddle-section .box-middle .icon-books {
     width: 60px;
@@ -1411,7 +1666,7 @@ footer ul li a {
     padding: 10px;
     background: #236841;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
   }
   table td {
     color: #000;
@@ -1613,6 +1868,31 @@ footer ul li a {
     margin: 0 auto;
   }
   /*---- HOME PAGE STYLES IPAD-PRO-------*/
+  .video-tittle-container {
+    width: 100%;
+    top: 20%;
+    -webkit-animation: myfirst 4s linear 1s;
+            animation: myfirst 4s linear 1s;
+  }
+  .video-tittle-container h1 {
+    font-size: 8rem;
+    margin: 40px;
+    line-height: 4.5rem;
+    font-weight: bolder;
+    height: 300px;
+  }
+  .video-tittle-container h1::after {
+    margin-right: 390px;
+    font-size: 4.5rem;
+    padding: 27px;
+  }
+  .video-tittle-container h1::before {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    margin-left: 370px;
+    padding: 17px;
+    font-size: 4.5rem;
+  }
   .cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1633,7 +1913,7 @@ footer ul li a {
     padding: 10px;
     line-height: 1.1rem;
     background: #236841;
-    color: #fff;
+    color: #ffffff;
     font-family: paris;
     -webkit-box-shadow: 0px 10px 13px -7px #000000;
             box-shadow: 0px 10px 13px -7px #000000;
@@ -1735,6 +2015,24 @@ footer ul li a {
     font-size: 1.5rem;
   }
   /*---- 19TH CENTURY PAGE IPAD-PROD MEDIA QUERIES ------*/
+  .century-image-wrapper {
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  .century-image-wrapper .century-cover-img {
+    height: 100%;
+    width: 100%;
+  }
+  .century-image-wrapper h1 {
+    position: absolute;
+    font-size: 4rem;
+    top: 40%;
+    font-family: paris;
+  }
   .century-main-wrapper {
     display: -ms-grid;
     display: grid;
@@ -1768,10 +2066,14 @@ footer ul li a {
     letter-spacing: .1rem;
     margin-bottom: 3px;
     font-size: 1.75rem;
+    color: #1c3a01;
+    font-family: paris;
   }
   .century-main-wrapper .century-card6 h3, .century-main-wrapper .century-card5 h3, .century-main-wrapper .century-card4 h3, .century-main-wrapper .century-card3 h3, .century-main-wrapper .century-card2 h3, .century-main-wrapper .century-card1 h3 {
     font-size: 2.5rem;
     margin-top: 40px;
+    color: #236841;
+    font-family: paris;
   }
   .century-main-wrapper .century-card6 .century-img, .century-main-wrapper .century-card5 .century-img, .century-main-wrapper .century-card4 .century-img, .century-main-wrapper .century-card3 .century-img, .century-main-wrapper .century-card2 .century-img, .century-main-wrapper .century-card1 .century-img {
     margin: 10px;
@@ -1865,6 +2167,14 @@ footer ul li a {
     display: none;
   }
   /* -----STAR BOOKS IPAD-PRO  STYLES MEDIA QUERIES----*/
+  .main-wrapper .cover-img {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+  }
   .books-image-wrapper {
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
@@ -1880,16 +2190,33 @@ footer ul li a {
         align-content: center;
   }
   .books-image-wrapper .text-book-cover h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: -1;
     letter-spacing: .4rem;
-    height: 150px;
-    color: #fff;
+    height: 100px;
+    color: #ffffff;
   }
-  .books-image-wrapper .books-img {
+  .books-image-wrapper .text-book-cover .books-img {
     padding: 20px;
+  }
+  .books-image-wrapper .cant-link-container {
+    height: 50px;
+    margin: 20px;
+  }
+  .books-image-wrapper .cat-link-readmore {
+    padding: 20px;
+    font-size: 1.3125rem;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    font-style: italic;
+    color: #444444;
+  }
+  .books-image-wrapper .cat-link-readmore:hover {
+    text-decoration: underline;
+    color: #259C9B;
   }
   .century-sec {
     display: -ms-grid;
@@ -1924,7 +2251,7 @@ footer ul li a {
     width: 150px;
     height: 150px;
   }
-  .container-pics .icon-book-fist-p {
+  .container-pics .para-con .icon-book-fist-p {
     width: 70px;
     height: 70px;
   }
@@ -2003,7 +2330,7 @@ footer ul li a {
     padding: 10px;
     background: #236841;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.3rem;
   }
   table td {
@@ -2019,7 +2346,7 @@ footer ul li a {
     padding: 5px;
     background: #175c37;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
   }
   table .pr, table .st {
     padding: 10px;
@@ -2175,28 +2502,40 @@ footer ul li a {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
     font-size: 1.3125rem;
+    width: 30%;
+    cursor: pointer;
+  }
+  .submit-button input:hover {
+    background: #87CC85;
     width: 60%;
   }
   /*------ NAVIGATION DESKTOP MEDIA QUERIES --------*/
+  .main-wrapper .main-nav {
+    width: 100%;
+  }
   .main-wrapper .main-nav ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(30px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid rgba(128, 127, 127, 0.5);
     height: 40px;
   }
   .main-wrapper .main-nav li {
     text-decoration: none;
     font-size: 0.875rem;
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
+    margin-right: 80px;
   }
   .main-wrapper .main-nav li:hover {
     background: white;
@@ -2216,6 +2555,31 @@ footer ul li a {
   }
   /*---- END NAVIGATION-------*/
   /*----- HOME PAGE DESKTOP MEDIA QUERIES --------*/
+  .video-tittle-container {
+    width: 100%;
+    top: 20%;
+    -webkit-animation: myfirst 4s linear 1s;
+            animation: myfirst 4s linear 1s;
+  }
+  .video-tittle-container h1 {
+    font-size: 10rem;
+    margin: 40px;
+    line-height: 4.5rem;
+    font-weight: bolder;
+    height: 300px;
+  }
+  .video-tittle-container h1::after {
+    margin-right: 490px;
+    font-size: 4.5rem;
+    padding: 37px;
+  }
+  .video-tittle-container h1::before {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    margin-left: 470px;
+    padding: 10px;
+    font-size: 4.5rem;
+  }
   .cat-0 .top1, .cat-0 .cat-1 .top-buy, .cat-1 .cat-0 .top-buy, .cat-0 .cat-1 .top-sell, .cat-1 .cat-0 .top-sell, .cat-0 .cat-1 .top-img, .cat-1 .cat-0 .top-img, .cat-0 .cat-1 .top-img1, .cat-1 .cat-0 .top-img1, .cat-0 .cat-1 .top-img2, .cat-1 .cat-0 .top-img2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -2237,7 +2601,7 @@ footer ul li a {
     padding: 10px;
     line-height: 1.1rem;
     background: #236841;
-    color: #fff;
+    color: #ffffff;
     font-family: paris;
     -webkit-box-shadow: 0px 10px 13px -7px #000000;
             box-shadow: 0px 10px 13px -7px #000000;
@@ -2271,6 +2635,12 @@ footer ul li a {
     height: 200px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    -webkit-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+  }
+  .cat-1 .top-img .home-img:hover, .cat-1 .top-img1 .home-img:hover, .cat-1 .top-img2 .home-img:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   .cat-1 .top-img {
     -ms-grid-row: 2;
@@ -2329,6 +2699,24 @@ footer ul li a {
   }
   /*-------END HOME PAGE -------*/
   /*-------19TH CENTURY PAGE DESKTOP MEDIA QUERIES  -------*/
+  .century-image-wrapper {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  .century-image-wrapper .century-cover-img {
+    height: 100vh;
+    width: 100vw;
+  }
+  .century-image-wrapper h1 {
+    position: absolute;
+    font-size: 4rem;
+    top: 40%;
+    font-family: paris;
+  }
   .century-main-wrapper {
     display: -ms-grid;
     display: grid;
@@ -2366,14 +2754,25 @@ footer ul li a {
     font-style: italic;
     letter-spacing: .1rem;
     margin-bottom: 3px;
+    font-family: paris;
+    color: #1c3a01;
   }
   .century-main-wrapper .century-card6 h3, .century-main-wrapper .century-card5 h3, .century-main-wrapper .century-card4 h3, .century-main-wrapper .century-card3 h3, .century-main-wrapper .century-card2 h3, .century-main-wrapper .century-card1 h3 {
     font-size: 3rem;
+    font-family: paris;
+    color: #236841;
   }
   .century-main-wrapper .century-card6 .century-img, .century-main-wrapper .century-card5 .century-img, .century-main-wrapper .century-card4 .century-img, .century-main-wrapper .century-card3 .century-img, .century-main-wrapper .century-card2 .century-img, .century-main-wrapper .century-card1 .century-img {
     width: 150px;
     height: 150px;
     margin: 0;
+    padding: 50px;
+    -webkit-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+  }
+  .century-main-wrapper .century-card6 .century-img:hover, .century-main-wrapper .century-card5 .century-img:hover, .century-main-wrapper .century-card4 .century-img:hover, .century-main-wrapper .century-card3 .century-img:hover, .century-main-wrapper .century-card2 .century-img:hover, .century-main-wrapper .century-card1 .century-img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .century-main-wrapper .century-card6 .price, .century-main-wrapper .century-card5 .price, .century-main-wrapper .century-card4 .price, .century-main-wrapper .century-card3 .price, .century-main-wrapper .century-card2 .price, .century-main-wrapper .century-card1 .price {
     width: 40%;
@@ -2511,12 +2910,10 @@ footer ul li a {
     text-align: center;
     font-size: 1.3125rem;
   }
-  .container-pics .icon-book-fist-p {
-    width: 90px;
-    height: 90px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 10px;
+  .container-pics .para-con .icon-book-fist-p {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
   }
   .container-pics .book-img-box {
     margin: 10px;
@@ -2528,6 +2925,29 @@ footer ul li a {
   .container-pics .book-img-box .books-img {
     width: 150px;
     height: 150px;
+    -webkit-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+  }
+  .container-pics .book-img-box .books-img:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .container-pics .cant-link-container {
+    height: 50px;
+    margin: 20px;
+  }
+  .container-pics .cat-link-readmore {
+    padding: 20px;
+    font-size: 1.3125rem;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    font-style: italic;
+    color: #444444;
+  }
+  .container-pics .cat-link-readmore:hover {
+    text-decoration: underline;
+    color: #259C9B;
   }
   .contaniner-meddle-section {
     -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
@@ -2595,7 +3015,7 @@ footer ul li a {
     padding: 10px;
     background: #236841;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.3125rem;
   }
   table td {
@@ -2778,6 +3198,7 @@ section form {
   display: -ms-grid;
   display: grid;
   width: 95%;
+  position: relative;
 }
 
 section form .details {
@@ -2787,6 +3208,10 @@ section form .details {
   color: black;
   -webkit-box-shadow: 0px 10px 13px -7px #000000;
           box-shadow: 0px 10px 13px -7px #000000;
+}
+
+section form .details input:invalid, section form .details input:focus {
+  outline: 2px solid #f00;
 }
 
 section form .centuries {
@@ -2895,7 +3320,7 @@ section form legend {
 
 section .submit-button input {
   display: block;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: .3rem;
   background: #236841;
   margin: 10px auto;
@@ -2911,7 +3336,7 @@ section .submit-button input {
   margin-top: 200px;
   text-decoration: none;
   z-index: 1;
-  color: #fff;
+  color: #ffffff;
 }
 
 .main-wrapper .skiplink:focus {
@@ -2923,18 +3348,8 @@ section .submit-button input {
   background: #236841;
 }
 
-a:focus {
-  outline: #fff dotted 2px;
-  letter-spacing: .1rem;
-}
-
-h3:focus, h4:focus, div:focus, table:focus, select:focus, input[type=submit]:focus, input[type=text]:focus, input[type=email]:focus, input[type=radio]:focus, input[type=checkbox]:focus, form:focus {
-  outline: #fff  dotted 8px;
-  letter-spacing: .1rem;
-}
-
 body {
-  background: white;
+  background: blue;
   line-height: 1.3;
   font-family: 'PT Sans Narrow', sans-serif;
 }

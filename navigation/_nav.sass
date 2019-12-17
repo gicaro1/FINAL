@@ -35,21 +35,19 @@
             text-transform: uppercase
             cursor: pointer
             font-size: .7rem
-            color: $light
+            color: $white
             letter-spacing: .2rem
  
 
     .main-nav 
+        z-index: 100
         
       
         ul
 
             flex-direction: column
-            // z-index: 1
             background: black
             height: 87vh
-            overflow: hidden
-            width: 100%
             display: none
             list-style: none
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
@@ -60,18 +58,24 @@
         
           
             opacity: .4
+            
             display: flex
             justify-content: flex-start
             padding: 10px 10px
             width: 80% 
-            margin-left: 24px
+            // margin-left:  24px
+            
+            // &:nth-child(1)
+            //     margin-top: 30px
+                
            
         a 
-            font-size: 0.875rem 
+            font-size: $Phone-paragraph
             text-decoration: none
-            color: $light
+            color: $white
             cursor: pointer
             letter-spacing: .2rem
+           
       
         
 

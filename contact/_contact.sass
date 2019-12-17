@@ -32,10 +32,12 @@ section
         display: grid
         
         width: 95%
+        position: relative
      
 
         .details
             grid-area: details
+            
             // display: grid
             border: 1px solid #b9b8bb
             background: #fafafa
@@ -45,6 +47,13 @@ section
             box-shadow: $shadow
             // padding: 20px
             // margin-bottom: 10px
+       
+
+            input
+                &:invalid,
+                &:focus
+                    outline: 2px solid #f00 
+            
 
 
         .centuries
@@ -72,6 +81,8 @@ section
             background: #fafafa
             color: black
             box-shadow: $shadow
+         
+                
            
 
           
@@ -84,11 +95,12 @@ section
          
                 label
                     text-align: center
-            
                     letter-spacing: .2rem
        
                 input
                     margin: 10px auto
+                        // &:valid, &:focus,:not([type-radio]):not([type-checkbox])
+                        // outline: 2px solid#29acee
      
         .sell-and-buy
             grid-area: sell-and-buy
@@ -118,6 +130,8 @@ section
                 
                     width: 100%
                     padding-left: 20px
+                    // &:valid, &:focus,:not([type-radio]):not([type-checkbox])
+                    // outline: 2px solid#29acee
 
              
             
@@ -148,12 +162,61 @@ section
         input
            
             display: block
-            color: #fff
+            color: $white
             letter-spacing: .3rem
             background: $mainColor
          
             margin: 10px auto
             padding: 10px
             border-radius: 20px
+
+    
+    // .tooltip
+     
+    //     display: inline-block
+    //     border-bottom: 1px dotted black
+    //     &:hover 
+    //         .tooltiptext
+    //             visibility: visible
+    //             opacity: 1
+
+    //     .tooltiptext
+    //        // visibility: hidden
+    //         width: 120px;
+    //         background-color: #555;
+    //         color: $white;
+    //         text-align: center
+    //         border-radius: 6px
+    //         padding: 5px 0
+    //         position: absolute
+    //         z-index: 1
+    //         bottom: 125%
+    //         left: 50%
+    //         margin-left: -60px
+    //         opacity: 0
+    //         transition: opacity 0.3s
+
+    //         &::after 
+    //             content: ""
+    //             position: absolute
+    //             top: 100%
+    //             left: 50%
+    //             margin-left: -5px
+    //             border-width: 5px
+    //             border-style: solid
+    //             border-color: #555 transparent transparent transparent
+
+
+                
+  
+
+
+
+    
+
+   
+
+   
+
          
 

@@ -2,8 +2,28 @@
 @media only  screen and(min-device-width:415px) and (max-device-width:768px)
 
     /*------ ====== 19TH CENTURY PAGE STYLES IPAD ======= ---------*/
+    .main-wrapper
+        
+    .century-image-wrapper
+        height: 70vh
+        overflow: hidden
+        position: relative
+        display: grid
+        justify-items: center
+    
+        .century-cover-img
+            height: 100%
+            width: 100%
+      
+    
+        h1
+            position: absolute
+            font-size: 2rem
+            top: 40%
 
     .century-main-wrapper
+        
+        
         .century-text-top
             grid-area: century-text-top
 
@@ -35,10 +55,16 @@
                 letter-spacing: .1rem
                 margin-bottom: 3px
                 font-size: $h4Ipad-tittle
+                color: $footer-main
+                font-family: paris
         
             h3  
                 font-size: $h3Ipad-tittle
                 margin-top: 40px
+                color: $mainColor
+                font-family: paris
+
+                
 
             .century-img 
                 margin: 10PX
@@ -200,11 +226,16 @@
             font-size: $Ipad-paragraph
 
     .submit-button
+     
+        width: 100%
         input
-            // grid-column: 1/-1
-            // grid-row: 4/5
             font-size: $Ipad-list
-            width: 60%
+            width: 350px
+            
+                
+         
+            
+           
     /*-------======== END CONTACT STYELS =====-----*/
 
 
@@ -225,8 +256,11 @@
                 height: 50px
                 margin: 0
                 align-content: center
+              
             
-            li      
+            li  
+           
+               
            
              text-decoration: none
              padding: 5px
@@ -234,7 +268,8 @@
              text-align: center
              padding: 10px
 
-            a
+            a 
+              
              margin: 0 auto
     /*-------======== END CONTACT STYELS =====-----*/
 
@@ -244,6 +279,54 @@
 
 
     /* ---- HOMEPAGE STYLES MEDIA QUERIES IPAD ----*/
+    .video-wrapper 
+    
+    .video-bg
+        // position: relative
+    .layout
+     
+    .video-tittle-container     
+        
+    
+
+    
+        width: 100%
+        top: 20%
+        
+        h1 
+        
+            font-size: 6rem 
+        
+            
+            margin: 40px
+            line-height: 4.5rem
+        
+            font-weight: bolder 
+            height: 300px
+           
+    
+    
+            &::after
+            
+                margin-right: 290px
+                font-size: 3.5rem
+                padding: 17px
+          
+            
+                
+            &::before
+            
+        
+                transform: rotate(180deg)
+                margin-left: 270px
+                
+                font-size: 3.5rem
+            
+
+            
+        
+     
+        // animation: myfirst 4s linear 1s 
     .cat-0
         .top1
             grid-area: top1
@@ -259,7 +342,7 @@
                 padding: 10px
                 line-height: 1.3rem
                 background: $mainColor
-                color: #fff
+                color: $white
                 font-family: paris
                 box-shadow: $shadow
                 display: flex
@@ -387,7 +470,7 @@
             align-content: center
        
             h1 
-                font-size: 6rem
+                font-size: 4rem
                 grid-row-start: 1
                 grid-row-end: -1
                 letter-spacing: .4rem
@@ -416,16 +499,17 @@
           
         
 
-        .icon-book-fist-p
-        
-            margin: px auto
-            width: 60px
-            height: 60px
+            .icon-book-fist-p
+            
+                margin: px auto
+                width: 60px
+                height: 60px
          
         
         .book-img-box 
             
             margin: 5px
+
             h3 
              
                 font-size: $h4Ipad-tittle
@@ -436,6 +520,24 @@
             
                 width: 150px
                 height: 150px
+        .cant-link-container
+            height: 50px
+            margin: 20px
+
+        .cat-link-readmore
+            
+             
+            padding: 20px
+            font-size: $h4Phone-tittle
+            cursor: pointer
+            text-decoration: none
+            letter-spacing: .1rem
+            font-style: italic
+            color: $gray-dark
+           
+            &:hover
+                text-decoration: underline
+                color: #259C9B
 
      
     .contaniner-meddle-section
@@ -514,7 +616,7 @@
             padding: 10px
             background: $defaul-color
             text-transform: uppercase
-            color: #fff
+            color: $white
 
 
         td
